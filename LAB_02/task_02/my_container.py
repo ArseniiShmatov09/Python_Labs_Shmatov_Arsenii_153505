@@ -56,14 +56,14 @@ class MyContainer:
 
     def save(self):
 
-        os.makedirs(os.path.dirname(f'./containers/{self.username}.json'), exist_ok=True)
-        with open(f'./containers/{self.username}.json', 'w') as fp:
+        os.makedirs(os.path.dirname(f'./task_02/containers/{self.username}.json'), exist_ok=True)
+        with open(f'./task_02/containers/{self.username}.json', 'w') as fp:
             json.dump(list(self.storage), fp)
 
     def load(self):
 
-        if os.path.exists(f'./containers/{self.username}.json'):
-            with open(f'./containers/{self.username}.json', 'r') as fp:
+        if os.path.exists(f'./task_02/containers/{self.username}.json'):
+            with open(f'./task_02/containers/{self.username}.json', 'r') as fp:
                 self.storage.update(set(json.load(fp)))
 
         else:
@@ -74,7 +74,7 @@ class MyContainer:
         self.username = username
         self.storage.clear()
 
-        if os.path.exists(f'./containers/{self.username}.json'):
+        if os.path.exists(f'./task_02/containers/{self.username}.json'):
             answer = input("\nХотите загрузить контейнер? Введите 'y', если да: ")
 
             if answer.lower() == "y":
