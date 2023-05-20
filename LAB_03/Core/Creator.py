@@ -1,7 +1,7 @@
 import sys
-sys.path.append("/home/arsenii/IGI_LABS/LAB_03")
-from Serializers.JSONSerializer import JsonSerializer
-from Serializers.XMLSerializator import XMLSerializer
+sys.path.append("/home/arsenii/IGI_LABS/LAB_03/Core")
+from JSONSerializer import JsonSerializer
+from XMLSerializator import XMLSerializer
 
 class Creator:
     

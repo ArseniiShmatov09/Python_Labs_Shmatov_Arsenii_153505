@@ -2,8 +2,7 @@ import unittest
 import sys
 sys.path.append("/home/arsenii/IGI_LABS/LAB_03")
 from Tests.data_test import my_func, my_decorator, for_dec, A, B, C
-sys.path.append("/home/arsenii/IGI_LABS/LAB_03/Core")
-from Serializers.JSONSerializer import JsonSerializer
+from SerilizerShmatovA import JsonSerializer
 
 class JSONTestCase(unittest.TestCase):
     def setUp(self) -> None:

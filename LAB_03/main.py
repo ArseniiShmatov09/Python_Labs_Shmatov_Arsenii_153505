@@ -1,16 +1,16 @@
 import sys
 sys.path.append("/home/arsenii/IGI_LABS/LAB_03/Core")
-from Serializers.JSONSerializer import JsonSerializer
-from Serializers.XMLSerializator import XMLSerializer
+from SerilizerShmatovA import JsonSerializer
+from SerilizerShmatovA import XMLSerializer
 
 ser_json = JsonSerializer()
 
 class A:
-    x = 15
+    x = 135
     
     def __init__(self) -> None:
-        self.a = 12
-        self.b = 10
+        self.a = 122
+        self.b = 103
     
     def my_meth(self):
         return self.a * self.b
@@ -18,10 +18,10 @@ class A:
     
 class B:
     def __str__(self):
-        return "AAAAAAAAA"
+        return "swa"
     
     def __repr__(self):
-        return "AAAAAAAAA"
+        return "swa"
     
     
 class C(A, B):
@@ -54,10 +54,10 @@ class D:
     
 class E:
     def __str__(self):
-        return "Class b"
+        return "Class e"
     
     def __repr__(self):
-        return "Classs B"
+        return "Classs E"
     
     
 class F(D, E):
