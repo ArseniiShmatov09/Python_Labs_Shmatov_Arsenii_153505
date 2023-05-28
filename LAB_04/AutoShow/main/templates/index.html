@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+<title>Main Page</title>
+
+{% endblock %}
+
+{% block content %}
+<ul>
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'cars' %}">All Cars</a></li>
+</ul>
+<p>Cars: {{cars}}</p>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+<title>Cars Page</title>
+
+{% endblock %}
+
+{% block content %}
+<h1>CARSSSSSSSSSSSSSSSSSSSS</h1>
+<ul>
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'cars' %}">All Cars</a></li>
+</ul>
+
+<ul>
+{% for car in {{cars}}%}
+<li>    
+    car.brand
+</li>
+
+{% endfor %}
+
+</ul>
+{% endblock %}
