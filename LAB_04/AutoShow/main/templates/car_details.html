@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+<title>Car Details Page</title>
+
+{% endblock %}
+
+{% block content %}
+
+<img src="{{car.photo.url}}">
+<ul>
+<li>{{car.brand}}</li>
+<li>{{car.model}}</li>
+<li>{{car.cost}}</li>
+<li>{{car.description}}</li>
+<li>{{car.color}}</li>
+<li>{{car.year_of_publication}}</li>
+<li>{{car.carcass}}</li>
+<li>{{car.producer}}</li>
+
+
+</ul>
+{% endblock %}

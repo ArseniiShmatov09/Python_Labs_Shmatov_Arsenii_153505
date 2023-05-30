@@ -7,9 +7,12 @@
 {% endblock %}
 
 {% block content %}
-<ul>
-    <li><a href="{% url 'index' %}">Home</a></li>
-    <li><a href="{% url 'cars' %}">All Cars</a></li>
-</ul>
-<p>Cars: {{cars}}</p>
+
+{% for car in cars%}
+<li>    
+    <img src="{{car.photo.url}}">
+   <a href="{% url 'car-details' car.id %}">{{car.brand}}, {{car.model}}</a> 
+</li>
+
+{% endfor %}
 {% endblock %}

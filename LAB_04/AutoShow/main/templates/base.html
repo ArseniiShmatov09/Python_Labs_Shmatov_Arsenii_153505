@@ -9,7 +9,13 @@
    {% block title %}{%endblock%}
 </head>
 <body>
+
+  <ul>
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'cars' %}">All Cars</a></li>
+</ul>
     {%block content%}
+    
     {%endblock%}
 </body>
 </html>

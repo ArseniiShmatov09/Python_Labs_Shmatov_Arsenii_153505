@@ -11,12 +11,13 @@ class Car(models.Model):
     color = models.CharField(max_length = 20, help_text="Enter color")
     carcass = models.ForeignKey('CarcassType', on_delete=models.SET_NULL, null=True, help_text="Choose carcass type")
     producer = models.ForeignKey('Producer', on_delete=models.SET_NULL, null=True, help_text="Choose producer")
+    photo = models.ImageField(upload_to='images', blank=True)
 
     def __str__(self) :
         return '{0}, {1}'.format(self.brand, self.model)   
     
     def get_absolute_url(self):        
-        return reverse('book-detail', args=[str(self.id)])
+        return reverse('car-details', args=[str(self.id)])
 
 
 class CarcassType(models.Model):
@@ -43,5 +44,5 @@ class Client(models.Model) :
         return '{0}, {1}'.format(self.first_name, self.last_name) 
     
     def get_absolute_url(self):        
-        return reverse('book-detail', args=[str(self.id)])
+        return reverse('client-detail', args=[str(self.id)])
     

@@ -7,16 +7,17 @@
 {% endblock %}
 
 {% block content %}
-<h1>CARSSSSSSSSSSSSSSSSSSSS</h1>
-<ul>
-    <li><a href="{% url 'index' %}">Home</a></li>
-    <li><a href="{% url 'cars' %}">All Cars</a></li>
-</ul>
+
 
 <ul>
-{% for car in {{cars}}%}
+<button>order by price</button>   
+<button>choose carcass type</button>   
+
+{% for car in cars%}
 <li>    
-    car.brand
+   <img src="{{car.photo.url}}">
+
+   <a href="{% url 'car-details' car.id %}">{{car.brand}}, {{car.model}}</a> 
 </li>
 
 {% endfor %}
