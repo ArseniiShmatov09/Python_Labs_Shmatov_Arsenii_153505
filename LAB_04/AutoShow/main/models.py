@@ -9,7 +9,7 @@ class Car(models.Model):
     description = models.TextField(help_text="Enter description")
     cost = models.IntegerField()
     color = models.CharField(max_length = 20, help_text="Enter color")
-    carcass = models.ForeignKey('CarcassType', on_delete=models.SET_NULL, null=True, help_text="Choose carcass type")
+    carcass_type = models.ForeignKey('CarcassType', on_delete=models.SET_NULL, null=True, help_text="Choose carcass type")
     producer = models.ForeignKey('Producer', on_delete=models.SET_NULL, null=True, help_text="Choose producer")
     photo = models.ImageField(upload_to='images', blank=True)
 
@@ -25,6 +25,9 @@ class CarcassType(models.Model):
 
     def __str__(self):
        return self.designation
+    
+    def get_absolute_url(self):        
+       return reverse('car_list_by_carcass', args=[str(self.designation)])
 
 class Producer(models.Model):
     country = models.CharField(max_length=20, help_text="Enter country")

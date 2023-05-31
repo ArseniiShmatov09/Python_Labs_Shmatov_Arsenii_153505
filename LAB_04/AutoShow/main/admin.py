@@ -5,8 +5,8 @@ from .models import Car, CarcassType, Producer, Client
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ['brand', 'model', 'year_of_publication', 'description', 'cost', 'color', 'carcass', 'producer'] 
-    list_filter = ['brand', 'year_of_publication', 'cost', 'carcass']
+    list_display = ['brand', 'model', 'year_of_publication', 'description', 'cost', 'color', 'carcass_type', 'producer'] 
+    list_filter = ['brand', 'year_of_publication', 'cost', 'carcass_type']
 
 @admin.register(CarcassType)
 class CarcassTypeAdmin(admin.ModelAdmin):

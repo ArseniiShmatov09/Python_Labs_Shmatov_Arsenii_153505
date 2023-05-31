@@ -9,9 +9,26 @@
 {% block content %}
 
 
-<ul>
-<button>order by price</button>   
-<button>choose carcass type</button>   
+<ul> 
+
+<form action="{{ request.get_full_path }}" method="get">
+   <button type="submit" name="sort_price" value="ascending">Sort up by price</button>
+   <button type="submit" name="sort_price" value="descending">Sort sort down by price</button>
+   <button type="submit" name="sort_year" value="ascending">Sort up by year</button>
+   <button type="submit" name="sort_year" value="descending">Sort sort down by year</button>
+</form>
+
+<div id="sidebar">
+   <h3>Cars</h3>
+   <ul>
+       
+       {% for c in carcass_types %}
+           <li {% if carcass_type.designation == c.designation %}class="selected" {% endif %}>
+               <a href="{{ c.get_absolute_url }}">{{ c.designation }}</a>
+           </li>
+       {% endfor %}
+   </ul>
+</div>
 
 {% for car in cars%}
 <li>    
