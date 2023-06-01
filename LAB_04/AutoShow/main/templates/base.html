@@ -16,9 +16,13 @@
     <li><a href="{% url 'cars' %}">All Cars</a></li>
 </ul>
 </div>
+{%if request.user.is_authenticated%}
+<div>| Hello, {{user.username}}! | <a href="{%url 'logout'%}">Logout</a> |</div>
+{%else%}
 <div><a href="{% url 'register'%}">Registration</a> | 
 <a href="{% url 'login'%}">Sign in</a>
 </div>
+{%endif%}
     {%block content%}
     
     {%endblock%}

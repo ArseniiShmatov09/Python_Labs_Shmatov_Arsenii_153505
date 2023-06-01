@@ -1,10 +1,10 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth import logout, login
 from .models import *
 from django.views.generic import DetailView, CreateView
 from django.urls import reverse_lazy
-from main.forms import RegisterUserForm
+from main.forms import RegisterUserForm, LoginUserForm
 from django.contrib.auth.views import LoginView
-from django.contrib.auth.forms import AuthenticationForm
 
 # Create your views here.
 
@@ -49,7 +49,20 @@ class RegisterUser(CreateView):
    template_name = 'register.html'
    success_url = reverse_lazy('login')
 
+   def form_valid(self, form):
+      user = form.save()
+      login(self.request, user)
+      return redirect('index')
+
 class LoginUser(LoginView):
-   form_class = AuthenticationForm
+   form_class = LoginUserForm
    template_name = 'login.html'
    success_url = reverse_lazy('login')
+
+   def get_success_url(self):
+      return reverse_lazy('index')
+
+
+def logout_user(request):
+   logout(request)
+   return redirect('index')

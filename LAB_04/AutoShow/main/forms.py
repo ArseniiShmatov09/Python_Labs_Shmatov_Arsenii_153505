@@ -4,6 +4,7 @@ from django import forms
 from django.core.validators import RegexValidator
 from datetime import date
 from django.core.exceptions import ValidationError
+from django.contrib.auth.forms import AuthenticationForm
 
 def validate_age(value):
     today = date.today()
@@ -30,3 +31,8 @@ class RegisterUserForm(UserCreationForm):
    class Meta:
         model = User
         fields = ('username','first_name','last_name', 'email','date_birthday', 'phone_number','password1','password2')
+
+
+class LoginUserForm(AuthenticationForm):
+    username = forms.CharField(label='login', widget= forms.TextInput(attrs={'class':'form-input'}))
+    password = forms.CharField(label='password', widget= forms.PasswordInput(attrs={'class':'form-input'}))
