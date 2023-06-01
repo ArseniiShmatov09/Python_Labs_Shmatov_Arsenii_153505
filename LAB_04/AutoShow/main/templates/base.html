@@ -10,10 +10,15 @@
 </head>
 <body>
 
+<div>
   <ul>
     <li><a href="{% url 'index' %}">Home</a></li>
     <li><a href="{% url 'cars' %}">All Cars</a></li>
 </ul>
+</div>
+<div><a href="{% url 'register'%}">Registration</a> | 
+<a href="{% url 'login'%}">Sign in</a>
+</div>
     {%block content%}
     
     {%endblock%}

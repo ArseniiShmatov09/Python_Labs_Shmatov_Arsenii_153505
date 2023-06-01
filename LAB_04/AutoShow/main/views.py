@@ -1,7 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from .models import *
-from django.views.generic import DetailView
-
+from django.views.generic import DetailView, CreateView
+from django.urls import reverse_lazy
+from main.forms import RegisterUserForm
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.forms import AuthenticationForm
 
 # Create your views here.
 
@@ -40,3 +43,13 @@ def CarsList(request, car_carcass = None):
 class CarDetailView(DetailView):
   model = Car
   template_name = 'car_details.html'
+
+class RegisterUser(CreateView):
+   form_class = RegisterUserForm
+   template_name = 'register.html'
+   success_url = reverse_lazy('login')
+
+class LoginUser(LoginView):
+   form_class = AuthenticationForm
+   template_name = 'login.html'
+   success_url = reverse_lazy('login')

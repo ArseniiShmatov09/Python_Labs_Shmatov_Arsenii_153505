@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        {%for f in form%}
+        <p><label for="{{f.id_for_label}}">{{f.label}}: </label>{{f}}</p>
+        <div>{{f.errors}}</div>
+        {%endfor%}
+        <button type="submit">Registration</button>
+    </form>
+</body>
+</html>
