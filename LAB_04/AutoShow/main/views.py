@@ -7,7 +7,7 @@ from main.forms import RegisterUserForm, LoginUserForm, CarForm
 from django.contrib.auth.views import LoginView
 from django.http import HttpResponseRedirect
 from django.http import HttpResponseNotFound
-
+from cart.forms import CartAddCarForm
 # Create your views here.
 
 def index(request):
@@ -44,12 +44,23 @@ def CarsList(request, car_carcass = None):
 
 class CarDetailView(DetailView):
   model = Car
+  cart_car_form = CartAddCarForm()
+
   template_name = 'car_details.html'
+
+def car_detail(request, id):
+    car = get_object_or_404(Car, id=id)
+    cart_car_form = CartAddCarForm()
+
+    return render(request, 
+                  'car_details.html',
+                  {'car':car, 'cart_car_form': cart_car_form})
+
 
 class RegisterUser(CreateView):
    form_class = RegisterUserForm
    template_name = 'register.html'
-   success_url = reverse_lazy('login')
+   success_url = reverse_lazy('main:login')
 
    def form_valid(self, form):
       user = form.save()
@@ -67,15 +78,15 @@ class RegisterUser(CreateView):
 class LoginUser(LoginView):
    form_class = LoginUserForm
    template_name = 'login.html'
-   success_url = reverse_lazy('login')
+   success_url = reverse_lazy('main:login')
 
    def get_success_url(self):
-      return reverse_lazy('index')
+      return reverse_lazy('main:index')
 
 
 def logout_user(request):
    logout(request)
-   return redirect('index')
+   return redirect('main:index')
 
 def car_create(request):
 

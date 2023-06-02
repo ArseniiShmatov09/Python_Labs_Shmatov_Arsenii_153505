@@ -17,7 +17,7 @@ class Car(models.Model):
         return '{0}, {1}'.format(self.brand, self.model)   
     
     def get_absolute_url(self):        
-        return reverse('car-details', args=[str(self.id)])
+        return reverse('main:car_details', args=[str(self.id)])
 
 
 class CarcassType(models.Model):
@@ -27,7 +27,7 @@ class CarcassType(models.Model):
        return self.designation
     
     def get_absolute_url(self):        
-       return reverse('car_list_by_carcass', args=[str(self.designation)])
+       return reverse('main:car_list_by_carcass', args=[str(self.designation)])
 
 class Producer(models.Model):
     country = models.CharField(max_length=20, help_text="Enter country")

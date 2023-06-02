@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}
+    Your shopping cart
+{% endblock %}
+{% block content %}
+    <h1>Your shopping cart</h1>
+    <table class="cart">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Car||</th>
+            <th>Quantity||</th>
+            <th>Remove||</th>
+            <th>Unit price||</th>
+            <th>Price||</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in cart %}
+            {% with car=item.car %}
+                <tr>
+                    <td>
+                        <a href="{{ car.get_absolute_url }}">
+                            <img src="{{ car.photo.url }}">
+                        </a>
+                    </td>
+                    <td>{{ car.model }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td><a href="{% url 'cart:cart_remove' car.id %}">Remove</a></td>
+                    <td class="num">{{ item.cost }}</td>
+                    <td class="num">{{ item.total_price }}</td>
+                </tr>
+            {% endwith %}
+        {% endfor %}
+        <tr class="total">
+            <td><h4>Total</h4></td>
+            <td colspan="4"></td>
+            <td class="num"><h4>{{ cart.get_total_price }}</h4></td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="text-right">
+        <h4><a href="{% url 'main:cars' %}" class="button light">Continue shopping</a>
+            <a href="">Checkout</a></h4>
+    </p>
+{% endblock %}

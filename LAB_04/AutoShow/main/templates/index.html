@@ -11,7 +11,7 @@
 {% for car in cars%}
 <li>    
     <img src="{{car.photo.url}}">
-   <a href="{% url 'car-details' car.id %}">{{car.brand}}, {{car.model}}</a> 
+   <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
 </li>
 
 {% endfor %}

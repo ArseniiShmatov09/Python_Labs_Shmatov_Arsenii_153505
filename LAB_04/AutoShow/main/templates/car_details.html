@@ -25,8 +25,13 @@
 <li>{{car.year_of_publication}}</li>
 <li>{{car.carcass_type}}</li>
 <li>{{car.producer}}</li>
+
 {%if user.is_authenticated%}
-<a href="">Buy</a>
+<form action="{% url 'cart:cart_add' car.id %}" method="post">
+    {{ cart_car_form }}
+    {% csrf_token %}
+    <input type="submit" value="Add to cart">
+</form>
 {%endif%}
 
 </ul>

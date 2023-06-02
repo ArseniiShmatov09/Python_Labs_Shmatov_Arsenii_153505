@@ -12,22 +12,40 @@
 
 <div>
   <ul>
-    <li><a href="{% url 'index' %}">Home</a></li>
-    <li><a href="{% url 'cars' %}">All Cars</a></li>
+    <li><a href="{% url 'main:index' %}">Home</a></li>
+    <li><a href="{% url 'main:cars' %}">All Cars</a></li>
 </ul>
 </div>
-{%if request.user.is_authenticated%}
-<div>| Hello, {{user.username}}! | <a href="{%url 'logout'%}">Logout</a> |</div>
-{%else%}
-<div><a href="{% url 'register'%}">Registration</a> | 
-<a href="{% url 'login'%}">Sign in</a>
 
+
+<div id="subheader">
+  <div class="cart">
+      {%if user.is_authenticated%}
+      {% with total_items=cart|length %}
+          {% if cart|length > 0 %}
+              Your cart:
+              <a href="{% url 'cart:cart_detail' %}">
+                  {{ total_items }} item{{ total_items|pluralize }},
+                  ${{ cart.get_total_price }}
+              </a>
+          {% else %}
+              Your cart is empty.
+          {% endif %}
+      {% endwith %}
+      {%endif%}
+      {% if user.is_authenticated %}
+              |{{ user.username }}|
+              <a href="{% url 'main:logout' %}">Out</a>
+              {% else %}
+              <a href="{% url 'main:login' %}">Sign up</a>
+              <a href="{% url 'main:register' %}">Sign in</a>
+              {% endif %}
+  </div>
 </div>
 
-{%endif%}
 {%if request.user.is_staff%}
 
-<div><a href="{% url 'create'%}">add new car</a></div>
+<div><a href="{% url 'main:create'%}">add new car</a></div>
 {%endif%}
 
     {%block content%}
