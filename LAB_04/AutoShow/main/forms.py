@@ -5,6 +5,7 @@ from django.core.validators import RegexValidator
 from datetime import date
 from django.core.exceptions import ValidationError
 from django.contrib.auth.forms import AuthenticationForm
+from .models import Car
 
 def validate_age(value):
     today = date.today()
@@ -36,3 +37,16 @@ class RegisterUserForm(UserCreationForm):
 class LoginUserForm(AuthenticationForm):
     username = forms.CharField(label='login', widget= forms.TextInput(attrs={'class':'form-input'}))
     password = forms.CharField(label='password', widget= forms.PasswordInput(attrs={'class':'form-input'}))
+
+class CarForm(forms.ModelForm):
+    brand = forms.CharField(label='brand', widget= forms.TextInput(attrs={'class':'form-input'}))
+    model = forms.CharField(label='model', widget= forms.TextInput(attrs={'class':'form-input'}))
+    year_of_publication = forms.IntegerField(label='year_of_publication', widget= forms.TextInput(attrs={'class':'form-input'}))
+    cost = forms.IntegerField(label='cost', widget= forms.TextInput(attrs={'class':'form-input'}))
+    color = forms.CharField(label='color', widget= forms.TextInput(attrs={'class':'form-input'}))
+    photo = forms.ImageField(label='photo', widget= forms.FileInput(attrs={'class':'form-input'}))
+
+
+    class Meta:
+        model = Car
+        fields = ['brand', 'model', 'year_of_publication', 'description', 'cost', 'color', 'carcass_type', 'producer', 'photo'] 

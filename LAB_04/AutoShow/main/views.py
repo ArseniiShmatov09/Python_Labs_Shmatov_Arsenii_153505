@@ -3,13 +3,14 @@ from django.contrib.auth import logout, login
 from .models import *
 from django.views.generic import DetailView, CreateView
 from django.urls import reverse_lazy
-from main.forms import RegisterUserForm, LoginUserForm
+from main.forms import RegisterUserForm, LoginUserForm, CarForm
 from django.contrib.auth.views import LoginView
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
 def index(request):
- cars  = Car.objects.all()[:1]
+ cars  = Car.objects.all()[:3]
  return render(request, 'index.html', context={'cars':cars})
 
 def CarsList(request, car_carcass = None):
@@ -51,6 +52,14 @@ class RegisterUser(CreateView):
 
    def form_valid(self, form):
       user = form.save()
+
+      Client.objects.create(first_name=form.cleaned_data['first_name'],
+                              last_name=form.cleaned_data['last_name'],
+                              date_of_birth=form.cleaned_data['date_birthday'],
+                              email=form.cleaned_data['email'],
+                              phone_number=form.cleaned_data['phone_number']).save()
+
+        
       login(self.request, user)
       return redirect('index')
 
@@ -66,3 +75,23 @@ class LoginUser(LoginView):
 def logout_user(request):
    logout(request)
    return redirect('index')
+
+def car_create(request):
+
+    form = CarForm()
+
+    if request.method == "POST":
+        car = Car.objects.create(brand = request.POST.get('brand'),
+                                 model=request.POST.get('model'),
+                                 description=request.POST.get('description'),
+                                 cost=request.POST.get('cost'),
+                                 color=request.POST.get('color'),
+                                 carcass_type=CarcassType.objects.get(id=request.POST.get('carcass_type')),
+                                 producer=Producer.objects.get(id=request.POST.get('producer')),
+                                 year_of_publication=request.POST.get('year_of_publication'),
+                                 photo=request.FILES.get('photo')),
+
+        
+    else:
+        return render(request, "create_car.html", {"form": form})
+    return HttpResponseRedirect("/")

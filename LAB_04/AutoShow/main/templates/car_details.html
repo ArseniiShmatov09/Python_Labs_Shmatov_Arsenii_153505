@@ -7,7 +7,14 @@
 {% endblock %}
 
 {% block content %}
+{%if request.user.is_staff%}
 
+<div>
+    <a href="">Edit car</a>
+    <a href="">Delete car</a>
+
+</div>
+{%endif%}
 <img src="{{car.photo.url}}">
 <ul>
 <li>{{car.brand}}</li>
@@ -18,7 +25,9 @@
 <li>{{car.year_of_publication}}</li>
 <li>{{car.carcass_type}}</li>
 <li>{{car.producer}}</li>
+{%if user.is_authenticated%}
 
+{%endif%}
 
 </ul>
 {% endblock %}

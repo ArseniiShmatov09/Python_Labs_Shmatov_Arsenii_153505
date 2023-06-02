@@ -21,8 +21,15 @@
 {%else%}
 <div><a href="{% url 'register'%}">Registration</a> | 
 <a href="{% url 'login'%}">Sign in</a>
+
 </div>
+
 {%endif%}
+{%if request.user.is_staff%}
+
+<div><a href="{% url 'create'%}">add new car</a></div>
+{%endif%}
+
     {%block content%}
     
     {%endblock%}
