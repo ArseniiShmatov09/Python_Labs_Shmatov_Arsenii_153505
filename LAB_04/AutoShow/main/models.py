@@ -12,6 +12,7 @@ class Car(models.Model):
     carcass_type = models.ForeignKey('CarcassType', on_delete=models.SET_NULL, null=True, help_text="Choose carcass type")
     producer = models.ForeignKey('Producer', on_delete=models.SET_NULL, null=True, help_text="Choose producer")
     photo = models.ImageField(upload_to='images', blank=True)
+    purchase_count = models.PositiveIntegerField(default=0)
 
     def __str__(self) :
         return '{0}, {1}'.format(self.brand, self.model)   

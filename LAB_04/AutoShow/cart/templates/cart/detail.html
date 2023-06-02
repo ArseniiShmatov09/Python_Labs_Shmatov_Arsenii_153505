@@ -41,6 +41,6 @@
     </table>
     <p class="text-right">
         <h4><a href="{% url 'main:cars' %}" class="button light">Continue shopping</a>
-            <a href="">Checkout</a></h4>
+            <a href="{% url 'order:order_create' %}">Checkout</a></h4>
     </p>
 {% endblock %}
