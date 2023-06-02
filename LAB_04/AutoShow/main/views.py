@@ -6,6 +6,7 @@ from django.urls import reverse_lazy
 from main.forms import RegisterUserForm, LoginUserForm, CarForm
 from django.contrib.auth.views import LoginView
 from django.http import HttpResponseRedirect
+from django.http import HttpResponseNotFound
 
 # Create your views here.
 
@@ -95,3 +96,42 @@ def car_create(request):
     else:
         return render(request, "create_car.html", {"form": form})
     return HttpResponseRedirect("/")
+
+
+def car_edit(request, id):
+   
+    try:
+        car = Car.objects.get(id=id)
+
+        form = CarForm(initial={'brand': car.brand, 'model': car.model,
+                                'description': car.description, 'cost': car.cost,
+                                'color': car.color, 'carcass_type': car.carcass_type,
+                                'producer': car.producer,'year_of_publication': car.year_of_publication,
+                                'photo': car.photo})
+
+        if request.method == "POST":
+            car.brand = request.POST.get('brand')
+            car.model=request.POST.get('model')
+            car.description=request.POST.get('description')
+            car.cost=request.POST.get('cost')
+            car.color=request.POST.get('color')
+            car.carcass_type=CarcassType.objects.get(id=request.POST.get('carcass_type'))
+            car.producer=Producer.objects.get(id=request.POST.get('producer'))
+            car.year_of_publication=request.POST.get('year_of_publication')
+            car.photo=request.FILES.get('photo')
+            car.save()
+            return HttpResponseRedirect("/")
+        else:
+            return render(request, "edit_car.html", {"car": car, 'form': form})
+        
+    except car.DoesNotExist:
+        return HttpResponseNotFound("<h2>Car not found :(</h2>")
+
+def car_delete(request, id):
+   
+    try:
+        car = Car.objects.get(id=id)
+        car.delete()
+        return HttpResponseRedirect("/")
+    except car.DoesNotExist:
+        return HttpResponseNotFound("<h2>car not found</h2>")

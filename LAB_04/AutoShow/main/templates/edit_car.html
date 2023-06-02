@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Edit</title>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        {%for f in form%}
+        <p><label for="{{f.id_for_label}}">{{f.label}}: </label>{{f}}</p>
+        <div>{{f.errors}}</div>
+        {%endfor%}
+        <input type="submit" value="Save" >
+    </form>
+</body>
+</html>

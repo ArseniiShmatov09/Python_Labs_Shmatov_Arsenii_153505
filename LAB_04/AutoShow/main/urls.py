@@ -10,5 +10,7 @@ urlpatterns = [
     path('logout/', views.logout_user, name = 'logout'),
     path('login/', views.LoginUser.as_view(), name = 'login'),
     path("create/", views.car_create, name='create'),
+    path("cars/edit/<int:id>/", views.car_edit),
+    path("cars/delete/<int:id>/", views.car_delete),
 
 ]

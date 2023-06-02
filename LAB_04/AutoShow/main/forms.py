@@ -44,7 +44,7 @@ class CarForm(forms.ModelForm):
     year_of_publication = forms.IntegerField(label='year_of_publication', widget= forms.TextInput(attrs={'class':'form-input'}))
     cost = forms.IntegerField(label='cost', widget= forms.TextInput(attrs={'class':'form-input'}))
     color = forms.CharField(label='color', widget= forms.TextInput(attrs={'class':'form-input'}))
-    photo = forms.ImageField(label='photo', widget= forms.FileInput(attrs={'class':'form-input'}))
+   
 
 
     class Meta:
