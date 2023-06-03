@@ -8,11 +8,15 @@ from django.contrib.auth.views import LoginView
 from django.http import HttpResponseRedirect
 from django.http import HttpResponseNotFound
 from cart.forms import CartAddCarForm
+import requests
+
 # Create your views here.
 
 def index(request):
  cars  = Car.objects.all()[:3]
- return render(request, 'index.html', context={'cars':cars})
+ joke = requests.get('https://official-joke-api.appspot.com/jokes/random').json()
+ dog = requests.get('https://dog.ceo/api/breeds/image/random').json()
+ return render(request, 'index.html', context={'cars':cars, 'joke': joke['setup'] + joke['punchline'], 'dog': dog['message']})
 
 def CarsList(request, car_carcass = None):
 
@@ -61,6 +65,8 @@ class RegisterUser(CreateView):
    form_class = RegisterUserForm
    template_name = 'register.html'
    success_url = reverse_lazy('main:login')
+
+
 
    def form_valid(self, form):
       user = form.save()

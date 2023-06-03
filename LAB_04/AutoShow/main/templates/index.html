@@ -14,5 +14,10 @@
    <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
 </li>
 
+
 {% endfor %}
+{%if user.is_authenticated%}
+<h3>Joke 4u - {{joke}} </h3>
+<h3>dog is here - {{dog}}</h3>
+{%endif%}
 {% endblock %}
