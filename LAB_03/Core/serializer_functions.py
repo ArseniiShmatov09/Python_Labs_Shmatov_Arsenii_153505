@@ -136,6 +136,10 @@ def ser_class(obj):
             ser[member[0]] = {"type" : "classmethod",
                               "value" : {"type" : "function",
                                          "value": ser_func(member[1].__func__, obj)}}
+        elif (isinstance(obj.__dict__[member[0]], property)):
+            ser[member[0]] = {"type" : "property",
+                              "value" : {"type" : "function",
+                                         "value": ser_func(member[1].__func__, obj)}}
         elif (inspect.ismethod(member[1])):
             ser[member[0]] = ser_func(member[1].__func__, obj)
             

@@ -13,10 +13,21 @@ import requests
 # Create your views here.
 
 def index(request):
- cars  = Car.objects.all()[:3]
+ cars  = Car.objects.all()[:2]
+
  joke = requests.get('https://official-joke-api.appspot.com/jokes/random').json()
  dog = requests.get('https://dog.ceo/api/breeds/image/random').json()
  return render(request, 'index.html', context={'cars':cars, 'joke': joke['setup'] + joke['punchline'], 'dog': dog['message']})
+
+
+def news(request):
+ 
+ return render(request, 'news.html')
+
+def privacy_policy(request):
+ 
+ return render(request, 'privacy_policy.html')
+
 
 def CarsList(request, car_carcass = None):
 
@@ -79,7 +90,7 @@ class RegisterUser(CreateView):
 
         
       login(self.request, user)
-      return redirect('index')
+      return redirect('main:index')
 
 class LoginUser(LoginView):
    form_class = LoginUserForm

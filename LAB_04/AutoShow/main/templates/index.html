@@ -2,12 +2,17 @@
 
 {% block title %}
 
-<title>Main Page</title>
+<title>MyAutoShow.by Page</title>
 
 {% endblock %}
 
-{% block content %}
 
+
+{% block content %}
+{%if request.user.is_staff%}
+
+<div><a href="{% url 'main:create'%}">add new car</a></div>
+{%endif%}
 {% for car in cars%}
 <li>    
     <img src="{{car.photo.url}}">
