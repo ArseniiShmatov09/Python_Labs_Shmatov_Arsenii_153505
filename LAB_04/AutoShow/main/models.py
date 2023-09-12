@@ -2,6 +2,17 @@ from django.db import models
 from django.urls import reverse
 
 # Create your models here.
+class News(models.Model):
+    title = models.CharField(max_length=50, help_text="Enter title")
+    essence= models.CharField(max_length=50, help_text="Enter essence")
+    photo = models.ImageField(upload_to='images', blank=True)
+    description = models.TextField(help_text="Enter description")
+    
+    def __str__(self):
+       return self.description
+    def get_absolute_url(self):        
+        return reverse('main:news', args=[str(self.id)])
+    
 class Car(models.Model):
     brand = models.CharField(max_length = 20, help_text="Enter brand")
     year_of_publication = models.IntegerField(help_text="Enter year of publication")

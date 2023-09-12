@@ -14,19 +14,26 @@ import requests
 
 def index(request):
  cars  = Car.objects.all()[:2]
-
+ news = News.objects.first()
  joke = requests.get('https://official-joke-api.appspot.com/jokes/random').json()
  dog = requests.get('https://dog.ceo/api/breeds/image/random').json()
- return render(request, 'index.html', context={'cars':cars, 'joke': joke['setup'] + joke['punchline'], 'dog': dog['message']})
+ return render(request, 'index.html', context={'news': news, 'cars':cars, 'joke': joke['setup'] + joke['punchline'], 'dog': dog['message']})
 
 
 def news(request):
  
- return render(request, 'news.html')
+ news = News.objects.all()
+
+
+ return render(request, 'news.html', {'news': news})
 
 def privacy_policy(request):
  
  return render(request, 'privacy_policy.html')
+
+def about(request):
+ 
+ return render(request, 'about.html')
 
 
 def CarsList(request, car_carcass = None):

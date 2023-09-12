@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
+
 <head>
    {% block title %}{%endblock%}
 </head>
@@ -36,7 +38,7 @@
     <ul style="padding-left: 0; margin-left: 0;">
         <li style="display: inline;"><a href="{% url 'main:index' %}">Главная</a></li>&nbsp;
         <li style="display: inline;"><a href="{% url 'main:cars' %}">Все Машины</a></li>&nbsp;
-        <li style="display: inline;"><a href="#">О компании</a></li>&nbsp;
+        <li style="display: inline;"><a href="{%url 'main:about'%}">О компании</a></li>&nbsp;
         <li style="display: inline;"></li><a href="{% url 'main:news' %}">Новости</a></li>&nbsp;
         <li style="display: inline;"></li><a href="#">Словарь терминов и понятий</a></li>&nbsp;
         <li style="display: inline;"></li><a href="#">Контакты</a></li>&nbsp;

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Car, CarcassType, Producer, Client
+from .models import Car, CarcassType, Producer, Client, News
 
 # Register your models here.
 
@@ -15,6 +15,10 @@ class CarcassTypeAdmin(admin.ModelAdmin):
 @admin.register(Producer)
 class ProducerAdmin(admin.ModelAdmin):
     list_display = ['country', 'owner']
+
+@admin.register(News)
+class NewsAdmin(admin.ModelAdmin):
+    list_display = ['title', 'essence', 'description', 'photo']
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):

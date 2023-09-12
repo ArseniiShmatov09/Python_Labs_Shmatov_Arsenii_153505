@@ -6,23 +6,57 @@
 
 {% endblock %}
 
-
-
 {% block content %}
 {%if request.user.is_staff%}
 
 <div><a href="{% url 'main:create'%}">add new car</a></div>
+<div style="margin-bottom: 50px;">
+    <h1>Последняя актуальная новость:</h1>
+    <h2>{{news.title}}</h2>
+    <h3>{{news.essence}}</h3>
+    <a href="{% url 'main:news' %}">Показать больше</a>
+</div>
 {%endif%}
 {% for car in cars%}
-<li>    
+<li>
     <img src="{{car.photo.url}}">
-   <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
+    <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a>
 </li>
-
 
 {% endfor %}
 {%if user.is_authenticated%}
 <h3>Joke 4u - {{joke}} </h3>
-<h3>dog is here - {{dog}}</h3>
+<a href="{{dog}}" target="_blank">Dog is here</a>
 {%endif%}
+
+<h1>Поддержите разработчика, посетите мoй гитхаб</h1>
+<a href="https://github.com/ArseniiShmatov09" target="_blank"><img
+        src="../media/images/git.png"
+        alt="git"></a>
+
+<h1>Партнеры</h1>
+<ul>
+    <li>
+        <img src="../media/images/bmw.png" alt="BMW">
+        <a href="https://www.bmw.fr/fr/accueil.html" target="_blank">BMW</a>
+    </li>
+    <li>
+        <img src="../media/images/audi.png" alt="AUDI">
+        <a href="https://www.audi.fr/fr/web/fr.html" target="_blank">AUDI</a>
+    </li>
+    <li>
+        <img src="../media/images/tesla.png" alt="TESLA">
+        <a href="https://www.tesla.com/" target="_blank">TESLA</a>
+    </li>
+    <li>
+        <img src="../media/images/merc.png" alt="MERCEDES">
+        <a
+            href="https://www.mercedes-benz.fr/?group=all&subgroup=see-all&view=BODYTYPE"
+            target="_blank">MERCEDES</a>
+    </li>
+    <li>
+        <img src="../media/images/renault.png" alt="RENAULT">
+        <a href="https://www.renault.fr/" target="_blank">RENAULT</a>
+    </li>
+</ul>
 {% endblock %}
