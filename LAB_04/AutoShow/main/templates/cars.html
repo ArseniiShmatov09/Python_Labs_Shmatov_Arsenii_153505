@@ -20,8 +20,9 @@
 
 <div id="sidebar">
    <h3>Cars</h3>
+   
    <ul>
-       
+       <li><a href="{%url 'main:cars'%}">All cars</a></li>
        {% for c in carcass_types %}
            <li {% if carcass_type.designation == c.designation %}class="selected" {% endif %}>
                <a href="{{ c.get_absolute_url }}">{{ c.designation }}</a>
