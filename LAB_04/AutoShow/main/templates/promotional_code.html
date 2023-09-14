@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}
+
+<title>FAQ Page</title>
+
+{% endblock %}
+
+{% block content %}
+
+<h1>Действующие промокоды:</h1>
+{%for p in actual_promotional_code%}
+
+    <h3>{{p.value}}</h3>
+
+{%endfor%}
+
+<h1>Промокоды в архиве:</h1>
+{%for p in archive_promotional_code%}
+
+    <h3>{{p.value}}</h3>
+
+{%endfor%}
+
+{%endblock%}

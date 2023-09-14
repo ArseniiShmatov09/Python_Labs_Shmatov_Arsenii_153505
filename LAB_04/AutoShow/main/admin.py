@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Car, CarcassType, Producer, Client, News, FAQ, Job, Employee, Review
+from .models import Car, CarcassType, Producer, Client, News, FAQ, Job, Employee, Review, Promotional_code
 
 # Register your models here.
 
@@ -45,4 +45,6 @@ class EmployeeAdmin(admin.ModelAdmin):
 class ReviewAdmin(admin.ModelAdmin):
     list_display = ['text', 'rating', 'date_added']
 
-
+@admin.register(Promotional_code)
+class Promotional_code_Admin(admin.ModelAdmin):
+    list_display = ['value', 'is_actual']

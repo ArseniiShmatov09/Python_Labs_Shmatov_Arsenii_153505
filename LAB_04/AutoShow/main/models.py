@@ -118,7 +118,12 @@ class Review(models.Model):
         MaxValueValidator(10, message="The number cannot be more than 10")
     ])
     date_added = models.DateTimeField(auto_now_add=True)
+    author = models.CharField(max_length=20, default='')
     #author =  models.OneToOneField(User, on_delete=models.CASCADE)
     def get_absolute_url(self):
         return reverse('main:reviews', args=[str(self.text)])
+
+class Promotional_code(models.Model):
+    value = models.TextField(help_text="Enter promocode")
+    is_actual = models.BooleanField(default=False)
 

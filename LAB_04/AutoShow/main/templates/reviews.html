@@ -14,7 +14,7 @@
     <a href="{% url 'main:login' %}?next={% url 'main:create_review' %}">Оставить свой отзыв</a>
 {% endif %}
 {%for r in reviews%}
-<!-- <h2>{{r.author}}</h2> -->
+<h2>{{r.author}}</h2>
 <h3>{{r.text}}</h3>
 <h4>Оценка: {{r.rating}}</h4>
 <h4>Добавлен: {{r.date_added}}</h4>

@@ -13,7 +13,6 @@ from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
-
 def index(request):
  cars  = Car.objects.all()[:2]
  news = News.objects.first()
@@ -28,8 +27,14 @@ def news(request):
 
  return render(request, 'news.html', {'news': news})
 
+@login_required(login_url=reverse_lazy('main:login')) 
+def promotional_code(request):
+ 
+ actual_promotional_code = Promotional_code.objects.filter(is_actual=True)
+ archive_promotional_code = Promotional_code.objects.filter(is_actual = False)
+ return render(request, 'promotional_code.html', {'actual_promotional_code': actual_promotional_code, 'archive_promotional_code': archive_promotional_code})
+
 def reviews(request):
- #author = User.objects.last()
  reviews = Review.objects.all()
 
  return render(request, 'reviews.html', {'reviews': reviews})
@@ -199,14 +204,15 @@ def car_delete(request, id):
 @login_required(login_url=reverse_lazy('main:login')) 
 def create_review(request):
 
-   
+       
         if request.method == "POST":
              form = ReviewForm(request.POST)
              if form.is_valid():
                  review = Review.objects.create(text = request.POST.get('text'),
                                     rating=request.POST.get('rating'),                           
-                                
+                                    author = request.user.username
                                     ),
+
                  return redirect('main:reviews')
             
         else:
