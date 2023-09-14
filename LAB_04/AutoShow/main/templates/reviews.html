@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %}
+
+<title>Reviews Page</title>
+
+{% endblock %}
+
+{% block content %}
+
+<h1>Отзывы</h1>
+
+{% if user.is_authenticated %}
+    <a href="{% url 'main:create_review' %}">Оставить свой отзыв</a>
+{% else %}
+    <a href="{% url 'main:login' %}?next={% url 'main:create_review' %}">Оставить свой отзыв</a>
+{% endif %}
+{%for r in reviews%}
+<!-- <h2>{{r.author}}</h2> -->
+<h3>{{r.text}}</h3>
+<h4>Оценка: {{r.rating}}</h4>
+<h4>Добавлен: {{r.date_added}}</h4>
+{%endfor%}
+{%endblock%}

@@ -5,7 +5,9 @@ from django.core.validators import RegexValidator
 from datetime import date
 from django.core.exceptions import ValidationError
 from django.contrib.auth.forms import AuthenticationForm
-from .models import Car
+from .models import Car, Review
+from django.core.validators import MinValueValidator, MaxValueValidator
+
 
 def validate_age(value):
     today = date.today()
@@ -44,9 +46,18 @@ class CarForm(forms.ModelForm):
     year_of_publication = forms.IntegerField(label='year_of_publication', widget= forms.TextInput(attrs={'class':'form-input'}))
     cost = forms.IntegerField(label='cost', widget= forms.TextInput(attrs={'class':'form-input'}))
     color = forms.CharField(label='color', widget= forms.TextInput(attrs={'class':'form-input'}))
-   
-
 
     class Meta:
         model = Car
         fields = ['brand', 'model', 'year_of_publication', 'description', 'cost', 'color', 'carcass_type', 'producer', 'photo'] 
+
+class ReviewForm(forms.ModelForm):
+    text = forms.CharField(label='text', widget= forms.TextInput(attrs={'class':'form-input'}))
+    rating = forms.IntegerField(label='rating', widget= forms.NumberInput(attrs={'class': 'form-input', 'min': 0, 'max': 10}),  validators=[
+        MinValueValidator(0, message="The number cannot be less than 0"),
+        MaxValueValidator(10, message="The number cannot be more than 10")
+    ])
+
+    class Meta:
+      model = Review
+      fields = ['text', 'rating'] 

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-</head>
-<body>
-    <form method="post">
-        {%csrf_token%}
-        <div>{{form.non_field_errors}}</div>
-        {%for f in form%}
-        <p><label for="{{f.id_for_label}}">{{f.label}}: </label>{{f}}</p>
-        <div>{{f.errors}}</div>
-        {%endfor%}
-        <button type="submit">Sign in</button>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <form method="post">
+            {%csrf_token%}
+            <div>{{form.non_field_errors}}</div>
+            {%for f in form%}
+            <p><label for="{{f.id_for_label}}">{{f.label}}: </label>{{f}}</p>
+            <div>{{f.errors}}</div>
+            {%endfor%}
+            <button type="submit">Sign in</button>
+        </form>
+        <p>Нет аккаунта? <a href="{% url 'main:register' %}">Зарегистрироваться</a></p>
+
+    </body>
 </html>

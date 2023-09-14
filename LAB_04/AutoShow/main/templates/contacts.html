@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}
+
+<title>Contacts Page</title>
+
+{% endblock %}
+
+{% block content %}
+
+<h1>Контакты наших сотрудников</h1>
+<ul>
+    {%for e in employee%}
+
+    <li>
+        <img src="{{e.photo.url}}" alt="Фото сотрудника">
+        <p><strong>{{e.first_name}} {{e.last_name}}</strong></p>
+        <p>{{e.email}}</p>
+        <p>{{e.phone_number}}</p>
+        {% for j in e.job.all %}
+        
+           <a href="{% url 'main:vacancies'%}" target="_blank">{{j.type_of_job}}</a> 
+        
+        {%endfor%}
+    </li>
+
+    {%endfor%}
+</ul>
+{%endblock%}

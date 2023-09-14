@@ -3,12 +3,14 @@ from django.contrib.auth import logout, login
 from .models import *
 from django.views.generic import DetailView, CreateView
 from django.urls import reverse_lazy
-from main.forms import RegisterUserForm, LoginUserForm, CarForm
+from main.forms import RegisterUserForm, LoginUserForm, CarForm, ReviewForm
 from django.contrib.auth.views import LoginView
 from django.http import HttpResponseRedirect
 from django.http import HttpResponseNotFound
 from cart.forms import CartAddCarForm
 import requests
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 
@@ -24,8 +26,31 @@ def news(request):
  
  news = News.objects.all()
 
-
  return render(request, 'news.html', {'news': news})
+
+def reviews(request):
+ #author = User.objects.last()
+ reviews = Review.objects.all()
+
+ return render(request, 'reviews.html', {'reviews': reviews})
+
+def vacancies(request):
+ 
+ vacancies = Job.objects.filter(is_actual=True)
+
+ return render(request, 'vacancies.html', {'vacancies': vacancies})
+
+def faq(request):
+ 
+ faq = FAQ.objects.all()
+
+ return render(request, 'FAQ.html', {'faq': faq})
+
+def contacts(request):
+ 
+ employee = Employee.objects.all()
+ return render(request, 'contacts.html', {'employee': employee})
+
 
 def privacy_policy(request):
  
@@ -170,3 +195,21 @@ def car_delete(request, id):
         return HttpResponseRedirect("/")
     except car.DoesNotExist:
         return HttpResponseNotFound("<h2>car not found</h2>")
+
+@login_required(login_url=reverse_lazy('main:login')) 
+def create_review(request):
+
+   
+        if request.method == "POST":
+             form = ReviewForm(request.POST)
+             if form.is_valid():
+                 review = Review.objects.create(text = request.POST.get('text'),
+                                    rating=request.POST.get('rating'),                           
+                                
+                                    ),
+                 return redirect('main:reviews')
+            
+        else:
+            form = ReviewForm()
+            return render(request, "create_review.html", {"form": form})
+        return HttpResponseRedirect("/")

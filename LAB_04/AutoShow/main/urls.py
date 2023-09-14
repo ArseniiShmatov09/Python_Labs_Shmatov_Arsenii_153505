@@ -17,6 +17,11 @@ urlpatterns = [
     path('news/', views.news, name = 'news'),
     path('privacy_policy/', views.privacy_policy, name = 'privacy_policy'),
     path('about/', views.about, name = 'about'),
+    path('FAQ/', views.faq, name = 'FAQ'),
+    path('contacts/', views.contacts, name = 'contacts'),
+    path('vacancies/', views.vacancies, name = 'vacancies'),
+    path("reviews/", views.reviews, name='reviews'),
+    path("create_review/", views.create_review, name='create_review'),
     
     
 

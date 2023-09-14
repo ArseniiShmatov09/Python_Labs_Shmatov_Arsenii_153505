@@ -29,8 +29,8 @@
               |{{ user.username }}|
               <a href="{% url 'main:logout' %}">Выйти</a>
               {% else %}
-              <a href="{% url 'main:login' %}">Зарегистрироваться</a>
-              <a href="{% url 'main:register' %}">Войти</a>
+              <a href="{% url 'main:login' %}">Войти</a>
+              <a href="{% url 'main:register' %}">Зарегистрироваться</a>
               {% endif %}
   </div>
 
@@ -40,11 +40,11 @@
         <li style="display: inline;"><a href="{% url 'main:cars' %}">Все Машины</a></li>&nbsp;
         <li style="display: inline;"><a href="{%url 'main:about'%}">О компании</a></li>&nbsp;
         <li style="display: inline;"></li><a href="{% url 'main:news' %}">Новости</a></li>&nbsp;
-        <li style="display: inline;"></li><a href="#">Словарь терминов и понятий</a></li>&nbsp;
-        <li style="display: inline;"></li><a href="#">Контакты</a></li>&nbsp;
+        <li style="display: inline;"></li><a href="{%url 'main:FAQ'%}">Словарь терминов и понятий</a></li>&nbsp;
+        <li style="display: inline;"></li><a href="{%url 'main:contacts'%}">Контакты</a></li>&nbsp;
         <li style="display: inline;"></li><a href="{% url 'main:privacy_policy'%}">Политика конфиденциальности</a></li>&nbsp;
-        <li style="display: inline;"></li><a href="#">Вакансии</a></li>&nbsp;
-        <li style="display: inline;"></li><a href="#">Отзывы</a></li>&nbsp;
+        <li style="display: inline;"></li><a href="{% url 'main:vacancies'%}">Вакансии</a></li>&nbsp;
+        <li style="display: inline;"></li><a href="{% url 'main:reviews'%}">Отзывы</a></li>&nbsp;
         <li style="display: inline;"></li><a href="#">Промокоды и купоны</a></li>&nbsp;
     </ul>
     </nav>
