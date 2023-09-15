@@ -3,43 +3,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Arsenii Shmatov">
-    <meta name="description" content="Автосалон MyAutoShow.by предлагает широкий выбор новых и подержанных автомобилей. Мы также предоставляем профессиональное обслуживание и консультации клиентам.">
-    <meta name="keywords" content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
-    
-    
-    <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="description"
+        content="Автосалон MyAutoShow.by предлагает широкий выбор новых и подержанных автомобилей. Мы также предоставляем профессиональное обслуживание и консультации клиентам.">
+    <meta name="keywords"
+        content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
+
     <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
 
     <head>
         {% block title %}{%endblock%}
     </head>
     <body>
-        <div style="float: right; margin-right: 10px;" class="cart">
-            {%if user.is_authenticated%}
-            {% with total_items=cart|length %}
-            {% if cart|length > 0 %}
-            Ваша корзина:
-            <a href="{% url 'cart:cart_detail' %}">
-                {{ total_items }} item{{ total_items|pluralize }},
-                ${{ cart.get_total_price }}
-            </a>
-            {% else %}
-            Ваша корзина пуста.
-            {% endif %}
-            {% endwith %}
-            {%endif%}
-            {% if user.is_authenticated %}
-            |{{ user.username }}|
-            <a href="{% url 'main:logout' %}">Выйти</a>
-            {% else %}
-            <a href="{% url 'main:login' %}">Войти</a>
-            <a href="{% url 'main:register' %}">Зарегистрироваться</a>
-            {% endif %}
+
+        <div
+            style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="flex-grow: 1;">
+                <header style="text-align: center;">
+                    <h1>Автосалон MyAutoShow</h1>
+                </header>
+            </div>
+
+            <div style="float: right; margin-right: 10px;" class="cart">
+                {%if user.is_authenticated%}
+                {% with total_items=cart|length %}
+                {% if cart|length > 0 %}
+                Ваша корзина:
+                <a href="{% url 'cart:cart_detail' %}">
+                    {{ total_items }} item{{ total_items|pluralize }},
+                    ${{ cart.get_total_price }}
+                </a>
+                {% else %}
+                Ваша корзина пуста.
+                {% endif %}
+                {% endwith %}
+                {%endif%}
+                {% if user.is_authenticated %}
+                |{{ user.username }}|
+                <a href="{% url 'main:logout' %}">Выйти</a>
+                {% else %}
+                <a href="{% url 'main:login' %}">Войти</a>
+                <a href="{% url 'main:register' %}">Зарегистрироваться</a>
+                {% endif %}
+            </div>
         </div>
 
         <nav class="menu">
@@ -49,29 +54,52 @@
                         Машины</a></li>&nbsp;
                 <li style="display: inline;"><a href="{%url 'main:about'%}">О
                         компании</a></li>&nbsp;
-                <li style="display: inline;"><a href="{% url 'main:news' %}">Новости</a></li>&nbsp;
-                <li style="display: inline;"><a href="{%url 'main:FAQ'%}">Словарь
-                        терминов и понятий</a></li>&nbsp;
                 <li style="display: inline;"><a href="{%url 'main:contacts'%}">Контакты</a></li>&nbsp;
-                <li style="display: inline;"><a
-                        href="{% url 'main:privacy_policy'%}">Политика
-                        конфиденциальности</a></li>&nbsp;
-                <li style="display: inline;"><a href="{% url 'main:vacancies'%}">Вакансии</a></li>&nbsp;
                 <li style="display: inline;"><a href="{% url 'main:reviews'%}">Отзывы</a></li>&nbsp;
-
-                <li style="display: inline;">
-                    {% if user.is_authenticated %}
-                    <a href="{% url 'main:promotional_code' %}">Промокоды и купоны</a>
-                    {% else %}
-                    <a href="{% url 'main:login' %}?next={% url 'main:promotional_code' %}">Промокоды
-                        и купоны</a>
-                    {% endif %}
-                    </li>&nbsp;
             </ul>
         </nav>
+        <main style="display: flex;">
+            <div style="width: 80%;" style="flex-grow: 1;">
+                {% block content %}
+                {% endblock %}
+            </div>
 
-        {%block content%}
+            <aside style="width: 20%; padding-left: 50px;">
+                <ul style="padding-left: 0; margin-left: 0;">
+                    <li><a href="{% url 'main:news' %}">Новости</a></li>&nbsp;
+                    <li><a href="{% url 'main:vacancies'%}">Вакансии</a></li>&nbsp;
+                    <li>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'main:promotional_code' %}">Промокоды и
+                            купоны</a>
+                        {% else %}
+                        <a
+                            href="{% url 'main:login' %}?next={% url 'main:promotional_code' %}">Промокоды
+                            и купоны</a>
+                        {% endif %}
+                    </li>&nbsp;
+                </ul>
+                
+            </aside>
+        </main>
 
-        {%endblock%}
+        <footer style="padding-top: 200px;">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center;">
+                <p>&copy; 2023 Автосалон MyAutoShow</p>
+                <nav class="menu">
+                    <ul
+                        style="padding-left: 0; margin-left: 0; list-style: none;">
+                        <li style="display: inline; margin-right: 10px;"><a
+                                href="{%url 'main:FAQ'%}">Словарь терминов и
+                                понятий</a></li>
+                        <li style="display: inline;"><a
+                                href="{% url 'main:privacy_policy'%}">Политика
+                                конфиденциальности</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
     </body>
 </html>

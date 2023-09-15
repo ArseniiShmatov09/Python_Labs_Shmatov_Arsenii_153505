@@ -9,7 +9,6 @@
 {% block content %}
 {%if request.user.is_staff%}
 
-<div><a href="{% url 'main:create'%}">add new car</a></div>
 <div style="margin-bottom: 50px;">
     <h1>Последняя актуальная новость:</h1>
     <h2>{{news.title}}</h2>
@@ -24,10 +23,7 @@
 </li>
 
 {% endfor %}
-{%if user.is_authenticated%}
-<h3>Joke 4u - {{joke}} </h3>
-<a href="{{dog}}" target="_blank">Dog is here</a>
-{%endif%}
+<div><a href="{% url 'main:create'%}">add new car</a></div>
 
 <h1>Поддержите разработчика, посетите мoй гитхаб</h1>
 <a href="https://github.com/ArseniiShmatov09" target="_blank"><img
@@ -59,4 +55,10 @@
         <a href="https://www.renault.fr/" target="_blank">RENAULT</a>
     </li>
 </ul>
+
+{%if user.is_authenticated%}
+<h3>Joke 4u - {{joke}} </h3>
+<a href="{{dog}}" target="_blank">Dog is here</a>
+{%endif%}
+
 {% endblock %}
