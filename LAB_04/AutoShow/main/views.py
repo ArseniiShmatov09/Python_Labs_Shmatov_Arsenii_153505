@@ -219,3 +219,4 @@ def create_review(request):
             form = ReviewForm()
             return render(request, "create_review.html", {"form": form})
         return HttpResponseRedirect("/")
+

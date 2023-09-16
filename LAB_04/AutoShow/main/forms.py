@@ -61,3 +61,7 @@ class ReviewForm(forms.ModelForm):
     class Meta:
       model = Review
       fields = ['text', 'rating'] 
+
+
+class Promotional_codeForm(forms.Form):
+    value = forms.CharField()

@@ -126,4 +126,7 @@ class Review(models.Model):
 class Promotional_code(models.Model):
     value = models.TextField(help_text="Enter promocode")
     is_actual = models.BooleanField(default=False)
+    discount = models.IntegerField(help_text="Enter discount from 1 to 25", default=10, validators=[
+        MinValueValidator(1, message="The number cannot be less than 1"),
+        MaxValueValidator(25, message="The number cannot be more than 25")])
 

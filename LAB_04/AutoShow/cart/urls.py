@@ -13,6 +13,8 @@ urlpatterns = [
     path('remove/<int:car_id>/',
          views.cart_remove,
          name='cart_remove'),
+    path('apply/', views.coupon_apply, name='apply'),
+
 ]
 
 if settings.DEBUG:

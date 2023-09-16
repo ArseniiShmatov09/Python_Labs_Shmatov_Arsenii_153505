@@ -30,7 +30,7 @@
                 Ваша корзина:
                 <a href="{% url 'cart:cart_detail' %}">
                     {{ total_items }} item{{ total_items|pluralize }},
-                    ${{ cart.get_total_price }}
+                    ${{ cart.get_total_price_after_discount }}
                 </a>
                 {% else %}
                 Ваша корзина пуста.
@@ -79,7 +79,23 @@
                         {% endif %}
                     </li>&nbsp;
                 </ul>
+                <p>Ниже приведен пример кода на Python:</p>
+                <p>
+                    <code>
+                        def greet(name): <br>&nbsp;
+                          return "Hello, " + name + "!"<br> <br>
                 
+                        person = "Alice"<br>
+                        greeting = greet(person) <br>
+                        print(greeting) <br>
+                    </code>
+                  </p>
+                  <p>The function in this example is <var> greet</var></p>
+                  <p>The output from the code is: <samp> Hello, Alice!</samp></p>
+                  <p>When asked for the name, I typed: <kbd> Alice</kbd></p>
+
+                  <abbr title="World Wide Web">WWW</abbr>
+                  
             </aside>
         </main>
 

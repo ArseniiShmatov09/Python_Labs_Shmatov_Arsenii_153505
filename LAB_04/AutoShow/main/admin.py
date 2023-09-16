@@ -47,4 +47,4 @@ class ReviewAdmin(admin.ModelAdmin):
 
 @admin.register(Promotional_code)
 class Promotional_code_Admin(admin.ModelAdmin):
-    list_display = ['value', 'is_actual']
+    list_display = ['value', 'is_actual', 'discount']

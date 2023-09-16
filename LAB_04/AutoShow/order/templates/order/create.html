@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Checkout{% endblock %}
+{% block title %}<title>Order Page</title>{% endblock %}
 
 {% block content %}
     <h1>Checkout</h1>
@@ -9,12 +9,18 @@
         <ul>
             {% for item in cart %}
                 <li>
-                    {{ item.quantity }}x {{ item.car.model }}
+                    {{ item.quantity }}x {{ item.product.name }}
                     <span>${{ item.total_price }}</span>
                 </li>
             {% endfor %}
+            {% if cart.coupon %}
+                <li>
+                    "{{ cart.coupon.value }}" ({{ cart.coupon.discount }}% off)
+                    <span>- ${{ cart.get_discount|floatformat:"2" }}</span>
+                </li>
+            {% endif %}
         </ul>
-        <p>Total: ${{ cart.get_total_price }}</p>
+        <p>Total: ${{ cart.get_total_price_after_discount }}</p>
     </div>
     <form action="." method="POST" class="order-form">
         {{ form.as_p }}
