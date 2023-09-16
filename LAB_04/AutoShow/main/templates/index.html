@@ -18,7 +18,7 @@
 {%endif%}
 {% for car in cars%}
 <li>
-    <img src="{{car.photo.url}}">
+    <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
     <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a>
 </li>
 
@@ -31,29 +31,43 @@
         alt="git"></a>
 
 <h1>Партнеры</h1>
-<ul>
-    <li>
-        <img src="../media/images/bmw.png" alt="BMW">
-        <a href="https://www.bmw.fr/fr/accueil.html" target="_blank">BMW</a>
+
+<ul style="padding-left: 0; margin-left: 0; list-style-type: none;">
+    <li style="display: inline-block; margin-right: 10px;">
+
+        <figure>
+            <p><img src="../media/images/bmw.png" alt="BMW"></p>
+            <figcaption> <a href="https://www.bmw.fr/fr/accueil.html"
+                    target="_blank">BMW</a></figcaption>
+        </figure>
+
     </li>
-    <li>
-        <img src="../media/images/audi.png" alt="AUDI">
-        <a href="https://www.audi.fr/fr/web/fr.html" target="_blank">AUDI</a>
+    <li style="display: inline-block; margin-right: 10px;">
+        <figure>
+            <p><img src="../media/images/audi.png" alt="AUDI"></p>
+            <figcaption> <a href="https://www.audi.fr/fr/web/fr.html"
+                    target="_blank">AUDI</a></figcaption>
+        </figure>
+
     </li>
-    <li>
-        <img src="../media/images/tesla.png" alt="TESLA">
-        <a href="https://www.tesla.com/" target="_blank">TESLA</a>
+    <li style="display: inline-block; margin-right: 10px;">
+        <figure>
+            <p><img src="../media/images/tesla.png" alt="TESLA"></p>
+            <figcaption> <a href="https://www.tesla.com/" target="_blank">TESLA</a></figcaption>
+        </figure>
+
     </li>
-    <li>
-        <img src="../media/images/merc.png" alt="MERCEDES">
-        <a
-            href="https://www.mercedes-benz.fr/?group=all&subgroup=see-all&view=BODYTYPE"
-            target="_blank">MERCEDES</a>
+    <li style="display: inline-block; margin-right: 10px;">
+
+        <figure>
+            <p><img src="../media/images/merc.png" alt="MERCEDES"></p>
+            <figcaption> <a
+                    href="https://www.mercedes-benz.fr/?group=all&subgroup=see-all&view=BODYTYPE"
+                    target="_blank">MERCEDES</a></figcaption>
+        </figure>
+
     </li>
-    <li>
-        <img src="../media/images/renault.png" alt="RENAULT">
-        <a href="https://www.renault.fr/" target="_blank">RENAULT</a>
-    </li>
+   
 </ul>
 
 {%if user.is_authenticated%}

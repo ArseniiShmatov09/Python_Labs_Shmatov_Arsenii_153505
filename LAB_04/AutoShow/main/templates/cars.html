@@ -19,21 +19,26 @@
 </form>
 
 <div id="sidebar">
-   <h3>Cars</h3>
+   <h3>Доступные машины</h3>
    
-   <ul>
-       <li><a href="{%url 'main:cars'%}">All cars</a></li>
-       {% for c in carcass_types %}
-           <li {% if carcass_type.designation == c.designation %}class="selected" {% endif %}>
-               <a href="{{ c.get_absolute_url }}">{{ c.designation }}</a>
-           </li>
-       {% endfor %}
-   </ul>
+   <form action="{% url 'main:cars' %}" method="get">
+    <label for="carcass_type">Выберите тип кузова:</label>
+    <select id="carcass_type" name="carcass_type">
+        <option value="">Все автомобили</option>
+        {% for c in carcass_types %}
+            <option value="{{ c.designation }}" {% if car_carcass == c.designation %}selected{% endif %}>
+                {{ c.designation }}
+            </option>
+        {% endfor %}
+    </select>
+    <button type="submit">Применить</button>
+</form>
+
 </div>
 
 {% for car in cars%}
 <li>    
-   <img src="{{car.photo.url}}">
+   <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
 
    <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
 </li>

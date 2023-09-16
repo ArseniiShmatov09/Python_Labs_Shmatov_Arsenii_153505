@@ -66,33 +66,27 @@ def about(request):
  return render(request, 'about.html')
 
 
-def CarsList(request, car_carcass = None):
+def CarsList(request):
+    cars = Car.objects.all()
+    carcass_type = request.GET.get('carcass_type')
+    carcass_types = CarcassType.objects.all()
+    sort_type_price = request.GET.get('sort_price')
+    sort_type_year = request.GET.get('sort_year')
 
-  cars  = Car.objects.all()
-  carcass_type = None
-  carcass_types = CarcassType.objects.all()
-  sort_type_price = request.GET.get('sort_price')
-  sort_type_year = request.GET.get('sort_year')
+    if str(sort_type_price) == 'ascending':
+        cars = cars.order_by('cost')
+    elif str(sort_type_price) == 'descending':
+        cars = cars.order_by('-cost')
 
-  if str(sort_type_price) == 'ascending':
-      cars = cars.order_by('cost')
+    if str(sort_type_year) == 'ascending':
+        cars = cars.order_by('year_of_publication')
+    elif str(sort_type_year) == 'descending':
+        cars = cars.order_by('-year_of_publication')
 
-  elif str(sort_type_price) == 'descending':
-      cars = cars.order_by('-cost')
+    if carcass_type:
+        cars = cars.filter(carcass_type__designation=carcass_type)
 
-  if str(sort_type_year) == 'ascending':
-      cars = cars.order_by('year_of_publication')
-
-  elif str(sort_type_year) == 'descending':
-      cars = cars.order_by('-year_of_publication')    
-  
-  if car_carcass:
-       carcass_type = get_object_or_404(CarcassType, designation=car_carcass)
-       cars = cars.filter(carcass_type=carcass_type)
-       print(carcass_type)
-    
-  
-  return render(request, 'cars.html', {'cars':cars, 'carcass_type':carcass_type,'carcass_types':carcass_types})
+    return render(request, 'cars.html', {'cars': cars, 'carcass_type': carcass_type, 'carcass_types': carcass_types})
 
 class CarDetailView(DetailView):
   model = Car
