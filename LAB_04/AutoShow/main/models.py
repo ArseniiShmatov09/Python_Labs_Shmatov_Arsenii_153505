@@ -124,6 +124,9 @@ class Review(models.Model):
     def get_absolute_url(self):
         return reverse('main:reviews', args=[str(self.text)])
 
+    def __str__(self):
+        return f'{self.text}'
+    
 class Promotional_code(models.Model):
     value = models.TextField(help_text="Enter promocode")
     is_actual = models.BooleanField(default=False)
@@ -131,3 +134,5 @@ class Promotional_code(models.Model):
         MinValueValidator(1, message="The number cannot be less than 1"),
         MaxValueValidator(25, message="The number cannot be more than 25")])
 
+    def __str__(self):
+        return self.value

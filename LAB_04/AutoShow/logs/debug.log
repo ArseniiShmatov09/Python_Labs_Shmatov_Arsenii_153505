@@ -1,0 +1,24 @@
+INFO 2023-09-20 23:18:50,926 autoreload /home/arsenii/IGI_LABS/LAB_04/AutoShow/main/models.py changed, reloading.
+INFO 2023-09-20 23:18:50,926 autoreload /home/arsenii/IGI_LABS/LAB_04/AutoShow/main/models.py changed, reloading.
+INFO 2023-09-20 23:18:51,157 autoreload Watching for file changes with StatReloader
+INFO 2023-09-20 23:18:51,157 autoreload Watching for file changes with StatReloader
+INFO 2023-09-20 23:19:14,013 autoreload Watching for file changes with StatReloader
+INFO 2023-09-20 23:19:14,013 autoreload Watching for file changes with StatReloader
+INFO 2023-09-20 23:20:05,549 autoreload /home/arsenii/IGI_LABS/LAB_04/AutoShow/main/models.py changed, reloading.
+INFO 2023-09-20 23:20:05,549 autoreload /home/arsenii/IGI_LABS/LAB_04/AutoShow/main/models.py changed, reloading.
+INFO 2023-09-20 23:20:05,759 autoreload Watching for file changes with StatReloader
+INFO 2023-09-20 23:20:05,759 autoreload Watching for file changes with StatReloader
+INFO 2023-09-20 23:20:52,192 basehttp "GET / HTTP/1.1" 200 12022
+INFO 2023-09-20 23:20:52,192 basehttp "GET / HTTP/1.1" 200 12022
+INFO 2023-09-20 23:20:52,207 basehttp "GET /cars HTTP/1.1" 200 13028
+INFO 2023-09-20 23:20:52,207 basehttp "GET /cars HTTP/1.1" 200 13028
+INFO 2023-09-20 23:20:52,219 basehttp "GET /cars/1 HTTP/1.1" 200 11455
+INFO 2023-09-20 23:20:52,219 basehttp "GET /cars/1 HTTP/1.1" 200 11455
+INFO 2023-09-20 23:20:52,231 basehttp "GET /cars/2 HTTP/1.1" 200 11372
+INFO 2023-09-20 23:20:52,231 basehttp "GET /cars/2 HTTP/1.1" 200 11372
+INFO 2023-09-20 23:20:52,243 basehttp "GET /cars/3 HTTP/1.1" 200 12255
+INFO 2023-09-20 23:20:52,243 basehttp "GET /cars/3 HTTP/1.1" 200 12255
+INFO 2023-09-20 23:20:52,256 basehttp "GET /login/ HTTP/1.1" 200 1039
+INFO 2023-09-20 23:20:52,256 basehttp "GET /login/ HTTP/1.1" 200 1039
+INFO 2023-09-20 23:20:52,267 basehttp "GET /register/ HTTP/1.1" 200 2057
+INFO 2023-09-20 23:20:52,267 basehttp "GET /register/ HTTP/1.1" 200 2057

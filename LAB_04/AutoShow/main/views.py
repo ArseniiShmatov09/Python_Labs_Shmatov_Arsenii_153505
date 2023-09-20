@@ -12,6 +12,20 @@ import requests
 from django.contrib.auth.decorators import login_required
 from order.models import OrderItem
 from django.db.models import Count
+from django.db.models.functions import Coalesce
+import logging
+
+# Получаем объект логгера для текущего модуля
+logger = logging.getLogger(__name__)
+
+def my_view(request):
+    logger.debug('Это сообщение с уровнем DEBUG')
+    logger.info('Это сообщение с уровнем INFO')
+    logger.warning('Это сообщение с уровнем WARNING')
+    logger.error('Это сообщение с уровнем ERROR')
+    logger.critical('Это сообщение с уровнем CRITICAL')
+
+
 
 
 def get_most_popular_cars():
@@ -22,8 +36,6 @@ def get_most_popular_cars():
         .order_by('-order_count')[:3]
     )
     return popular_cars
-
-
 
 def get_least_popular_cars():
     least_popular_cars = (
@@ -42,8 +54,6 @@ def base_context(request):
         'most_popular_cars': most_popular_cars,
         'least_popular_cars': least_popular_cars,
     }
-# Create your views here.
-
 
 def index(request):
     cars = Car.objects.all()[:2]
@@ -51,7 +61,14 @@ def index(request):
     joke = requests.get(
         'https://official-joke-api.appspot.com/jokes/random').json()
     dog = requests.get('https://dog.ceo/api/breeds/image/random').json()
-    return render(request, 'index.html', context={'news': news, 'cars': cars, 'joke': joke['setup'] + joke['punchline'], 'dog': dog['message']})
+
+    most_popular_cars = get_most_popular_cars()
+    least_popular_cars = get_least_popular_cars()
+    return render(request, 'index.html', context={'news': news, 'cars': cars,   
+                                                  'joke': joke['setup'] + joke['punchline'], 
+                                                  'dog': dog['message'], 'least_popular_cars': least_popular_cars, 
+                                                  'most_popular_cars': most_popular_cars})
+                                                   
 
 
 def news(request):

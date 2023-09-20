@@ -18,11 +18,12 @@
         {% block title %}{%endblock%}
     </head>
     <body>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div
+            style="display: flex; justify-content: space-between; align-items: center;">
             <div style="flex-grow: 1;">
                 <header style="text-align: center;">
                     <h1>Автосалон MyAutoShow</h1>
-                    
+
                 </header>
             </div>
 
@@ -48,12 +49,13 @@
                 <a href="{% url 'main:register' %}">Зарегистрироваться</a>
                 {% endif %}
 
-                <div style="margin-top: 10px;">Тайм зона пользователя: <span id="userTimeZone"></span></div>
-                    <div>Текущая дата и время: <span id="currentDateTime"></span></div>
-                    <div><span id="utcOffset"></span></div>
-                    <div>Календарь: <input type="text" id="calendar"
-                            placeholder="Выберите дату и время"></div>
-                    <script>
+                <div style="margin-top: 10px;">Тайм зона пользователя: <span
+                        id="userTimeZone"></span></div>
+                <div>Текущая дата и время: <span id="currentDateTime"></span></div>
+                <div><span id="utcOffset"></span></div>
+                <div>Календарь: <input type="text" id="calendar"
+                        placeholder="Выберите дату и время"></div>
+                <script>
                         document.getElementById("userTimeZone").textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
                 
                         const currentDateTime = new Date().toLocaleString("ru-RU");
@@ -173,16 +175,14 @@
                 <h2>Товары с наибольшим спросом:</h2>
                 <ul>
                     {% for car in most_popular_cars %}
-                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{
-                        car.order_count }} заказов)</li>
+                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{car.order_count }} заказов)</li>
                     {% endfor %}
                 </ul>
 
                 <h2>Товары с наименьшим спросом:</h2>
                 <ul>
                     {% for car in least_popular_cars %}
-                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{
-                        car.order_count }} заказов)</li>
+                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{car.order_count }} заказов)</li>
                     {% endfor %}
                 </ul>
 
