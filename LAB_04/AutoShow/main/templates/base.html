@@ -1,25 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Arsenii Shmatov">
-    <meta name="description"
-        content="Автосалон MyAutoShow.by предлагает широкий выбор новых и подержанных автомобилей. Мы также предоставляем профессиональное обслуживание и консультации клиентам.">
-    <meta name="keywords"
-        content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
-
-    <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
 
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Arsenii Shmatov">
+        <meta name="description"
+            content="Автосалон MyAutoShow.by предлагает широкий выбор новых и подержанных автомобилей. Мы также предоставляем профессиональное обслуживание и консультации клиентам.">
+        <meta name="keywords"
+            content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
+
+        <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         {% block title %}{%endblock%}
     </head>
     <body>
-
-        <div
-            style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
             <div style="flex-grow: 1;">
                 <header style="text-align: center;">
                     <h1>Автосалон MyAutoShow</h1>
+                    
                 </header>
             </div>
 
@@ -44,6 +47,29 @@
                 <a href="{% url 'main:login' %}">Войти</a>
                 <a href="{% url 'main:register' %}">Зарегистрироваться</a>
                 {% endif %}
+
+                <div style="margin-top: 10px;">Тайм зона пользователя: <span id="userTimeZone"></span></div>
+                    <div>Текущая дата и время: <span id="currentDateTime"></span></div>
+                    <div><span id="utcOffset"></span></div>
+                    <div>Календарь: <input type="text" id="calendar"
+                            placeholder="Выберите дату и время"></div>
+                    <script>
+                        document.getElementById("userTimeZone").textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                
+                        const currentDateTime = new Date().toLocaleString("ru-RU");
+                        document.getElementById("currentDateTime").textContent = currentDateTime;
+                
+                        flatpickr("#calendar", {
+                            dateFormat: "d/m/Y H:i", 
+                            defaultDate: currentDateTime 
+                        });
+
+                        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                        const userTimeZoneOffset = new Date().getTimezoneOffset() / 60;
+                        const utcOffset = userTimeZoneOffset > 0 ? `UTC-${userTimeZoneOffset}` : `UTC+${Math.abs(userTimeZoneOffset)}`;
+                        document.getElementById("utcOffset").textContent = `В вашей тайм зоне: ${userTimeZone} (${utcOffset})`;
+
+                    </script>
             </div>
         </div>
 
@@ -143,9 +169,22 @@
 
                     </tr>
                 </table>
-            
 
-       
+                <h2>Товары с наибольшим спросом:</h2>
+                <ul>
+                    {% for car in most_popular_cars %}
+                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{
+                        car.order_count }} заказов)</li>
+                    {% endfor %}
+                </ul>
+
+                <h2>Товары с наименьшим спросом:</h2>
+                <ul>
+                    {% for car in least_popular_cars %}
+                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{
+                        car.order_count }} заказов)</li>
+                    {% endfor %}
+                </ul>
 
                 <p>Ниже приведен пример кода на Python:</p>
                 <p>

@@ -22,8 +22,8 @@ class NewsAdmin(admin.ModelAdmin):
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
-    list_display = ['first_name', 'last_name', 'date_of_birth','email', 'phone_number' ]
-    list_filter = ['first_name', 'last_name', 'date_of_birth','email', 'phone_number' ]
+    list_display = ['first_name', 'last_name', 'date_of_birth','email', 'phone_number', 'town' ]
+    list_filter = ['first_name', 'last_name', 'date_of_birth','email', 'phone_number', 'town' ]
 
 @admin.register(FAQ)
 class FAQAdmin(admin.ModelAdmin):

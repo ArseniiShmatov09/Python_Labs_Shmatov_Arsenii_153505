@@ -23,6 +23,7 @@ class OrderItem(models.Model):
     car = models.ForeignKey(Car, related_name='order_items', on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=15, decimal_places=2)
     quantity = models.PositiveIntegerField(default=1)
+    delivery_date = models.IntegerField(default=10)
 
     def __str__(self):
         return '{}'.format(self.id)

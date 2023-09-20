@@ -34,6 +34,7 @@ class Car(models.Model):
     photo = models.ImageField(upload_to='images', blank=True)
     purchase_count = models.PositiveIntegerField(default=0)
 
+    
     def __str__(self):
         return '{0}, {1}'.format(self.brand, self.model)
 
@@ -64,6 +65,7 @@ class Client(models.Model):
     last_name = models.CharField(max_length=20, help_text='Enter last name')
     date_of_birth = models.DateField(help_text="Enter date of birth")
     email = models.EmailField(help_text="Enter email")
+    town = models.CharField(help_text="Enter town", max_length=30, default='Minsk')
     phone_number = models.CharField(
         max_length=15, help_text='Enter phone number')
 
@@ -119,7 +121,6 @@ class Review(models.Model):
     ])
     date_added = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=20, default='')
-    #author =  models.OneToOneField(User, on_delete=models.CASCADE)
     def get_absolute_url(self):
         return reverse('main:reviews', args=[str(self.text)])
 

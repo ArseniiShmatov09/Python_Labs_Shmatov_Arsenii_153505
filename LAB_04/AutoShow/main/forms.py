@@ -21,6 +21,7 @@ class RegisterUserForm(UserCreationForm):
    first_name = forms.CharField(label='first name', widget= forms.TextInput(attrs={'class':'form-input'}))
    last_name = forms.CharField(label='last name', widget= forms.TextInput(attrs={'class':'form-input'}))
    email = forms.CharField(label='email', widget= forms.EmailInput(attrs={'class':'form-input'}))
+   town = forms.CharField(label='town', widget= forms.TextInput(attrs={'class':'form-input'}))
    date_birthday = forms.DateField(label='date of birth', widget= forms.DateInput(attrs={'class':'form-input'}), validators=[validate_age])
    phone_number = forms.CharField(label='phone number',widget= forms.TextInput(attrs={'class':'form-input'}),
                                    validators=[RegexValidator(
@@ -33,7 +34,7 @@ class RegisterUserForm(UserCreationForm):
    
    class Meta:
         model = User
-        fields = ('username','first_name','last_name', 'email','date_birthday', 'phone_number','password1','password2')
+        fields = ('username','first_name','last_name', 'email','town','date_birthday', 'phone_number','password1','password2')
 
 
 class LoginUserForm(AuthenticationForm):

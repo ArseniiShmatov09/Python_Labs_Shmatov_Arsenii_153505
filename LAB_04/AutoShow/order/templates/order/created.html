@@ -3,7 +3,9 @@
 {% block title %}<title>Thank You Page</title>{% endblock %}
 
 {% block content %}
-    <h1>Thank you</h1>
-    <p>Your order has been successfully completed. Your order number is
-        <strong>{{ order.id }}</strong>.</p>
+<h1>Thank you</h1>
+<p>Your order has been successfully completed. Your order number is
+    <strong>{{ order.id }}</strong>.</p>
+
+    <a href="{% url 'main:index' %}">Вернуться на главную</a>
 {% endblock %}

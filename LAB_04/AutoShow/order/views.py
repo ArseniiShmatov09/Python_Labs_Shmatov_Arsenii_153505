@@ -6,7 +6,6 @@ from main.models import Client
 from .models import Order
 from django.core.exceptions import PermissionDenied
 
-
 def order_create(request):
 
     if not request.user.is_authenticated:
@@ -25,8 +24,9 @@ def order_create(request):
             item['car'].save()
         # очистка корзины
         cart.clear()
+       
         return render(request, 'order/created.html',
-                        {'order': order})
-    
+                  {'order': order})
+   
     return render(request, 'order/create.html',
                   {'cart': cart})
