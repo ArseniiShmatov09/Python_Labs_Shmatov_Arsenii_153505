@@ -24,7 +24,7 @@ class OrderItem(models.Model):
     price = models.DecimalField(max_digits=15, decimal_places=2)
     quantity = models.PositiveIntegerField(default=1)
     delivery_date = models.IntegerField(default=10)
-
+    sale_amount = models.DecimalField(max_digits=15, decimal_places=2, default=0)  
     def __str__(self):
         return '{}'.format(self.id)
 

@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-{%if request.user.is_staff%}
+
 
 <div style="margin-bottom: 50px;">
     <h1>Последняя актуальная новость:</h1>
@@ -15,7 +15,6 @@
     <h3>{{news.essence}}</h3>
     <a href="{% url 'main:news' %}">Показать больше</a>
 </div>
-{%endif%}
 {% for car in cars%}
 <li>
     <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
@@ -23,7 +22,9 @@
 </li>
 
 {% endfor %}
+{%if request.user.is_staff%}
 <div><a href="{% url 'main:create'%}">add new car</a></div>
+{%endif%}
 
 <h1>Поддержите разработчика, посетите мoй гитхаб</h1>
 <a href="https://github.com/ArseniiShmatov09" target="_blank"><img

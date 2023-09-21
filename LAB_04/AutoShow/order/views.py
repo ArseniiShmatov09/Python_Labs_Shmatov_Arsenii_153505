@@ -16,10 +16,13 @@ def order_create(request):
         order = Order.objects.create(client = Client.objects.filter(email=request.user.email).first())
 
         for item in cart:
+            
+            sale_amount = item['price'] * item['quantity']  # Вычисление суммы продажи
             OrderItem.objects.create(order=order,
                                         car=item['car'],
                                         price=item['price'],
-                                        quantity=item['quantity'])
+                                        quantity=item['quantity'],
+                                        sale_amount=sale_amount)
             item['car'].purchase_count += item['quantity']
             item['car'].save()
         # очистка корзины

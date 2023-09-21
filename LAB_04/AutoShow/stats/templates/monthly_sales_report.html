@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Статистика</title>
+    </head>
+    <body>
+        <h1>Ежемесячный отчет о продажах</h1>
+
+        <form method="get">
+            {{ form.as_p }}
+            <button type="submit">Показать месячный отчет</button>
+        </form>
+
+        <style>
+            .table-container {
+                display: flex;
+            }
+        
+            .table-container div {
+                flex: 1;
+            }
+        
+            table {
+                width: 60%;
+            }
+            th {
+                 text-align: left; /* Прижимаем заголовки к левому краю */
+            }
+
+        </style>
+
+        <div class="table-container">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Товар</th>
+                            <th>Продажи</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for car, sales in monthly_sales_data.items %}
+                        <tr>
+                            <td>{{ car }}</td>
+                            <td>{{ sales }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div style="flex: 1;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Сумма продаж</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data, key in monthly_sales_total.items %}
+                        <tr>
+                            <td>{{ key }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <h1>Ежегодный отчет о продажах</h1>
+
+        <form method="get">
+            {{ formY.as_p }}
+            <button type="submit">Показать годовой отчет</button>
+        </form>
+
+
+        </style>
+
+        <div class="table-container">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Товар</th>
+                            <th>Продажи</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for car, sales in yearly_sales_data.items %}
+                        <tr>
+                            <td>{{ car }}</td>
+                            <td>{{ sales }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div style="flex: 1;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Сумма продаж</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data, key in yearly_sales_total.items %}
+                        <tr>
+                            <td>{{ key }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <a href="{% url 'main:index' %}">Вернуться на главную</a>
+
+    </body>
+
+</html>

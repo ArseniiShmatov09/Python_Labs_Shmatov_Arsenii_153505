@@ -200,7 +200,9 @@
                 <p>The function in this example is <var> greet</var></p>
                 <p>The output from the code is: <samp> Hello, Alice!</samp></p>
                 <p>When asked for the name, I typed: <kbd> Alice</kbd></p>
-
+                {%if request.user.is_staff%}
+                <a href="{% url 'stats:report'%}">Статистика</a>
+                {%endif%}
             </aside>
         </main>
 

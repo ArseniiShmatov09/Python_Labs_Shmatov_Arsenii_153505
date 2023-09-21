@@ -23,6 +23,7 @@ urlpatterns = [
     path('cart/', include('cart.urls', namespace='cart')),
     path('order/', include('order.urls', namespace='order')),
     path('', include('main.urls', namespace='main')),    
+    path('stats/', include('stats.urls', namespace='stats'))
 ]
 
 if settings.DEBUG:
