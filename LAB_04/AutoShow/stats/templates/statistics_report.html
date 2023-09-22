@@ -24,7 +24,7 @@
                 width: 60%;
             }
             th {
-                 text-align: left; /* Прижимаем заголовки к левому краю */
+                 text-align: left; 
             }
 
         </style>
@@ -34,8 +34,10 @@
                 <table>
                     <thead>
                         <tr>
+                            {% if year == 0 %}
                             <th>Товар</th>
                             <th>Продажи</th>
+                            {%endif%}
                         </tr>
                     </thead>
                     <tbody>
@@ -52,7 +54,13 @@
                 <table>
                     <thead>
                         <tr>
+
+                            {% if year == 0 %}
+
                             <th>Сумма продаж</th>
+
+                            {%endif%}
+
                         </tr>
                     </thead>
                     <tbody>
@@ -74,7 +82,6 @@
             <button type="submit">Показать годовой отчет</button>
         </form>
 
-
         </style>
 
         <div class="table-container">
@@ -82,8 +89,12 @@
                 <table>
                     <thead>
                         <tr>
+                            {% if year != 0 %}
+
                             <th>Товар</th>
                             <th>Продажи</th>
+                            {%endif%}
+
                         </tr>
                     </thead>
                     <tbody>
@@ -100,7 +111,12 @@
                 <table>
                     <thead>
                         <tr>
+                            {% if year != 0 %}
+
                             <th>Сумма продаж</th>
+
+                            {%endif%}
+
                         </tr>
                     </thead>
                     <tbody>
@@ -113,7 +129,69 @@
                 </table>
             </div>
         </div>
+        
+        <h2>Круговая диаграмма продаж за год </h2>
+        <img src="data:image/png;base64,{{ image_base64 }}" alt="Круговая диаграмма">
+        <h2>График зависимости Объема продаж относительно Цен</h2>
+        <img src="data:image/png;base64,{{ image_data }}" alt="График зависимости">
+        <h2>Гистограмма продаж</h2>
+        <img src="data:image/png;base64,{{ image_base64_hist }}" alt="Гистограмма продаж">
+    
+        <h1>Статистические показатели</h1>
+        <h2>Возраст клиентов</h2>
+        <p>Средний Возраст: {{ average_age }}</p>
+        <p>Медиана по Возрасту: {{ median_age }}</p>
+        <h2>Продажа товаров</h2>
+        <p>Средняя сумма Продаж: {{ average_sales }}</p>
+        <p>Медиана сумм Продаж: {{ median_sales }}</p>
+        <p>Мода сумм Продаж: {{ mode_sales }}</p>
+        {% if year != 0 %}
+            <h2>Наибольшую прибыль за {{year}} приносят товары:</h2>
 
+
+            {% if max_year_value != 0 %}
+
+            {% for c in key_with_max_value_year %}
+                    <p>{{ c }} - {{ max_year_value }}</p>
+                
+            {% endfor %}
+
+            {%else%}
+                <p>В этом году не было продаж</p>
+            {% endif %}
+        
+        {% endif %}
+
+        <h2>Список клиентов</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Email</th>
+                    <th>Общая сумма заказов</th>
+                    <th>Заказы</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in client_data  %}
+                <tr>
+                    <td>{{ c.client.first_name }}</td>
+                    <td>{{ c.client.last_name }}</td>
+                    <td>{{ c.client.email }}</td>
+                    <td>{{ c.total_sales|default:0 }}</td>
+                    <td>
+                        <ul>
+                            {% for order in c.client.order_set.all %}
+                                <li>{{ order.get_total_cost }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
 
         <a href="{% url 'main:index' %}">Вернуться на главную</a>
 

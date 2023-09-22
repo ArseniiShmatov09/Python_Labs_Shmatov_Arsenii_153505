@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.core.validators import RegexValidator
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.contrib.auth.models import User
-
+from statistics import mean, median
 
 # Create your models here.
 class News(models.Model):
