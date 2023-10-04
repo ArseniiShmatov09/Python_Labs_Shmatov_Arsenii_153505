@@ -1,0 +1,57 @@
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contacts_list {
+    list-style: none;
+    padding: 0;
+    background-color:aliceblue;
+}
+
+
+.employee-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.employee-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-right: 20px; 
+}
+
+
+.employee-info {
+    flex-grow: 1; 
+    text-align: left; 
+}
+
+.employee-info p strong {
+    font-size: 18px;
+}
+
+.employee-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.job-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.job-links a:hover {
+    text-decoration: underline;
+}

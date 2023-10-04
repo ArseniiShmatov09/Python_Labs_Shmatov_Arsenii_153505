@@ -1,0 +1,37 @@
+.vacancies-content {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #666;
+}
+
+h3,
+h4 {
+    float: left;
+    width: 50%; 
+    box-sizing: border-box; 
+}
+
+.clear {
+    clear: both;
+}

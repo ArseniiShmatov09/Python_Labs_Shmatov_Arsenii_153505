@@ -1,27 +1,35 @@
 {% extends "base.html" %} {% block title %}
+{% load static %}
 
+{%block css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/FAQ.css' %}">
+{%endblock%}
 <title>FAQ Page</title>
 
 {% endblock %}
 
 {% block content %}
 
-<h1>Часто Задаваемые Вопросы</h1>
+<div class="faq-content">
+    <h1>Часто Задаваемые Вопросы</h1>
 
-<ul>
-    {%for F in faq%}
-    <li>
-        <details>
-            <summary>
-                <p> <strong>{{F.question}}</strong></p>
-            </summary>
-            <p>{{F.answer}}</p>
-            <p>Добавлено: {{F.date_added}}</p>
-        </details>
+    <ul>
+        {%for F in faq%}
+        <li>
+            <details>
+                <summary>
+                    <p> <strong>{{F.question}}</strong></p>
+                </summary>
+                <p>{{F.answer}}</p>
+                <p>Добавлено: {{F.date_added}}</p>
+            </details>
 
-    </li>
+        </li>
 
-    {%endfor%}
+        {%endfor%}
 
-</ul>
+    </ul>
+</div>
+
 {% endblock %}

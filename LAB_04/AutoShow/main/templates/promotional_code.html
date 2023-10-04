@@ -1,4 +1,12 @@
-{% extends "base.html" %} {% block title %}
+{% extends "base.html" %} 
+{% load static %}
+
+{%block css %}
+
+<link rel="stylesheet" type="text/css"
+  href="{% static 'main/promotional_code.css' %}">
+{%endblock%}
+{% block title %}
 
 <title>FAQ Page</title>
 
@@ -6,20 +14,19 @@
 
 {% block content %}
 
-<h1>Действующие промокоды:</h1>
-{%for p in actual_promotional_code%}
+<div class="promo-container">
+    <h1>Действующие промокоды:</h1>
+    {% for p in actual_promotional_code %}
+        <h3>{{ p.value }} - {{ p.discount }}%</h3>
+    {% endfor %}
+    <a href="../media/images/promo.txt" download>Скачать список актуальных промокодов</a>
+</div>
 
-<h3>{{p.value}} - {{p.discount}}%</h3>
-
-{%endfor%}
-<a href="../media/images/promo.txt" download>Скачать список актуальных
-    промокодов</a>
-
-<h1>Промокоды в архиве:</h1>
-{%for p in archive_promotional_code%}
-
-<h3>{{p.value}} - {{p.discount}}%</h3>
-
-{%endfor%}
+<div class="promo-container">
+    <h1>Промокоды в архиве:</h1>
+    {% for p in archive_promotional_code %}
+        <h3>{{ p.value }} - {{ p.discount }}%</h3>
+    {% endfor %}
+</div>
 
 {%endblock%}

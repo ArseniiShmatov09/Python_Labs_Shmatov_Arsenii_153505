@@ -12,9 +12,12 @@
             content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
 
         <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'main/base.css' %}">
+        {%block css %}
+        
+       
+        {%endblock%}
         {% block title %}{%endblock%}
     </head>
     <body>
@@ -53,8 +56,7 @@
                         id="userTimeZone"></span></div>
                 <div>Текущая дата и время: <span id="currentDateTime"></span></div>
                 <div><span id="utcOffset"></span></div>
-                <div>Календарь: <input type="text" id="calendar"
-                        placeholder="Выберите дату и время"></div>
+                
                 <script>
                         document.getElementById("userTimeZone").textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
                 
@@ -200,6 +202,18 @@
                 <p>The function in this example is <var> greet</var></p>
                 <p>The output from the code is: <samp> Hello, Alice!</samp></p>
                 <p>When asked for the name, I typed: <kbd> Alice</kbd></p>
+
+                <article itemscope itemtype="http://schema.org/Article">
+                    <h1 itemprop="name">Немного о Microdata</h1>
+                    <meta itemprop="inLanguage" content="ru" /> 
+                    <section itemprop="articleBody">
+                        Скажи рекурсии «нет»!
+                    </section>
+                    <section itemprop="author" itemscope itmetype="http://schema.org/Person">
+                        <span itemprop="additionalName">VlAleVas</span>
+                    </section>
+                </article>
+
                 {%if request.user.is_staff%}
                 <a href="{% url 'stats:report'%}">Статистика</a>
                 {%endif%}

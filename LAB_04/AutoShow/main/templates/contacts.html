@@ -1,27 +1,40 @@
-{% extends "base.html" %} {% block title %}
+{% extends "base.html" %}
+{% load static %}
+
+{%block css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/contacts.css' %}">
+{%endblock%}
+ {% block title %}
 
 <title>Contacts Page</title>
 
 {% endblock %}
 
+
 {% block content %}
 
 <h1>Контакты наших сотрудников</h1>
 <ul>
-    {%for e in employee%}
-
-    <li>
-        <img src="{{e.photo.url}}" alt="Фото сотрудника" style="width: 200px; height: 200px;">
-        <p><strong>{{e.first_name}} {{e.last_name}}</strong></p>
-        <p>{{e.email}}</p>
-        <p>{{e.phone_number}}</p>
-        {% for j in e.job.all %}
-        
-           <a href="{% url 'main:vacancies'%}" target="_blank">{{j.type_of_job}}</a> 
-        
-        {%endfor%}
+    {% for e in employee %}
+    <li class="contacts_list">
+        <div class="employee-container">
+            <div class="employee-image">
+                <img src="{{ e.photo.url }}" alt="Фото сотрудника">
+            </div>
+            <div class="employee-info">
+                <p><strong>{{ e.first_name }} {{ e.last_name }}</strong></p>
+                <p>{{ e.email }}</p>
+                <p>{{ e.phone_number }}</p>
+                <div class="job-links">
+                    {% for j in e.job.all %}
+                    <a href="{% url 'main:vacancies' %}" target="_blank">{{ j.type_of_job }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </li>
-
-    {%endfor%}
+    {% endfor %}
 </ul>
+
 {%endblock%}
