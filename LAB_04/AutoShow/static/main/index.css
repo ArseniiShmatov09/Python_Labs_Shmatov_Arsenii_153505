@@ -1,0 +1,11 @@
+img[src$=".jpg"] {
+    border: 3px solid black; 
+}
+
+a[href^="https"] {
+    color: #FF0000; 
+}
+
+[href*="ArseniiShmatov09"] img{
+    border: 5px solid gray; 
+}

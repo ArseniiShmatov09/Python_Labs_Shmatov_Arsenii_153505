@@ -1,5 +1,10 @@
 {% extends "base.html" %} {% block title %}
+{% load static %}
 
+{%block css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/about.css' %}">
+{%endblock%}
 <title>About Page</title>
 
 {% endblock %} {% block content %}
@@ -72,7 +77,7 @@
 <h1>Наш логотип:</h1>
 <div style="text-align: center;">
 
-    <img src="../media/images/лого.png" alt="Логотип" />
+    <img src="../media/images/лого.png" alt="Логотип" class="logo-img"/>
 </div>
 
 <h1 id = "History">История нашей компании: Путешествие сквозь Годы</h1>

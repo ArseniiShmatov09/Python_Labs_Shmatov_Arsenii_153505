@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +12,10 @@
             content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
 
         <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
-        {% load static %}
-        <link rel="stylesheet" type="text/css" href="{% static 'main/base.css' %}">
+ 
+        <link rel="stylesheet" type="text/css" href="{% static 'main/base_page_.css' %}">
         {%block css %}
-        
+     
        
         {%endblock%}
         {% block title %}{%endblock%}
@@ -88,42 +88,41 @@
                 <li style="display: inline;"><a href="{% url 'main:reviews'%}">Отзывы</a></li>&nbsp;
             </ul>
         </nav>
-        <main style="display: flex;">
+        <main style="display: flex;" class="main-content">
             <div style="width: 80%;" style="flex-grow: 1;">
                 {% block content %}
                 {% endblock %}
             </div>
 
             <aside style="width: 20%; padding-left: 50px;">
-                <ul style="padding-left: 0; margin-left: 0;">
-                    <li><a href="{% url 'main:news' %}">Новости</a></li>&nbsp;
-                    <li><a href="{% url 'main:vacancies'%}">Вакансии</a></li>&nbsp;
-                    <li>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="{% url 'main:news' %}">Новости</a></li>
+                    <li class="menu-item"><a href="{% url 'main:vacancies'%}">Вакансии</a></li>
+                    <li class="menu-item">
                         {% if user.is_authenticated %}
-                        <a href="{% url 'main:promotional_code' %}">Промокоды и
-                            купоны</a>
+                        <a href="{% url 'main:promotional_code' %}">Промокоды и купоны</a>
                         {% else %}
-                        <a
-                            href="{% url 'main:login' %}?next={% url 'main:promotional_code' %}">Промокоды
-                            и купоны</a>
+                        <a href="{% url 'main:login' %}?next={% url 'main:promotional_code' %}">Промокоды и купоны</a>
                         {% endif %}
-                    </li>&nbsp;
+                    </li>
                 </ul>
+                
                 <p>Добро пожаловать в <abbr title="Автосалон MyAutoShow">Автосалон
                         MAS</abbr>! Мы - ваш путь к инновационным автомобилям и
                     качественному обслуживанию. Присоединяйтесь к нам сегодня!</p>
 
                 <p>Наша цитата:</p>
-                <q>Индивидуальность на дороге начинается здесь.</q>
-
+                <q lang="en">Individuality on the road starts here.</q>
+                <q lang="ru">Индивидуальность на дороге начинается здесь.</q>
                 <p>
                     Дорогие гости, в нашем салоне,<br>
                     Мы здесь, чтобы вас порадовать!<br>
                     Авто мечты, роскошь и страсть,<br>
                     С нами выбор всегда на вес золота.
                 </p>
-                <p>Таблица наиболее популярных машин: </p>
+               
                 <table border="1">
+                    <caption>Таблица наиболее популярных машин:</caption>
                     <tr>
                         <th id="popularity">Popularity</th>
                         <th id="name">Car</th>
@@ -229,7 +228,7 @@
                 <nav class="menu">
                     <ul
                         style="padding-left: 0; margin-left: 0; list-style: none;">
-                        <li style="display: inline; margin-right: 10px;"><a
+                        <li style="display: inline; margin-right: 10px;"><a 
                                 href="{%url 'main:FAQ'%}">Словарь терминов и
                                 понятий</a></li>
                         <li style="display: inline;"><a

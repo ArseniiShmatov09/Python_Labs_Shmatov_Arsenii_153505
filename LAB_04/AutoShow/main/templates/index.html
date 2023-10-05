@@ -1,5 +1,10 @@
 {% extends "base.html" %}
+{% load static %}
 
+{%block css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/index.css' %}">
+{%endblock%}
 {% block title %}
 
 <title>MyAutoShow.by Page</title>
@@ -17,7 +22,7 @@
 </div>
 {% for car in cars%}
 <li>
-    <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
+    <img src="{{car.photo.url}}" style="width: 333px; height: 200px;">
     <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a>
 </li>
 

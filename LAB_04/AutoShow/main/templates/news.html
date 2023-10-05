@@ -1,4 +1,11 @@
-{% extends "base.html" %} {% block title %}
+{% extends "base.html" %}
+{% load static %}
+
+{%block css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/news.css' %}">
+{%endblock%}
+{% block title %}
 
 <title>News Page</title>
 
@@ -9,7 +16,7 @@
   {% for new in news%}
   <article>
     <h2>{{new.title}}</h2>
-    <h4>{{new.essence}}</h4>
+    <h4 class="short-description">{{new.essence}}</h4>
     <img src="{{new.photo.url}}">
     <details>
       <summary>

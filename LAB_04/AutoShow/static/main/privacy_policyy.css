@@ -1,7 +1,10 @@
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.pp-block{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 p {
     font-size: 16px;
@@ -28,4 +31,5 @@ p strong {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 

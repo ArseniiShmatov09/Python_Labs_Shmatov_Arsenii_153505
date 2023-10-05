@@ -1,0 +1,206 @@
+body {
+    background-image: url("https://gas-kvas.com/uploads/posts/2023-02/1675443528_gas-kvas-com-p-fonovii-risunok-dlya-div-32.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+a:link {
+    color: #0077cc; 
+    text-decoration: none; 
+}
+
+a:visited {
+    color: #551a8b; 
+    text-decoration:none;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration:none;
+}
+
+a:active {
+    color: #cc0000; 
+}
+
+a:focus {
+    outline: 2px solid #0077cc; 
+}
+
+header > h1 {
+    font-size: 36px;
+    color: black;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    background-color: #edebeb;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #8a8888;
+}
+
+aside {
+    width: 20%;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+}
+
+aside p {
+    margin-bottom: 20px;
+}
+
+
+
+q:lang(en) {
+    quotes: "\201E" "\201C"; 
+}
+
+q:lang(ru) {
+    quotes: "\00AB" "\00BB";  
+}
+
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+td:empty {
+    background-color: #c1bbbb;
+}
+
+table caption {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+th, td {
+    text-align: center; 
+    vertical-align: middle;
+    padding: 10px; 
+}
+
+tr:nth-child(even) {
+    background-color: #a5a5a5; 
+}
+
+th, td:first-child {
+    background-color: #e0e0e0; 
+    font-weight: bold; 
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+var {
+    font-style: italic;
+}
+
+samp {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+kbd {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    padding-top: 20px;
+    background-color: #edebeb;
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: gray; 
+}
+
+.cart {
+    width: 20%;
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #551a8b;
+    margin-right: 10px;
+}
+
+.cart a:hover {
+    text-decoration: underline;
+}
+
+#userTimeZone,
+#currentDateTime,
+#utcOffset {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.menu-list {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.menu-item {
+    margin-right: 10px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-item a:hover {
+    background-color: gray;
+    color: #fff;
+}

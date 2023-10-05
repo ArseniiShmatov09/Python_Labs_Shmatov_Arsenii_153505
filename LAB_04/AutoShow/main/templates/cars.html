@@ -1,5 +1,10 @@
 {% extends "base.html" %}
+{% load static %}
 
+{%block css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/cars.css' %}">
+{%endblock%}
 {% block title %}
 
 <title>Cars Page</title>
@@ -8,8 +13,6 @@
 
 {% block content %}
 
-
-<ul> 
 
 <form action="{{ request.get_full_path }}" method="get">
    <button type="submit" name="sort_price" value="ascending">Sort up by price</button>
@@ -35,15 +38,15 @@
 </form>
 
 </div>
+<ul class="cars">
+    {% for car in cars%}
+    <li>    
+        <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
 
-{% for car in cars%}
-<li>    
-   <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
-
-   <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
-</li>
-
-{% endfor %}
-
+        <a class="car-name" href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
+    </li>
+    {% endfor %}
 </ul>
+
+
 {% endblock %}

@@ -1336,3 +1336,1765 @@ INFO 2023-10-04 16:22:02,737 basehttp "GET /promotional_code/ HTTP/1.1" 200 1135
 INFO 2023-10-04 16:22:02,737 basehttp "GET /promotional_code/ HTTP/1.1" 200 11358
 INFO 2023-10-04 16:22:02,744 basehttp "GET /static/main/promotional_code.css HTTP/1.1" 304 0
 INFO 2023-10-04 16:22:02,744 basehttp "GET /static/main/promotional_code.css HTTP/1.1" 304 0
+INFO 2023-10-04 16:24:51,239 basehttp "GET /vacancies/ HTTP/1.1" 200 11938
+INFO 2023-10-04 16:24:51,239 basehttp "GET /vacancies/ HTTP/1.1" 200 11938
+INFO 2023-10-05 16:59:01,319 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 16:59:01,319 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 16:59:04,935 basehttp "GET / HTTP/1.1" 200 13029
+INFO 2023-10-05 16:59:04,935 basehttp "GET / HTTP/1.1" 200 13029
+INFO 2023-10-05 16:59:04,944 basehttp "GET /static/main/base.css HTTP/1.1" 304 0
+INFO 2023-10-05 16:59:04,944 basehttp "GET /static/main/base.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:02:19,403 basehttp "GET /vacancies/ HTTP/1.1" 200 11938
+INFO 2023-10-05 17:02:19,403 basehttp "GET /vacancies/ HTTP/1.1" 200 11938
+INFO 2023-10-05 17:02:19,409 basehttp "GET /static/main/vacancies.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:02:19,409 basehttp "GET /static/main/vacancies.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:02:22,180 basehttp "GET / HTTP/1.1" 200 13017
+INFO 2023-10-05 17:02:22,180 basehttp "GET / HTTP/1.1" 200 13017
+INFO 2023-10-05 17:03:23,539 basehttp "GET / HTTP/1.1" 200 13025
+INFO 2023-10-05 17:03:23,539 basehttp "GET / HTTP/1.1" 200 13025
+INFO 2023-10-05 17:03:34,831 basehttp "GET / HTTP/1.1" 200 13080
+INFO 2023-10-05 17:03:34,831 basehttp "GET / HTTP/1.1" 200 13080
+INFO 2023-10-05 17:03:47,854 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 17:03:47,854 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 17:03:50,465 basehttp "GET / HTTP/1.1" 200 13006
+INFO 2023-10-05 17:03:50,465 basehttp "GET / HTTP/1.1" 200 13006
+INFO 2023-10-05 17:03:55,699 basehttp "GET / HTTP/1.1" 200 13020
+INFO 2023-10-05 17:03:55,699 basehttp "GET / HTTP/1.1" 200 13020
+INFO 2023-10-05 17:04:03,933 basehttp "GET / HTTP/1.1" 200 13035
+INFO 2023-10-05 17:04:03,933 basehttp "GET / HTTP/1.1" 200 13035
+INFO 2023-10-05 17:04:26,527 basehttp "GET / HTTP/1.1" 200 13028
+INFO 2023-10-05 17:04:26,527 basehttp "GET / HTTP/1.1" 200 13028
+INFO 2023-10-05 17:05:25,072 basehttp "GET / HTTP/1.1" 200 13028
+INFO 2023-10-05 17:05:25,072 basehttp "GET / HTTP/1.1" 200 13028
+INFO 2023-10-05 17:06:11,184 basehttp "GET / HTTP/1.1" 200 13031
+INFO 2023-10-05 17:06:11,184 basehttp "GET / HTTP/1.1" 200 13031
+INFO 2023-10-05 17:06:24,273 basehttp "GET / HTTP/1.1" 200 13041
+INFO 2023-10-05 17:06:24,273 basehttp "GET / HTTP/1.1" 200 13041
+INFO 2023-10-05 17:06:36,158 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 17:06:36,158 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 17:06:43,826 basehttp "GET / HTTP/1.1" 200 13013
+INFO 2023-10-05 17:06:43,826 basehttp "GET / HTTP/1.1" 200 13013
+INFO 2023-10-05 17:08:44,838 basehttp "GET / HTTP/1.1" 200 13023
+INFO 2023-10-05 17:08:44,838 basehttp "GET / HTTP/1.1" 200 13023
+INFO 2023-10-05 17:08:44,850 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2859
+INFO 2023-10-05 17:08:44,850 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2859
+INFO 2023-10-05 17:09:43,838 basehttp "GET / HTTP/1.1" 200 13019
+INFO 2023-10-05 17:09:43,838 basehttp "GET / HTTP/1.1" 200 13019
+INFO 2023-10-05 17:09:43,844 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2857
+INFO 2023-10-05 17:09:43,844 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2857
+INFO 2023-10-05 17:10:33,231 basehttp "GET / HTTP/1.1" 200 13038
+INFO 2023-10-05 17:10:33,231 basehttp "GET / HTTP/1.1" 200 13038
+INFO 2023-10-05 17:10:33,237 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2810
+INFO 2023-10-05 17:10:33,237 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2810
+INFO 2023-10-05 17:10:43,318 basehttp "GET / HTTP/1.1" 200 13008
+INFO 2023-10-05 17:10:43,318 basehttp "GET / HTTP/1.1" 200 13008
+INFO 2023-10-05 17:10:43,324 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2830
+INFO 2023-10-05 17:10:43,324 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2830
+INFO 2023-10-05 17:14:17,130 basehttp "GET / HTTP/1.1" 200 12996
+INFO 2023-10-05 17:14:17,130 basehttp "GET / HTTP/1.1" 200 12996
+INFO 2023-10-05 17:14:17,136 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3233
+INFO 2023-10-05 17:14:17,136 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3233
+INFO 2023-10-05 17:15:13,657 basehttp "GET / HTTP/1.1" 200 12997
+INFO 2023-10-05 17:15:13,657 basehttp "GET / HTTP/1.1" 200 12997
+INFO 2023-10-05 17:15:13,664 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3233
+INFO 2023-10-05 17:15:13,664 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3233
+INFO 2023-10-05 17:15:28,484 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:15:28,484 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:16:18,214 basehttp "GET / HTTP/1.1" 200 13115
+INFO 2023-10-05 17:16:18,214 basehttp "GET / HTTP/1.1" 200 13115
+INFO 2023-10-05 17:16:18,220 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:16:18,220 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:17:41,866 basehttp "GET / HTTP/1.1" 200 13054
+INFO 2023-10-05 17:17:41,866 basehttp "GET / HTTP/1.1" 200 13054
+INFO 2023-10-05 17:17:41,874 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3233
+INFO 2023-10-05 17:17:41,874 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3233
+INFO 2023-10-05 17:18:14,228 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:18:14,228 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:18:14,235 basehttp "GET /static/main/contacts.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:14,235 basehttp "GET /static/main/contacts.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:18,730 basehttp "GET /reviews/ HTTP/1.1" 200 11530
+INFO 2023-10-05 17:18:18,730 basehttp "GET /reviews/ HTTP/1.1" 200 11530
+INFO 2023-10-05 17:18:18,739 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:18,739 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:20,178 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:18:20,178 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:18:23,226 basehttp "GET /reviews/ HTTP/1.1" 200 11530
+INFO 2023-10-05 17:18:23,226 basehttp "GET /reviews/ HTTP/1.1" 200 11530
+INFO 2023-10-05 17:18:23,235 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:23,235 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:25,366 basehttp "GET /cars HTTP/1.1" 200 13583
+INFO 2023-10-05 17:18:25,366 basehttp "GET /cars HTTP/1.1" 200 13583
+INFO 2023-10-05 17:18:26,800 basehttp "GET /about/ HTTP/1.1" 200 18617
+INFO 2023-10-05 17:18:26,800 basehttp "GET /about/ HTTP/1.1" 200 18617
+INFO 2023-10-05 17:18:28,116 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:18:28,116 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:18:31,189 basehttp "GET /privacy_policy/ HTTP/1.1" 200 24826
+INFO 2023-10-05 17:18:31,189 basehttp "GET /privacy_policy/ HTTP/1.1" 200 24826
+INFO 2023-10-05 17:18:31,199 basehttp "GET /static/main/privacy_policy.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:31,199 basehttp "GET /static/main/privacy_policy.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:33,843 basehttp "GET /FAQ/ HTTP/1.1" 200 15182
+INFO 2023-10-05 17:18:33,843 basehttp "GET /FAQ/ HTTP/1.1" 200 15182
+INFO 2023-10-05 17:18:33,850 basehttp "GET /static/main/FAQ.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:33,850 basehttp "GET /static/main/FAQ.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:41,551 basehttp "GET / HTTP/1.1" 200 13049
+INFO 2023-10-05 17:18:41,551 basehttp "GET / HTTP/1.1" 200 13049
+INFO 2023-10-05 17:18:41,561 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:18:41,561 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:19:37,153 basehttp "GET / HTTP/1.1" 200 13069
+INFO 2023-10-05 17:19:37,153 basehttp "GET / HTTP/1.1" 200 13069
+INFO 2023-10-05 17:19:37,160 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3144
+INFO 2023-10-05 17:19:37,160 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3144
+INFO 2023-10-05 17:21:16,582 basehttp "GET / HTTP/1.1" 200 12986
+INFO 2023-10-05 17:21:16,582 basehttp "GET / HTTP/1.1" 200 12986
+INFO 2023-10-05 17:21:16,588 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2980
+INFO 2023-10-05 17:21:16,588 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2980
+INFO 2023-10-05 17:21:40,040 basehttp "GET / HTTP/1.1" 200 13012
+INFO 2023-10-05 17:21:40,040 basehttp "GET / HTTP/1.1" 200 13012
+INFO 2023-10-05 17:21:40,047 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2954
+INFO 2023-10-05 17:21:40,047 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2954
+INFO 2023-10-05 17:22:04,506 basehttp "GET /cars HTTP/1.1" 200 13522
+INFO 2023-10-05 17:22:04,506 basehttp "GET /cars HTTP/1.1" 200 13522
+INFO 2023-10-05 17:22:04,513 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:22:04,513 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:22:06,203 basehttp "GET /about/ HTTP/1.1" 200 18556
+INFO 2023-10-05 17:22:06,203 basehttp "GET /about/ HTTP/1.1" 200 18556
+INFO 2023-10-05 17:22:07,586 basehttp "GET /contacts/ HTTP/1.1" 200 15736
+INFO 2023-10-05 17:22:07,586 basehttp "GET /contacts/ HTTP/1.1" 200 15736
+INFO 2023-10-05 17:22:29,501 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:22:29,501 basehttp "GET /contacts/ HTTP/1.1" 200 15797
+INFO 2023-10-05 17:23:09,357 basehttp "GET /contacts/ HTTP/1.1" 200 15871
+INFO 2023-10-05 17:23:09,357 basehttp "GET /contacts/ HTTP/1.1" 200 15871
+INFO 2023-10-05 17:23:09,363 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:23:09,363 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:23:19,070 basehttp "GET / HTTP/1.1" 200 13022
+INFO 2023-10-05 17:23:19,070 basehttp "GET / HTTP/1.1" 200 13022
+INFO 2023-10-05 17:23:19,077 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:23:19,077 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:23:58,916 basehttp "GET / HTTP/1.1" 200 13053
+INFO 2023-10-05 17:23:58,916 basehttp "GET / HTTP/1.1" 200 13053
+INFO 2023-10-05 17:23:58,923 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2952
+INFO 2023-10-05 17:23:58,923 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2952
+INFO 2023-10-05 17:24:32,078 basehttp "GET / HTTP/1.1" 200 13066
+INFO 2023-10-05 17:24:32,078 basehttp "GET / HTTP/1.1" 200 13066
+INFO 2023-10-05 17:24:32,085 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2949
+INFO 2023-10-05 17:24:32,085 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2949
+INFO 2023-10-05 17:24:46,695 basehttp "GET / HTTP/1.1" 200 13044
+INFO 2023-10-05 17:24:46,695 basehttp "GET / HTTP/1.1" 200 13044
+INFO 2023-10-05 17:24:46,700 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2948
+INFO 2023-10-05 17:24:46,700 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2948
+INFO 2023-10-05 17:25:06,876 basehttp "GET / HTTP/1.1" 200 13094
+INFO 2023-10-05 17:25:06,876 basehttp "GET / HTTP/1.1" 200 13094
+INFO 2023-10-05 17:25:06,883 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3049
+INFO 2023-10-05 17:25:06,883 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3049
+INFO 2023-10-05 17:25:22,631 basehttp "GET / HTTP/1.1" 200 13052
+INFO 2023-10-05 17:25:22,631 basehttp "GET / HTTP/1.1" 200 13052
+INFO 2023-10-05 17:25:22,638 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2999
+INFO 2023-10-05 17:25:22,638 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2999
+INFO 2023-10-05 17:30:30,761 basehttp "GET / HTTP/1.1" 200 13077
+INFO 2023-10-05 17:30:30,761 basehttp "GET / HTTP/1.1" 200 13077
+INFO 2023-10-05 17:30:30,770 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3051
+INFO 2023-10-05 17:30:30,770 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3051
+INFO 2023-10-05 17:30:58,282 basehttp "GET / HTTP/1.1" 200 13093
+INFO 2023-10-05 17:30:58,282 basehttp "GET / HTTP/1.1" 200 13093
+INFO 2023-10-05 17:30:58,288 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3050
+INFO 2023-10-05 17:30:58,288 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3050
+INFO 2023-10-05 17:32:14,329 basehttp "GET / HTTP/1.1" 200 13098
+INFO 2023-10-05 17:32:14,329 basehttp "GET / HTTP/1.1" 200 13098
+INFO 2023-10-05 17:32:14,335 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3054
+INFO 2023-10-05 17:32:14,335 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3054
+INFO 2023-10-05 17:32:25,639 basehttp "GET / HTTP/1.1" 200 13063
+INFO 2023-10-05 17:32:25,639 basehttp "GET / HTTP/1.1" 200 13063
+INFO 2023-10-05 17:32:25,644 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3054
+INFO 2023-10-05 17:32:25,644 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3054
+INFO 2023-10-05 17:33:34,343 basehttp "GET / HTTP/1.1" 200 13074
+INFO 2023-10-05 17:33:34,343 basehttp "GET / HTTP/1.1" 200 13074
+INFO 2023-10-05 17:33:34,351 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2899
+INFO 2023-10-05 17:33:34,351 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2899
+INFO 2023-10-05 17:34:58,440 basehttp "GET / HTTP/1.1" 200 13059
+INFO 2023-10-05 17:34:58,440 basehttp "GET / HTTP/1.1" 200 13059
+INFO 2023-10-05 17:34:58,446 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2830
+INFO 2023-10-05 17:34:58,446 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2830
+INFO 2023-10-05 17:35:49,403 basehttp "GET / HTTP/1.1" 200 13031
+INFO 2023-10-05 17:35:49,403 basehttp "GET / HTTP/1.1" 200 13031
+INFO 2023-10-05 17:35:49,410 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2830
+INFO 2023-10-05 17:35:49,410 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2830
+INFO 2023-10-05 17:37:04,938 basehttp "GET / HTTP/1.1" 200 13036
+INFO 2023-10-05 17:37:04,938 basehttp "GET / HTTP/1.1" 200 13036
+INFO 2023-10-05 17:37:04,945 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3412
+INFO 2023-10-05 17:37:04,945 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3412
+INFO 2023-10-05 17:38:32,976 basehttp "GET / HTTP/1.1" 200 13066
+INFO 2023-10-05 17:38:32,976 basehttp "GET / HTTP/1.1" 200 13066
+INFO 2023-10-05 17:38:32,983 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3408
+INFO 2023-10-05 17:38:32,983 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3408
+INFO 2023-10-05 17:40:16,405 basehttp "GET / HTTP/1.1" 200 13033
+INFO 2023-10-05 17:40:16,405 basehttp "GET / HTTP/1.1" 200 13033
+INFO 2023-10-05 17:40:16,411 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3423
+INFO 2023-10-05 17:40:16,411 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3423
+INFO 2023-10-05 17:40:44,280 basehttp "GET / HTTP/1.1" 200 13051
+INFO 2023-10-05 17:40:44,280 basehttp "GET / HTTP/1.1" 200 13051
+INFO 2023-10-05 17:40:44,286 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:40:44,286 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:41:16,550 basehttp "GET / HTTP/1.1" 200 13050
+INFO 2023-10-05 17:41:16,550 basehttp "GET / HTTP/1.1" 200 13050
+INFO 2023-10-05 17:41:16,556 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:41:16,556 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:41:39,430 basehttp "GET / HTTP/1.1" 200 13030
+INFO 2023-10-05 17:41:39,430 basehttp "GET / HTTP/1.1" 200 13030
+INFO 2023-10-05 17:41:39,437 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3413
+INFO 2023-10-05 17:41:39,437 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3413
+INFO 2023-10-05 17:42:04,303 basehttp "GET / HTTP/1.1" 200 13057
+INFO 2023-10-05 17:42:04,303 basehttp "GET / HTTP/1.1" 200 13057
+INFO 2023-10-05 17:42:04,311 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3409
+INFO 2023-10-05 17:42:04,311 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3409
+INFO 2023-10-05 17:42:34,671 basehttp "GET / HTTP/1.1" 200 13064
+INFO 2023-10-05 17:42:34,671 basehttp "GET / HTTP/1.1" 200 13064
+INFO 2023-10-05 17:42:34,678 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3409
+INFO 2023-10-05 17:42:34,678 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3409
+INFO 2023-10-05 17:42:50,882 basehttp "GET /reviews/ HTTP/1.1" 200 11529
+INFO 2023-10-05 17:42:50,882 basehttp "GET /reviews/ HTTP/1.1" 200 11529
+INFO 2023-10-05 17:42:50,889 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:42:50,889 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:42:54,722 basehttp "GET /contacts/ HTTP/1.1" 200 15872
+INFO 2023-10-05 17:42:54,722 basehttp "GET /contacts/ HTTP/1.1" 200 15872
+INFO 2023-10-05 17:42:54,729 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:42:54,729 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:43:01,533 basehttp "GET / HTTP/1.1" 200 13110
+INFO 2023-10-05 17:43:01,533 basehttp "GET / HTTP/1.1" 200 13110
+INFO 2023-10-05 17:43:01,540 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:43:01,540 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:44:37,088 basehttp "GET / HTTP/1.1" 200 13048
+INFO 2023-10-05 17:44:37,088 basehttp "GET / HTTP/1.1" 200 13048
+INFO 2023-10-05 17:44:37,094 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3430
+INFO 2023-10-05 17:44:37,094 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3430
+INFO 2023-10-05 17:45:20,885 basehttp "GET / HTTP/1.1" 200 13017
+INFO 2023-10-05 17:45:20,885 basehttp "GET / HTTP/1.1" 200 13017
+INFO 2023-10-05 17:45:20,890 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3455
+INFO 2023-10-05 17:45:20,890 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3455
+INFO 2023-10-05 17:45:42,190 basehttp "GET / HTTP/1.1" 200 13036
+INFO 2023-10-05 17:45:42,190 basehttp "GET / HTTP/1.1" 200 13036
+INFO 2023-10-05 17:45:42,196 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3455
+INFO 2023-10-05 17:45:42,196 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3455
+INFO 2023-10-05 17:45:54,968 basehttp "GET / HTTP/1.1" 200 13084
+INFO 2023-10-05 17:45:54,968 basehttp "GET / HTTP/1.1" 200 13084
+INFO 2023-10-05 17:45:54,973 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3455
+INFO 2023-10-05 17:45:54,973 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3455
+INFO 2023-10-05 17:46:59,098 basehttp "GET / HTTP/1.1" 200 13054
+INFO 2023-10-05 17:46:59,098 basehttp "GET / HTTP/1.1" 200 13054
+INFO 2023-10-05 17:46:59,106 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:46:59,106 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:47:07,547 basehttp "GET / HTTP/1.1" 200 13091
+INFO 2023-10-05 17:47:07,547 basehttp "GET / HTTP/1.1" 200 13091
+INFO 2023-10-05 17:47:07,554 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:47:07,554 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 3411
+INFO 2023-10-05 17:50:04,238 basehttp "GET / HTTP/1.1" 200 13055
+INFO 2023-10-05 17:50:04,238 basehttp "GET / HTTP/1.1" 200 13055
+INFO 2023-10-05 17:50:04,244 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 4369
+INFO 2023-10-05 17:50:04,244 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 4369
+INFO 2023-10-05 17:50:18,904 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2023-10-05 17:50:18,904 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2023-10-05 17:50:20,378 basehttp "GET / HTTP/1.1" 200 12678
+INFO 2023-10-05 17:50:20,378 basehttp "GET / HTTP/1.1" 200 12678
+INFO 2023-10-05 17:50:20,431 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:50:20,431 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:50:22,693 basehttp "GET /login/ HTTP/1.1" 200 1039
+INFO 2023-10-05 17:50:22,693 basehttp "GET /login/ HTTP/1.1" 200 1039
+ERROR 2023-10-05 17:50:22,722 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 17:50:22,722 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 17:50:22,723 basehttp "GET /favicon.ico HTTP/1.1" 500 66067
+ERROR 2023-10-05 17:50:22,723 basehttp "GET /favicon.ico HTTP/1.1" 500 66067
+INFO 2023-10-05 17:50:24,563 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2023-10-05 17:50:24,563 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2023-10-05 17:50:25,377 basehttp "GET / HTTP/1.1" 200 13056
+INFO 2023-10-05 17:50:25,377 basehttp "GET / HTTP/1.1" 200 13056
+INFO 2023-10-05 17:50:25,425 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:50:25,425 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:51:12,976 basehttp "GET / HTTP/1.1" 200 13050
+INFO 2023-10-05 17:51:12,976 basehttp "GET / HTTP/1.1" 200 13050
+INFO 2023-10-05 17:51:12,984 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 4368
+INFO 2023-10-05 17:51:12,984 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 4368
+INFO 2023-10-05 17:51:26,197 basehttp "GET / HTTP/1.1" 200 13030
+INFO 2023-10-05 17:51:26,197 basehttp "GET / HTTP/1.1" 200 13030
+INFO 2023-10-05 17:51:26,203 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:51:26,203 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 17:52:46,833 basehttp "GET / HTTP/1.1" 200 13060
+INFO 2023-10-05 17:52:46,833 basehttp "GET / HTTP/1.1" 200 13060
+INFO 2023-10-05 17:52:46,839 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 4907
+INFO 2023-10-05 17:52:46,839 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 4907
+INFO 2023-10-05 17:54:11,200 basehttp "GET / HTTP/1.1" 200 13114
+INFO 2023-10-05 17:54:11,200 basehttp "GET / HTTP/1.1" 200 13114
+INFO 2023-10-05 17:54:11,206 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 5386
+INFO 2023-10-05 17:54:11,206 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 5386
+INFO 2023-10-05 17:55:45,680 basehttp "GET / HTTP/1.1" 200 13040
+INFO 2023-10-05 17:55:45,680 basehttp "GET / HTTP/1.1" 200 13040
+INFO 2023-10-05 17:55:45,686 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 5395
+INFO 2023-10-05 17:55:45,686 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 5395
+INFO 2023-10-05 17:58:15,976 basehttp "GET / HTTP/1.1" 200 13057
+INFO 2023-10-05 17:58:15,976 basehttp "GET / HTTP/1.1" 200 13057
+INFO 2023-10-05 17:58:15,983 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2726
+INFO 2023-10-05 17:58:15,983 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2726
+INFO 2023-10-05 18:04:55,874 basehttp "GET / HTTP/1.1" 200 13134
+INFO 2023-10-05 18:04:55,874 basehttp "GET / HTTP/1.1" 200 13134
+INFO 2023-10-05 18:04:55,880 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:04:55,880 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:05:50,791 basehttp "GET / HTTP/1.1" 200 13032
+INFO 2023-10-05 18:05:50,791 basehttp "GET / HTTP/1.1" 200 13032
+INFO 2023-10-05 18:05:50,796 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:05:50,796 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:06:42,798 basehttp "GET / HTTP/1.1" 200 13104
+INFO 2023-10-05 18:06:42,798 basehttp "GET / HTTP/1.1" 200 13104
+INFO 2023-10-05 18:06:42,805 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:06:42,805 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:06:42,805 basehttp "GET /static/main/index.css HTTP/1.1" 200 191
+INFO 2023-10-05 18:06:42,805 basehttp "GET /static/main/index.css HTTP/1.1" 200 191
+INFO 2023-10-05 18:07:11,175 basehttp "GET / HTTP/1.1" 200 13095
+INFO 2023-10-05 18:07:11,175 basehttp "GET / HTTP/1.1" 200 13095
+INFO 2023-10-05 18:07:11,183 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:07:11,183 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:08:17,347 basehttp "GET / HTTP/1.1" 200 13106
+INFO 2023-10-05 18:08:17,347 basehttp "GET / HTTP/1.1" 200 13106
+INFO 2023-10-05 18:08:17,354 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:08:17,354 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:08:17,354 basehttp "GET /static/main/index.css HTTP/1.1" 200 50
+INFO 2023-10-05 18:08:17,354 basehttp "GET /static/main/index.css HTTP/1.1" 200 50
+INFO 2023-10-05 18:10:26,076 basehttp "GET / HTTP/1.1" 200 13092
+INFO 2023-10-05 18:10:26,076 basehttp "GET / HTTP/1.1" 200 13092
+INFO 2023-10-05 18:10:26,082 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:10:26,082 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:10:26,084 basehttp "GET /static/main/index.css HTTP/1.1" 200 233
+INFO 2023-10-05 18:10:26,084 basehttp "GET /static/main/index.css HTTP/1.1" 200 233
+INFO 2023-10-05 18:13:44,422 basehttp "GET / HTTP/1.1" 200 13084
+INFO 2023-10-05 18:13:44,422 basehttp "GET / HTTP/1.1" 200 13084
+INFO 2023-10-05 18:13:44,432 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:13:44,432 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:13:44,432 basehttp "GET /static/main/index.css HTTP/1.1" 200 149
+INFO 2023-10-05 18:13:44,432 basehttp "GET /static/main/index.css HTTP/1.1" 200 149
+INFO 2023-10-05 18:14:33,458 basehttp "GET / HTTP/1.1" 200 13124
+INFO 2023-10-05 18:14:33,458 basehttp "GET / HTTP/1.1" 200 13124
+INFO 2023-10-05 18:14:33,467 basehttp "GET /static/main/index.css HTTP/1.1" 200 157
+INFO 2023-10-05 18:14:33,467 basehttp "GET /static/main/index.css HTTP/1.1" 200 157
+INFO 2023-10-05 18:14:42,981 basehttp "GET / HTTP/1.1" 200 13094
+INFO 2023-10-05 18:14:42,981 basehttp "GET / HTTP/1.1" 200 13094
+INFO 2023-10-05 18:14:42,990 basehttp "GET /static/main/index.css HTTP/1.1" 200 158
+INFO 2023-10-05 18:14:42,990 basehttp "GET /static/main/index.css HTTP/1.1" 200 158
+INFO 2023-10-05 18:14:50,114 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:14:50,114 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:15:12,309 basehttp "GET / HTTP/1.1" 200 13124
+INFO 2023-10-05 18:15:12,309 basehttp "GET / HTTP/1.1" 200 13124
+INFO 2023-10-05 18:15:12,317 basehttp "GET /static/main/index.css HTTP/1.1" 200 162
+INFO 2023-10-05 18:15:12,317 basehttp "GET /static/main/index.css HTTP/1.1" 200 162
+INFO 2023-10-05 18:15:38,125 basehttp "GET / HTTP/1.1" 200 13092
+INFO 2023-10-05 18:15:38,125 basehttp "GET / HTTP/1.1" 200 13092
+INFO 2023-10-05 18:15:38,132 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:15:38,132 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:15:38,132 basehttp "GET /static/main/index.css HTTP/1.1" 200 162
+INFO 2023-10-05 18:15:38,132 basehttp "GET /static/main/index.css HTTP/1.1" 200 162
+INFO 2023-10-05 18:15:48,881 basehttp "GET / HTTP/1.1" 200 13111
+INFO 2023-10-05 18:15:48,881 basehttp "GET / HTTP/1.1" 200 13111
+INFO 2023-10-05 18:15:48,889 basehttp "GET /static/main/index.css HTTP/1.1" 200 160
+INFO 2023-10-05 18:15:48,889 basehttp "GET /static/main/index.css HTTP/1.1" 200 160
+INFO 2023-10-05 18:16:06,652 basehttp "GET / HTTP/1.1" 200 13142
+INFO 2023-10-05 18:16:06,652 basehttp "GET / HTTP/1.1" 200 13142
+INFO 2023-10-05 18:16:06,660 basehttp "GET /static/main/index.css HTTP/1.1" 200 157
+INFO 2023-10-05 18:16:06,660 basehttp "GET /static/main/index.css HTTP/1.1" 200 157
+INFO 2023-10-05 18:23:19,557 basehttp "GET / HTTP/1.1" 200 13090
+INFO 2023-10-05 18:23:19,557 basehttp "GET / HTTP/1.1" 200 13090
+INFO 2023-10-05 18:23:19,564 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:23:19,564 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:23:19,565 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:23:19,565 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:23:28,150 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 18:23:28,150 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 18:23:29,459 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 18:23:29,459 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 18:23:33,847 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:23:33,847 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:23:40,495 basehttp "GET / HTTP/1.1" 200 13073
+INFO 2023-10-05 18:23:40,495 basehttp "GET / HTTP/1.1" 200 13073
+INFO 2023-10-05 18:23:41,345 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 18:23:41,345 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 18:23:42,263 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 18:23:42,263 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 18:23:43,033 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 18:23:43,033 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 18:23:43,736 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:23:43,736 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:23:49,547 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:23:49,547 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:23:49,556 basehttp "GET /static/main/promotional_code.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:23:49,556 basehttp "GET /static/main/promotional_code.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:23:50,568 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:23:50,568 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:23:51,690 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 18:23:51,690 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 18:23:52,632 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:23:52,632 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:23:53,381 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:23:53,381 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:26:37,009 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:26:37,009 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:26:37,016 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2728
+INFO 2023-10-05 18:26:37,016 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2728
+INFO 2023-10-05 18:28:32,581 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:28:32,581 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:28:32,588 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:28:32,588 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:28:44,538 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:28:44,538 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:28:44,544 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2728
+INFO 2023-10-05 18:28:44,544 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2728
+INFO 2023-10-05 18:29:38,498 basehttp "GET /promotional_code/ HTTP/1.1" 200 11409
+INFO 2023-10-05 18:29:38,498 basehttp "GET /promotional_code/ HTTP/1.1" 200 11409
+INFO 2023-10-05 18:29:38,506 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:29:38,506 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:29:49,362 basehttp "GET /promotional_code/ HTTP/1.1" 200 11407
+INFO 2023-10-05 18:29:49,362 basehttp "GET /promotional_code/ HTTP/1.1" 200 11407
+INFO 2023-10-05 18:29:49,369 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:29:49,369 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:18,701 basehttp "GET /promotional_code/ HTTP/1.1" 200 11410
+INFO 2023-10-05 18:30:18,701 basehttp "GET /promotional_code/ HTTP/1.1" 200 11410
+INFO 2023-10-05 18:30:18,708 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:18,708 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:35,179 basehttp "GET / HTTP/1.1" 200 13120
+INFO 2023-10-05 18:30:35,179 basehttp "GET / HTTP/1.1" 200 13120
+INFO 2023-10-05 18:30:35,190 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:35,190 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:35,192 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:35,192 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:40,093 basehttp "GET /reviews/ HTTP/1.1" 200 11561
+INFO 2023-10-05 18:30:40,093 basehttp "GET /reviews/ HTTP/1.1" 200 11561
+INFO 2023-10-05 18:30:46,511 basehttp "GET /contacts/ HTTP/1.1" 200 15904
+INFO 2023-10-05 18:30:46,511 basehttp "GET /contacts/ HTTP/1.1" 200 15904
+INFO 2023-10-05 18:30:46,521 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:46,521 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:30:51,072 basehttp "GET / HTTP/1.1" 200 13115
+INFO 2023-10-05 18:30:51,072 basehttp "GET / HTTP/1.1" 200 13115
+INFO 2023-10-05 18:30:58,171 basehttp "GET /contacts/ HTTP/1.1" 200 15904
+INFO 2023-10-05 18:30:58,171 basehttp "GET /contacts/ HTTP/1.1" 200 15904
+INFO 2023-10-05 18:31:49,533 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:31:49,533 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:31:49,541 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:31:49,541 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:39,956 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:32:39,956 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:32:39,963 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2728
+INFO 2023-10-05 18:32:39,963 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2728
+INFO 2023-10-05 18:32:43,815 basehttp "GET / HTTP/1.1" 200 13130
+INFO 2023-10-05 18:32:43,815 basehttp "GET / HTTP/1.1" 200 13130
+INFO 2023-10-05 18:32:43,825 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:43,825 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:43,825 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:43,825 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:44,606 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 18:32:44,606 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 18:32:44,613 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:44,613 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:45,495 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 18:32:45,495 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 18:32:45,505 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:45,505 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:46,263 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 18:32:46,263 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 18:32:46,271 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:46,271 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:47,120 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:32:47,120 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:32:47,129 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:47,129 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:47,989 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 18:32:47,989 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 18:32:47,996 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:47,996 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:48,734 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:32:48,734 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:32:48,742 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:48,742 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:49,327 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:32:49,327 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:32:49,336 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:32:49,336 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:04,206 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:33:04,206 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:33:04,215 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:04,215 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:05,831 basehttp "GET / HTTP/1.1" 200 13139
+INFO 2023-10-05 18:33:05,831 basehttp "GET / HTTP/1.1" 200 13139
+INFO 2023-10-05 18:33:07,423 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 18:33:07,423 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 18:33:07,430 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:07,430 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:08,238 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:33:08,238 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 18:33:23,271 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:33:23,271 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 18:33:23,279 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:23,279 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:24,247 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:33:24,247 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 18:33:25,045 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 18:33:25,045 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 18:33:27,293 basehttp "GET / HTTP/1.1" 200 13079
+INFO 2023-10-05 18:33:27,293 basehttp "GET / HTTP/1.1" 200 13079
+INFO 2023-10-05 18:33:40,848 basehttp "GET /cars/1 HTTP/1.1" 200 12703
+INFO 2023-10-05 18:33:40,848 basehttp "GET /cars/1 HTTP/1.1" 200 12703
+INFO 2023-10-05 18:33:40,856 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:40,856 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:42,476 basehttp "POST /cart/add/1/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:42,476 basehttp "POST /cart/add/1/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:42,484 basehttp "GET /cart/ HTTP/1.1" 200 12341
+INFO 2023-10-05 18:33:42,484 basehttp "GET /cart/ HTTP/1.1" 200 12341
+INFO 2023-10-05 18:33:47,888 basehttp "GET /cars HTTP/1.1" 200 13682
+INFO 2023-10-05 18:33:47,888 basehttp "GET /cars HTTP/1.1" 200 13682
+INFO 2023-10-05 18:33:47,897 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:47,897 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:49,417 basehttp "GET /cars/9 HTTP/1.1" 200 12695
+INFO 2023-10-05 18:33:49,417 basehttp "GET /cars/9 HTTP/1.1" 200 12695
+INFO 2023-10-05 18:33:50,508 basehttp "POST /cart/add/9/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:50,508 basehttp "POST /cart/add/9/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:50,523 basehttp "GET /cart/ HTTP/1.1" 200 12838
+INFO 2023-10-05 18:33:50,523 basehttp "GET /cart/ HTTP/1.1" 200 12838
+INFO 2023-10-05 18:33:55,443 basehttp "GET /cart/remove/9/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:55,443 basehttp "GET /cart/remove/9/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:55,450 basehttp "GET /cart/ HTTP/1.1" 200 12341
+INFO 2023-10-05 18:33:55,450 basehttp "GET /cart/ HTTP/1.1" 200 12341
+INFO 2023-10-05 18:33:55,507 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:55,507 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:33:56,534 basehttp "GET /cart/remove/1/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:56,534 basehttp "GET /cart/remove/1/ HTTP/1.1" 302 0
+INFO 2023-10-05 18:33:56,542 basehttp "GET /cart/ HTTP/1.1" 200 11747
+INFO 2023-10-05 18:33:56,542 basehttp "GET /cart/ HTTP/1.1" 200 11747
+INFO 2023-10-05 18:34:00,194 basehttp "GET /order/create/ HTTP/1.1" 200 11125
+INFO 2023-10-05 18:34:00,194 basehttp "GET /order/create/ HTTP/1.1" 200 11125
+WARNING 2023-10-05 18:34:00,219 log Not Found: /order/media/images/лого.ico
+WARNING 2023-10-05 18:34:00,219 log Not Found: /order/media/images/лого.ico
+WARNING 2023-10-05 18:34:00,219 basehttp "GET /order/media/images/%D0%BB%D0%BE%D0%B3%D0%BE.ico HTTP/1.1" 404 6010
+WARNING 2023-10-05 18:34:00,219 basehttp "GET /order/media/images/%D0%BB%D0%BE%D0%B3%D0%BE.ico HTTP/1.1" 404 6010
+INFO 2023-10-05 18:34:01,444 basehttp "POST /order/create/ HTTP/1.1" 200 10874
+INFO 2023-10-05 18:34:01,444 basehttp "POST /order/create/ HTTP/1.1" 200 10874
+INFO 2023-10-05 18:34:04,158 basehttp "GET / HTTP/1.1" 200 13083
+INFO 2023-10-05 18:34:04,158 basehttp "GET / HTTP/1.1" 200 13083
+INFO 2023-10-05 18:34:04,168 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:34:04,168 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:35:02,945 basehttp "GET / HTTP/1.1" 200 13057
+INFO 2023-10-05 18:35:02,945 basehttp "GET / HTTP/1.1" 200 13057
+INFO 2023-10-05 18:35:02,953 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:35:02,953 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 18:35:02,953 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2730
+INFO 2023-10-05 18:35:02,953 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2730
+INFO 2023-10-05 18:35:16,219 basehttp "GET / HTTP/1.1" 200 13121
+INFO 2023-10-05 18:35:16,219 basehttp "GET / HTTP/1.1" 200 13121
+INFO 2023-10-05 18:35:16,227 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2730
+INFO 2023-10-05 18:35:16,227 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2730
+INFO 2023-10-05 19:44:47,544 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:44:47,544 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:44:47,553 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2730
+INFO 2023-10-05 19:44:47,553 basehttp "GET /static/main/base_page.css HTTP/1.1" 200 2730
+INFO 2023-10-05 19:44:56,412 basehttp "GET /FAQ/ HTTP/1.1" 200 15259
+INFO 2023-10-05 19:44:56,412 basehttp "GET /FAQ/ HTTP/1.1" 200 15259
+INFO 2023-10-05 19:45:09,579 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:09,579 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:11,513 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:45:11,513 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:45:11,520 basehttp "GET /static/main/vacancies.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:45:11,520 basehttp "GET /static/main/vacancies.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:45:13,921 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 19:45:13,921 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 19:45:15,244 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:45:15,244 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:45:15,651 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:15,651 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:16,756 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 19:45:16,756 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 19:45:17,350 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:45:17,350 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:45:18,104 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:18,104 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:19,926 basehttp "GET /FAQ/ HTTP/1.1" 200 15259
+INFO 2023-10-05 19:45:19,926 basehttp "GET /FAQ/ HTTP/1.1" 200 15259
+INFO 2023-10-05 19:45:25,293 basehttp "GET /privacy_policy/ HTTP/1.1" 200 24903
+INFO 2023-10-05 19:45:25,293 basehttp "GET /privacy_policy/ HTTP/1.1" 200 24903
+INFO 2023-10-05 19:45:58,252 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:58,252 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:45:59,055 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:45:59,055 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:46:00,240 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 19:46:00,240 basehttp "GET /promotional_code/ HTTP/1.1" 200 11380
+INFO 2023-10-05 19:46:03,344 basehttp "GET / HTTP/1.1" 200 13104
+INFO 2023-10-05 19:46:03,344 basehttp "GET / HTTP/1.1" 200 13104
+INFO 2023-10-05 19:46:03,356 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:46:03,356 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:46:05,329 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 19:46:05,329 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 19:46:06,678 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 19:46:06,678 basehttp "GET /contacts/ HTTP/1.1" 200 15874
+INFO 2023-10-05 19:46:07,788 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 19:46:07,788 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 19:46:08,726 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 19:46:08,726 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 19:46:10,105 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:46:10,105 basehttp "GET /news/ HTTP/1.1" 200 21701
+INFO 2023-10-05 19:46:10,731 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:46:10,731 basehttp "GET /vacancies/ HTTP/1.1" 200 11960
+INFO 2023-10-05 19:48:04,988 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:48:04,988 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:48:07,139 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:48:07,139 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:50:22,949 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:50:22,949 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:50:23,682 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:50:23,682 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:14,088 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:14,088 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:15,373 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:15,373 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:16,108 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:16,108 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:53,750 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:53,750 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:53,758 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:51:53,758 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:51:54,402 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:54,402 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:54,794 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:51:54,794 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:52:03,866 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:52:03,866 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:52:21,459 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 19:52:21,459 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 19:52:25,133 basehttp "GET / HTTP/1.1" 200 13105
+INFO 2023-10-05 19:52:25,133 basehttp "GET / HTTP/1.1" 200 13105
+INFO 2023-10-05 19:52:29,184 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:52:29,184 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:52:42,505 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:52:42,505 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:53:50,252 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:53:50,252 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:01,104 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:01,104 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:01,676 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:01,676 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:01,860 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:01,860 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:02,039 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:02,039 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:02,219 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:02,219 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:02,411 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:02,411 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:40,729 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 19:54:40,729 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 19:54:44,387 basehttp "GET / HTTP/1.1" 200 13091
+INFO 2023-10-05 19:54:44,387 basehttp "GET / HTTP/1.1" 200 13091
+INFO 2023-10-05 19:54:48,971 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:54:48,971 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:02,840 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:02,840 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:03,334 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:03,334 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:03,521 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:03,521 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:03,689 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:03,689 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:15,798 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:15,798 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:16,281 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:16,281 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:16,460 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:16,460 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:16,636 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:16,636 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:17,158 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 19:55:17,158 basehttp "GET /about/ HTTP/1.1" 200 18618
+INFO 2023-10-05 19:55:19,962 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:19,962 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:41,108 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:41,108 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:41,660 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:41,660 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:41,876 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:41,876 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,058 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,058 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,234 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,234 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,413 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,413 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,591 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,591 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,763 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,763 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,940 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:55:42,940 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:05,265 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25066
+INFO 2023-10-05 19:56:05,265 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25066
+INFO 2023-10-05 19:56:11,400 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:11,400 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:12,415 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:12,415 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:12,749 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:12,749 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:12,962 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:12,962 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:13,146 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:13,146 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:32,491 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:32,491 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:32,996 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:32,996 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:33,164 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:33,164 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:33,332 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:33,332 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:33,494 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:33,494 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25226
+INFO 2023-10-05 19:56:48,318 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 19:56:48,318 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+WARNING 2023-10-05 19:56:48,328 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 404 1831
+WARNING 2023-10-05 19:56:48,328 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 404 1831
+INFO 2023-10-05 19:56:49,328 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 19:56:49,328 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+WARNING 2023-10-05 19:56:49,336 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 404 1831
+WARNING 2023-10-05 19:56:49,336 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 404 1831
+INFO 2023-10-05 19:56:50,065 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 19:56:50,065 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+WARNING 2023-10-05 19:56:50,072 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 404 1831
+WARNING 2023-10-05 19:56:50,072 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 404 1831
+INFO 2023-10-05 19:57:40,672 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 19:57:40,672 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 19:57:40,680 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 200 436
+INFO 2023-10-05 19:57:40,680 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 200 436
+INFO 2023-10-05 19:57:50,594 basehttp "GET / HTTP/1.1" 200 13067
+INFO 2023-10-05 19:57:50,594 basehttp "GET / HTTP/1.1" 200 13067
+INFO 2023-10-05 19:57:50,600 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:57:50,600 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:57:53,418 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 19:57:53,418 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 19:57:53,424 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 304 0
+INFO 2023-10-05 19:57:53,424 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:02:13,532 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 20:02:13,532 basehttp "GET /privacy_policy/ HTTP/1.1" 200 25228
+INFO 2023-10-05 20:02:13,538 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:02:13,538 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:02:13,538 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:02:13,538 basehttp "GET /static/main/privacy_policyy.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:02:16,391 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:02:16,391 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:02:16,398 basehttp "GET /static/main/news.css HTTP/1.1" 200 1670
+INFO 2023-10-05 20:02:16,398 basehttp "GET /static/main/news.css HTTP/1.1" 200 1670
+INFO 2023-10-05 20:02:36,851 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:02:36,851 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:03:50,601 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 20:03:50,601 basehttp "GET /reviews/ HTTP/1.1" 200 11531
+INFO 2023-10-05 20:04:01,542 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:04:01,542 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:04:01,550 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:04:01,550 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:07:25,555 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:07:25,555 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:07:25,561 basehttp "GET /static/main/news.css HTTP/1.1" 200 1667
+INFO 2023-10-05 20:07:25,561 basehttp "GET /static/main/news.css HTTP/1.1" 200 1667
+INFO 2023-10-05 20:07:34,308 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:07:34,308 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:07:34,315 basehttp "GET /static/main/news.css HTTP/1.1" 200 1667
+INFO 2023-10-05 20:07:34,315 basehttp "GET /static/main/news.css HTTP/1.1" 200 1667
+INFO 2023-10-05 20:09:30,203 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:09:30,203 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:09:30,210 basehttp "GET /static/main/news.css HTTP/1.1" 200 1695
+INFO 2023-10-05 20:09:30,210 basehttp "GET /static/main/news.css HTTP/1.1" 200 1695
+INFO 2023-10-05 20:09:42,965 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:09:42,965 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:09:42,971 basehttp "GET /static/main/news.css HTTP/1.1" 200 1696
+INFO 2023-10-05 20:09:42,971 basehttp "GET /static/main/news.css HTTP/1.1" 200 1696
+INFO 2023-10-05 20:14:03,535 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:03,535 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:03,542 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:14:03,542 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:14:03,542 basehttp "GET /static/main/news.css HTTP/1.1" 200 1694
+INFO 2023-10-05 20:14:03,542 basehttp "GET /static/main/news.css HTTP/1.1" 200 1694
+INFO 2023-10-05 20:14:20,740 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:20,740 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:20,746 basehttp "GET /static/main/news.css HTTP/1.1" 200 1696
+INFO 2023-10-05 20:14:20,746 basehttp "GET /static/main/news.css HTTP/1.1" 200 1696
+INFO 2023-10-05 20:14:21,780 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:21,780 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:21,787 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:14:21,787 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:14:22,385 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:22,385 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:22,391 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:14:22,391 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:14:58,440 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:58,440 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:14:58,446 basehttp "GET /static/main/news.css HTTP/1.1" 200 1564
+INFO 2023-10-05 20:14:58,446 basehttp "GET /static/main/news.css HTTP/1.1" 200 1564
+INFO 2023-10-05 20:15:51,645 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:15:51,645 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:15:51,653 basehttp "GET /static/main/news.css HTTP/1.1" 200 1586
+INFO 2023-10-05 20:15:51,653 basehttp "GET /static/main/news.css HTTP/1.1" 200 1586
+INFO 2023-10-05 20:17:17,403 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:17:17,403 basehttp "GET /news/ HTTP/1.1" 200 21749
+INFO 2023-10-05 20:17:17,409 basehttp "GET /static/main/news.css HTTP/1.1" 200 1756
+INFO 2023-10-05 20:17:17,409 basehttp "GET /static/main/news.css HTTP/1.1" 200 1756
+INFO 2023-10-05 20:27:43,048 basehttp "GET /news/ HTTP/1.1" 200 21879
+INFO 2023-10-05 20:27:43,048 basehttp "GET /news/ HTTP/1.1" 200 21879
+INFO 2023-10-05 20:27:43,055 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:27:43,055 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:27:43,055 basehttp "GET /static/main/news.css HTTP/1.1" 200 1801
+INFO 2023-10-05 20:27:43,055 basehttp "GET /static/main/news.css HTTP/1.1" 200 1801
+ERROR 2023-10-05 20:27:59,271 log Internal Server Error: /admin
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:27:59,271 log Internal Server Error: /admin
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:27:59,271 basehttp "GET /admin HTTP/1.1" 500 66338
+ERROR 2023-10-05 20:27:59,271 basehttp "GET /admin HTTP/1.1" 500 66338
+ERROR 2023-10-05 20:27:59,326 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:27:59,326 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:27:59,327 basehttp "GET /favicon.ico HTTP/1.1" 500 66207
+ERROR 2023-10-05 20:27:59,327 basehttp "GET /favicon.ico HTTP/1.1" 500 66207
+INFO 2023-10-05 20:28:02,543 basehttp "GET /admin/ HTTP/1.1" 200 12198
+INFO 2023-10-05 20:28:02,543 basehttp "GET /admin/ HTTP/1.1" 200 12198
+INFO 2023-10-05 20:28:02,553 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO 2023-10-05 20:28:02,553 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO 2023-10-05 20:28:02,553 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,553 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,554 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO 2023-10-05 20:28:02,554 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO 2023-10-05 20:28:02,555 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,555 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,556 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,556 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,556 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,556 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,597 basehttp "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,597 basehttp "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,645 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,645 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,645 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,645 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,645 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,645 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:02,672 basehttp "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2023-10-05 20:28:02,672 basehttp "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2023-10-05 20:28:02,673 basehttp "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2023-10-05 20:28:02,673 basehttp "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2023-10-05 20:28:02,673 basehttp "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2023-10-05 20:28:02,673 basehttp "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+ERROR 2023-10-05 20:28:02,708 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:28:02,708 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:28:02,709 basehttp "GET /favicon.ico HTTP/1.1" 500 66208
+ERROR 2023-10-05 20:28:02,709 basehttp "GET /favicon.ico HTTP/1.1" 500 66208
+INFO 2023-10-05 20:28:04,976 basehttp "GET /admin/main/news/ HTTP/1.1" 200 22237
+INFO 2023-10-05 20:28:04,976 basehttp "GET /admin/main/news/ HTTP/1.1" 200 22237
+INFO 2023-10-05 20:28:04,986 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-10-05 20:28:04,986 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-10-05 20:28:04,986 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2023-10-05 20:28:04,986 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2023-10-05 20:28:04,989 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO 2023-10-05 20:28:04,989 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO 2023-10-05 20:28:04,989 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:04,989 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:04,992 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:04,992 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:04,992 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:28:04,992 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:28:04,993 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2023-10-05 20:28:04,993 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2023-10-05 20:28:04,993 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-10-05 20:28:04,993 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-10-05 20:28:04,994 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:04,994 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:05,031 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:05,031 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:05,041 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:05,041 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:05,084 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:05,084 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+ERROR 2023-10-05 20:28:05,151 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:28:05,151 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:28:05,152 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+ERROR 2023-10-05 20:28:05,152 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+INFO 2023-10-05 20:28:08,400 basehttp "GET /admin/main/news/5/change/ HTTP/1.1" 200 16621
+INFO 2023-10-05 20:28:08,400 basehttp "GET /admin/main/news/5/change/ HTTP/1.1" 200 16621
+INFO 2023-10-05 20:28:08,411 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:08,411 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:08,411 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+INFO 2023-10-05 20:28:08,411 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+INFO 2023-10-05 20:28:08,414 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:28:08,414 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:28:08,416 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:08,416 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:08,462 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO 2023-10-05 20:28:08,462 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO 2023-10-05 20:28:08,521 basehttp "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:28:08,521 basehttp "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 304 0
+ERROR 2023-10-05 20:28:08,584 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:28:08,584 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:28:08,584 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+ERROR 2023-10-05 20:28:08,584 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+INFO 2023-10-05 20:28:42,722 autoreload /home/arsenii/IGI_LABS/LAB_04/AutoShow/main/models.py changed, reloading.
+INFO 2023-10-05 20:28:42,722 autoreload /home/arsenii/IGI_LABS/LAB_04/AutoShow/main/models.py changed, reloading.
+INFO 2023-10-05 20:28:43,046 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:28:43,046 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:29:38,400 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:29:38,400 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:29:40,469 basehttp "GET /admin/main/news/5/change/ HTTP/1.1" 200 16622
+INFO 2023-10-05 20:29:40,469 basehttp "GET /admin/main/news/5/change/ HTTP/1.1" 200 16622
+INFO 2023-10-05 20:29:40,488 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:29:40,488 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:29:40,625 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:29:40,625 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:29:40,625 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+ERROR 2023-10-05 20:29:40,625 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+INFO 2023-10-05 20:29:54,747 basehttp "POST /admin/main/news/5/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:29:54,747 basehttp "POST /admin/main/news/5/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:29:54,766 basehttp "GET /admin/main/news/ HTTP/1.1" 200 23933
+INFO 2023-10-05 20:29:54,766 basehttp "GET /admin/main/news/ HTTP/1.1" 200 23933
+INFO 2023-10-05 20:29:54,818 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:29:54,818 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:29:54,879 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2023-10-05 20:29:54,879 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+ERROR 2023-10-05 20:29:54,942 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:29:54,942 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:29:54,943 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+ERROR 2023-10-05 20:29:54,943 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+INFO 2023-10-05 20:29:57,961 basehttp "GET /admin/main/news/4/change/ HTTP/1.1" 200 16409
+INFO 2023-10-05 20:29:57,961 basehttp "GET /admin/main/news/4/change/ HTTP/1.1" 200 16409
+INFO 2023-10-05 20:29:58,013 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:29:58,013 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:29:58,093 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:29:58,093 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:29:58,094 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+ERROR 2023-10-05 20:29:58,094 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+INFO 2023-10-05 20:30:15,224 basehttp "GET / HTTP/1.1" 200 13090
+INFO 2023-10-05 20:30:15,224 basehttp "GET / HTTP/1.1" 200 13090
+INFO 2023-10-05 20:30:15,250 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:30:15,250 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:30:18,569 basehttp "GET /admin/main/news/4/change/ HTTP/1.1" 200 16409
+INFO 2023-10-05 20:30:18,569 basehttp "GET /admin/main/news/4/change/ HTTP/1.1" 200 16409
+INFO 2023-10-05 20:30:18,586 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:18,586 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:18,707 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:18,707 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:18,708 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+ERROR 2023-10-05 20:30:18,708 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+INFO 2023-10-05 20:30:29,380 basehttp "POST /admin/main/news/4/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:29,380 basehttp "POST /admin/main/news/4/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:29,392 basehttp "GET /admin/main/news/ HTTP/1.1" 200 24041
+INFO 2023-10-05 20:30:29,392 basehttp "GET /admin/main/news/ HTTP/1.1" 200 24041
+INFO 2023-10-05 20:30:29,449 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:29,449 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:29,533 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:29,533 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:29,533 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+ERROR 2023-10-05 20:30:29,533 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+INFO 2023-10-05 20:30:31,157 basehttp "GET /admin/main/news/3/change/ HTTP/1.1" 200 20086
+INFO 2023-10-05 20:30:31,157 basehttp "GET /admin/main/news/3/change/ HTTP/1.1" 200 20086
+INFO 2023-10-05 20:30:31,214 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:31,214 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:31,310 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:31,310 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:31,310 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+ERROR 2023-10-05 20:30:31,310 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+INFO 2023-10-05 20:30:37,395 basehttp "POST /admin/main/news/3/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:37,395 basehttp "POST /admin/main/news/3/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:37,407 basehttp "GET /admin/main/news/ HTTP/1.1" 200 25365
+INFO 2023-10-05 20:30:37,407 basehttp "GET /admin/main/news/ HTTP/1.1" 200 25365
+INFO 2023-10-05 20:30:37,463 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:37,463 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:37,555 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:37,555 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:37,555 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+ERROR 2023-10-05 20:30:37,555 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+INFO 2023-10-05 20:30:39,377 basehttp "GET /admin/main/news/2/change/ HTTP/1.1" 200 19592
+INFO 2023-10-05 20:30:39,377 basehttp "GET /admin/main/news/2/change/ HTTP/1.1" 200 19592
+INFO 2023-10-05 20:30:39,387 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:39,387 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:39,493 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:39,493 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:39,493 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+ERROR 2023-10-05 20:30:39,493 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+INFO 2023-10-05 20:30:46,190 basehttp "POST /admin/main/news/2/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:46,190 basehttp "POST /admin/main/news/2/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:46,203 basehttp "GET /admin/main/news/ HTTP/1.1" 200 25401
+INFO 2023-10-05 20:30:46,203 basehttp "GET /admin/main/news/ HTTP/1.1" 200 25401
+INFO 2023-10-05 20:30:46,258 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:46,258 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:46,351 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:46,351 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:46,351 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+ERROR 2023-10-05 20:30:46,351 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+INFO 2023-10-05 20:30:48,715 basehttp "GET /admin/main/news/1/change/ HTTP/1.1" 200 17726
+INFO 2023-10-05 20:30:48,715 basehttp "GET /admin/main/news/1/change/ HTTP/1.1" 200 17726
+INFO 2023-10-05 20:30:48,726 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:48,726 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:48,801 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:48,801 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:48,802 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+ERROR 2023-10-05 20:30:48,802 basehttp "GET /favicon.ico HTTP/1.1" 500 66227
+INFO 2023-10-05 20:30:56,143 basehttp "POST /admin/main/news/1/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:56,143 basehttp "POST /admin/main/news/1/change/ HTTP/1.1" 302 0
+INFO 2023-10-05 20:30:56,156 basehttp "GET /admin/main/news/ HTTP/1.1" 200 25035
+INFO 2023-10-05 20:30:56,156 basehttp "GET /admin/main/news/ HTTP/1.1" 200 25035
+INFO 2023-10-05 20:30:56,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-05 20:30:56,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-05 20:30:56,296 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:56,296 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-05 20:30:56,297 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+ERROR 2023-10-05 20:30:56,297 basehttp "GET /favicon.ico HTTP/1.1" 500 66218
+INFO 2023-10-05 20:31:02,384 basehttp "GET / HTTP/1.1" 200 13338
+INFO 2023-10-05 20:31:02,384 basehttp "GET / HTTP/1.1" 200 13338
+INFO 2023-10-05 20:31:31,369 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:31:31,369 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:31:31,378 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:31:31,378 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:32:19,287 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:19,287 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:19,295 basehttp "GET /static/main/news.css HTTP/1.1" 200 1801
+INFO 2023-10-05 20:32:19,295 basehttp "GET /static/main/news.css HTTP/1.1" 200 1801
+INFO 2023-10-05 20:32:19,887 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:19,887 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:19,893 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:32:19,893 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:32:20,085 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:20,085 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:20,090 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:32:20,090 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:32:20,261 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:20,261 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:20,436 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:20,436 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:20,442 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:32:20,442 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:32:36,129 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:36,129 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:32:36,136 basehttp "GET /static/main/news.css HTTP/1.1" 200 1556
+INFO 2023-10-05 20:32:36,136 basehttp "GET /static/main/news.css HTTP/1.1" 200 1556
+INFO 2023-10-05 20:33:14,561 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:33:14,561 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:33:14,569 basehttp "GET /static/main/news.css HTTP/1.1" 200 1801
+INFO 2023-10-05 20:33:14,569 basehttp "GET /static/main/news.css HTTP/1.1" 200 1801
+INFO 2023-10-05 20:34:48,350 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:34:48,350 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:34:48,356 basehttp "GET /static/main/news.css HTTP/1.1" 200 1780
+INFO 2023-10-05 20:34:48,356 basehttp "GET /static/main/news.css HTTP/1.1" 200 1780
+INFO 2023-10-05 20:34:49,003 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:34:49,003 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:34:49,009 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:34:49,009 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:34:49,446 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:34:49,446 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:08,894 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:08,894 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:08,899 basehttp "GET /static/main/news.css HTTP/1.1" 200 1563
+INFO 2023-10-05 20:35:08,899 basehttp "GET /static/main/news.css HTTP/1.1" 200 1563
+INFO 2023-10-05 20:35:09,482 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:09,482 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:09,489 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:35:09,489 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:35:09,735 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:09,735 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:09,740 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:35:09,740 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:35:24,799 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:24,799 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:35:24,806 basehttp "GET /static/main/news.css HTTP/1.1" 200 1585
+INFO 2023-10-05 20:35:24,806 basehttp "GET /static/main/news.css HTTP/1.1" 200 1585
+INFO 2023-10-05 20:36:30,493 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:36:30,493 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:36:35,040 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:36:35,040 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:36:35,047 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:36:35,047 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:36:54,590 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:36:54,590 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:36:54,598 basehttp "GET /static/main/news.css HTTP/1.1" 200 1451
+INFO 2023-10-05 20:36:54,598 basehttp "GET /static/main/news.css HTTP/1.1" 200 1451
+INFO 2023-10-05 20:39:13,373 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:39:13,373 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:39:13,379 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:39:13,379 basehttp "GET /static/main/base_page.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:39:13,379 basehttp "GET /static/main/news.css HTTP/1.1" 200 1342
+INFO 2023-10-05 20:39:13,379 basehttp "GET /static/main/news.css HTTP/1.1" 200 1342
+INFO 2023-10-05 20:40:31,743 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:40:31,743 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:40:31,749 basehttp "GET /static/main/news.css HTTP/1.1" 200 1295
+INFO 2023-10-05 20:40:31,749 basehttp "GET /static/main/news.css HTTP/1.1" 200 1295
+INFO 2023-10-05 20:40:41,946 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:40:41,946 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:44:13,984 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:13,984 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:13,990 basehttp "GET /static/main/news.css HTTP/1.1" 200 650
+INFO 2023-10-05 20:44:13,990 basehttp "GET /static/main/news.css HTTP/1.1" 200 650
+INFO 2023-10-05 20:44:14,838 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:14,838 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:16,103 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:16,103 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:16,108 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:44:16,108 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:44:16,653 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:16,653 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:16,940 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:16,940 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:17,231 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:17,231 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:17,616 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:17,616 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:18,504 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:18,504 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:18,509 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:44:18,509 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:44:39,233 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:39,233 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:39,238 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:44:39,238 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:44:39,871 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:39,871 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:40,070 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:40,070 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:40,250 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:40,250 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:40,430 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:44:40,430 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:45:00,232 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:45:00,232 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:45:02,446 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:45:02,446 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:45:02,454 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:45:02,454 basehttp "GET /static/main/news.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:45:03,026 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:45:03,026 basehttp "GET /news/ HTTP/1.1" 200 22775
+INFO 2023-10-05 20:45:05,610 basehttp "GET / HTTP/1.1" 200 13335
+INFO 2023-10-05 20:45:05,610 basehttp "GET / HTTP/1.1" 200 13335
+INFO 2023-10-05 20:45:05,619 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:45:05,619 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:45:39,548 basehttp "GET / HTTP/1.1" 200 13326
+INFO 2023-10-05 20:45:39,548 basehttp "GET / HTTP/1.1" 200 13326
+INFO 2023-10-05 20:46:28,890 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:46:28,890 autoreload Watching for file changes with StatReloader
+INFO 2023-10-05 20:46:31,425 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 20:46:31,425 basehttp "GET /cars HTTP/1.1" 200 13584
+INFO 2023-10-05 20:46:34,059 basehttp "GET / HTTP/1.1" 200 13350
+INFO 2023-10-05 20:46:34,059 basehttp "GET / HTTP/1.1" 200 13350
+INFO 2023-10-05 20:47:01,699 basehttp "GET / HTTP/1.1" 200 13324
+INFO 2023-10-05 20:47:01,699 basehttp "GET / HTTP/1.1" 200 13324
+INFO 2023-10-05 20:47:25,346 basehttp "GET / HTTP/1.1" 200 13340
+INFO 2023-10-05 20:47:25,346 basehttp "GET / HTTP/1.1" 200 13340
+INFO 2023-10-05 20:47:40,098 basehttp "GET / HTTP/1.1" 200 13341
+INFO 2023-10-05 20:47:40,098 basehttp "GET / HTTP/1.1" 200 13341
+WARNING 2023-10-05 20:47:40,107 basehttp "GET /static/main/baspage.css HTTP/1.1" 404 1807
+WARNING 2023-10-05 20:47:40,107 basehttp "GET /static/main/baspage.css HTTP/1.1" 404 1807
+INFO 2023-10-05 20:47:47,890 basehttp "GET / HTTP/1.1" 200 13352
+INFO 2023-10-05 20:47:47,890 basehttp "GET / HTTP/1.1" 200 13352
+INFO 2023-10-05 20:48:08,858 basehttp "GET / HTTP/1.1" 200 13350
+INFO 2023-10-05 20:48:08,858 basehttp "GET / HTTP/1.1" 200 13350
+INFO 2023-10-05 20:48:08,868 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:48:08,868 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:48:58,862 basehttp "GET / HTTP/1.1" 200 13382
+INFO 2023-10-05 20:48:58,862 basehttp "GET / HTTP/1.1" 200 13382
+INFO 2023-10-05 20:48:58,868 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:48:58,868 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:49:15,011 basehttp "GET / HTTP/1.1" 200 13343
+INFO 2023-10-05 20:49:15,011 basehttp "GET / HTTP/1.1" 200 13343
+INFO 2023-10-05 20:49:15,018 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:49:15,018 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:51:58,446 basehttp "GET / HTTP/1.1" 200 13397
+INFO 2023-10-05 20:51:58,446 basehttp "GET / HTTP/1.1" 200 13397
+INFO 2023-10-05 20:51:58,451 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:51:58,451 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:53:32,961 basehttp "GET / HTTP/1.1" 200 13359
+INFO 2023-10-05 20:53:32,961 basehttp "GET / HTTP/1.1" 200 13359
+INFO 2023-10-05 20:53:32,967 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:53:32,967 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:54:25,813 basehttp "GET / HTTP/1.1" 200 13363
+INFO 2023-10-05 20:54:25,813 basehttp "GET / HTTP/1.1" 200 13363
+INFO 2023-10-05 20:54:25,819 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:54:25,819 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3910
+INFO 2023-10-05 20:59:02,569 basehttp "GET /about/ HTTP/1.1" 200 18650
+INFO 2023-10-05 20:59:02,569 basehttp "GET /about/ HTTP/1.1" 200 18650
+INFO 2023-10-05 20:59:02,577 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 20:59:02,577 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:02:22,067 basehttp "GET /about/ HTTP/1.1" 200 18666
+INFO 2023-10-05 21:02:22,067 basehttp "GET /about/ HTTP/1.1" 200 18666
+INFO 2023-10-05 21:02:22,073 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:02:22,073 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:02:25,126 basehttp "GET /about/ HTTP/1.1" 200 18666
+INFO 2023-10-05 21:02:25,126 basehttp "GET /about/ HTTP/1.1" 200 18666
+INFO 2023-10-05 21:02:25,607 basehttp "GET /about/ HTTP/1.1" 200 18666
+INFO 2023-10-05 21:02:25,607 basehttp "GET /about/ HTTP/1.1" 200 18666
+INFO 2023-10-05 21:03:01,572 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:03:01,572 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:03:01,579 basehttp "GET /static/main/about.css HTTP/1.1" 200 54
+INFO 2023-10-05 21:03:01,579 basehttp "GET /static/main/about.css HTTP/1.1" 200 54
+INFO 2023-10-05 21:03:50,841 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:03:50,841 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:03:50,847 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:03:50,847 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:03:50,847 basehttp "GET /static/main/about.css HTTP/1.1" 200 186
+INFO 2023-10-05 21:03:50,847 basehttp "GET /static/main/about.css HTTP/1.1" 200 186
+INFO 2023-10-05 21:04:31,321 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:04:31,321 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:04:31,327 basehttp "GET /static/main/about.css HTTP/1.1" 200 152
+INFO 2023-10-05 21:04:31,327 basehttp "GET /static/main/about.css HTTP/1.1" 200 152
+INFO 2023-10-05 21:06:35,459 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:06:35,459 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:06:35,466 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:06:35,466 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:06:35,466 basehttp "GET /static/main/about.css HTTP/1.1" 200 175
+INFO 2023-10-05 21:06:35,466 basehttp "GET /static/main/about.css HTTP/1.1" 200 175
+INFO 2023-10-05 21:07:53,193 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:07:53,193 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:07:53,200 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:07:53,200 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:07:53,201 basehttp "GET /static/main/about.css HTTP/1.1" 200 599
+INFO 2023-10-05 21:07:53,201 basehttp "GET /static/main/about.css HTTP/1.1" 200 599
+INFO 2023-10-05 21:07:55,104 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:07:55,104 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:07:55,110 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:07:55,110 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:30,046 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:30,046 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:30,052 basehttp "GET /static/main/about.css HTTP/1.1" 200 1227
+INFO 2023-10-05 21:08:30,052 basehttp "GET /static/main/about.css HTTP/1.1" 200 1227
+INFO 2023-10-05 21:08:30,709 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:30,709 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:30,716 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:30,716 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:31,956 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:31,956 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:31,962 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:31,962 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:32,221 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,221 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,227 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:32,227 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:32,413 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,413 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,588 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,588 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,773 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,773 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:32,780 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:32,780 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:08:43,255 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:43,255 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:08:43,261 basehttp "GET /static/main/about.css HTTP/1.1" 200 1106
+INFO 2023-10-05 21:08:43,261 basehttp "GET /static/main/about.css HTTP/1.1" 200 1106
+INFO 2023-10-05 21:10:04,168 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:04,168 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:04,176 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:04,176 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:04,176 basehttp "GET /static/main/about.css HTTP/1.1" 200 310
+INFO 2023-10-05 21:10:04,176 basehttp "GET /static/main/about.css HTTP/1.1" 200 310
+INFO 2023-10-05 21:10:06,345 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,345 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,351 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:06,351 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:06,532 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,532 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,701 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,701 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,708 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:06,708 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:06,876 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,876 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:06,882 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:06,882 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:07,045 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:07,045 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:07,053 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:07,053 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:07,220 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:07,220 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:07,405 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:07,405 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:26,782 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:26,782 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:26,789 basehttp "GET /static/main/about.css HTTP/1.1" 200 352
+INFO 2023-10-05 21:10:26,789 basehttp "GET /static/main/about.css HTTP/1.1" 200 352
+INFO 2023-10-05 21:10:27,356 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:27,356 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:27,363 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:27,363 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:27,549 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:27,549 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:27,556 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:27,556 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:27,732 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:27,732 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:27,738 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:27,738 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:28,148 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:28,148 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:10:28,155 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:28,155 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:34,675 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:10:34,675 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:11:04,127 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:11:04,127 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:11:04,134 basehttp "GET /static/main/about.css HTTP/1.1" 200 393
+INFO 2023-10-05 21:11:04,134 basehttp "GET /static/main/about.css HTTP/1.1" 200 393
+INFO 2023-10-05 21:12:09,771 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:12:09,771 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:12:09,779 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:12:09,779 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:12:09,779 basehttp "GET /static/main/about.css HTTP/1.1" 200 227
+INFO 2023-10-05 21:12:09,779 basehttp "GET /static/main/about.css HTTP/1.1" 200 227
+INFO 2023-10-05 21:13:18,734 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:13:18,734 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:13:18,741 basehttp "GET /static/main/about.css HTTP/1.1" 200 93
+INFO 2023-10-05 21:13:18,741 basehttp "GET /static/main/about.css HTTP/1.1" 200 93
+INFO 2023-10-05 21:13:44,961 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:13:44,961 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:13:44,968 basehttp "GET /static/main/about.css HTTP/1.1" 200 365
+INFO 2023-10-05 21:13:44,968 basehttp "GET /static/main/about.css HTTP/1.1" 200 365
+INFO 2023-10-05 21:20:10,043 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:20:10,043 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:20:10,049 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:20:10,049 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:20:10,050 basehttp "GET /static/main/about.css HTTP/1.1" 200 792
+INFO 2023-10-05 21:20:10,050 basehttp "GET /static/main/about.css HTTP/1.1" 200 792
+INFO 2023-10-05 21:20:10,722 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:20:10,722 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:20:10,728 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:20:10,728 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:20:26,605 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:20:26,605 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:20:26,612 basehttp "GET /static/main/about.css HTTP/1.1" 200 767
+INFO 2023-10-05 21:20:26,612 basehttp "GET /static/main/about.css HTTP/1.1" 200 767
+INFO 2023-10-05 21:21:42,369 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:21:42,369 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:21:42,376 basehttp "GET /static/main/about.css HTTP/1.1" 200 678
+INFO 2023-10-05 21:21:42,376 basehttp "GET /static/main/about.css HTTP/1.1" 200 678
+INFO 2023-10-05 21:22:29,642 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:22:29,642 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:22:29,648 basehttp "GET /static/main/about.css HTTP/1.1" 200 715
+INFO 2023-10-05 21:22:29,648 basehttp "GET /static/main/about.css HTTP/1.1" 200 715
+INFO 2023-10-05 21:23:48,714 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:23:48,714 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:23:48,721 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:23:48,721 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:23:48,721 basehttp "GET /static/main/about.css HTTP/1.1" 200 676
+INFO 2023-10-05 21:23:48,721 basehttp "GET /static/main/about.css HTTP/1.1" 200 676
+INFO 2023-10-05 21:24:25,961 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:24:25,961 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:26:23,265 basehttp "GET /cars HTTP/1.1" 200 13616
+INFO 2023-10-05 21:26:23,265 basehttp "GET /cars HTTP/1.1" 200 13616
+INFO 2023-10-05 21:26:25,834 basehttp "GET / HTTP/1.1" 200 13371
+INFO 2023-10-05 21:26:25,834 basehttp "GET / HTTP/1.1" 200 13371
+INFO 2023-10-05 21:26:25,842 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:26:25,842 basehttp "GET /static/main/index.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:43,650 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:27:43,650 basehttp "GET /about/ HTTP/1.1" 200 18789
+INFO 2023-10-05 21:27:43,658 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:43,658 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:43,658 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:43,658 basehttp "GET /static/main/about.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:45,006 basehttp "GET /contacts/ HTTP/1.1" 200 15906
+INFO 2023-10-05 21:27:45,006 basehttp "GET /contacts/ HTTP/1.1" 200 15906
+INFO 2023-10-05 21:27:45,016 basehttp "GET /static/main/contacts.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:45,016 basehttp "GET /static/main/contacts.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:51,874 basehttp "GET /reviews/ HTTP/1.1" 200 11563
+INFO 2023-10-05 21:27:51,874 basehttp "GET /reviews/ HTTP/1.1" 200 11563
+INFO 2023-10-05 21:27:53,859 basehttp "GET /cars HTTP/1.1" 200 13616
+INFO 2023-10-05 21:27:53,859 basehttp "GET /cars HTTP/1.1" 200 13616
+INFO 2023-10-05 21:27:57,045 basehttp "GET / HTTP/1.1" 200 13374
+INFO 2023-10-05 21:27:57,045 basehttp "GET / HTTP/1.1" 200 13374
+INFO 2023-10-05 21:27:59,371 basehttp "GET /FAQ/ HTTP/1.1" 200 15291
+INFO 2023-10-05 21:27:59,371 basehttp "GET /FAQ/ HTTP/1.1" 200 15291
+INFO 2023-10-05 21:27:59,382 basehttp "GET /static/main/FAQ.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:27:59,382 basehttp "GET /static/main/FAQ.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:28:03,214 basehttp "GET / HTTP/1.1" 200 13355
+INFO 2023-10-05 21:28:03,214 basehttp "GET / HTTP/1.1" 200 13355
+INFO 2023-10-05 21:28:04,207 basehttp "GET /cars HTTP/1.1" 200 13616
+INFO 2023-10-05 21:28:04,207 basehttp "GET /cars HTTP/1.1" 200 13616
+INFO 2023-10-05 21:30:20,110 basehttp "GET /cars HTTP/1.1" 200 13697
+INFO 2023-10-05 21:30:20,110 basehttp "GET /cars HTTP/1.1" 200 13697
+INFO 2023-10-05 21:35:33,852 basehttp "GET /cars HTTP/1.1" 200 13697
+INFO 2023-10-05 21:35:33,852 basehttp "GET /cars HTTP/1.1" 200 13697
+INFO 2023-10-05 21:35:33,859 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3016
+INFO 2023-10-05 21:35:33,859 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3016
+INFO 2023-10-05 21:35:54,183 basehttp "GET /cars HTTP/1.1" 200 13697
+INFO 2023-10-05 21:35:54,183 basehttp "GET /cars HTTP/1.1" 200 13697
+INFO 2023-10-05 21:35:54,190 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3017
+INFO 2023-10-05 21:35:54,190 basehttp "GET /static/main/base_page_.css HTTP/1.1" 200 3017
+INFO 2023-10-05 21:39:33,702 basehttp "GET /cars HTTP/1.1" 200 13745
+INFO 2023-10-05 21:39:33,702 basehttp "GET /cars HTTP/1.1" 200 13745
+INFO 2023-10-05 21:39:33,714 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:39:33,714 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:39:33,714 basehttp "GET /static/main/cars.css HTTP/1.1" 200 371
+INFO 2023-10-05 21:39:33,714 basehttp "GET /static/main/cars.css HTTP/1.1" 200 371
+INFO 2023-10-05 21:39:39,791 basehttp "GET /cars HTTP/1.1" 200 13745
+INFO 2023-10-05 21:39:39,791 basehttp "GET /cars HTTP/1.1" 200 13745
+INFO 2023-10-05 21:39:39,797 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:39:39,797 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:39:40,697 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13759
+INFO 2023-10-05 21:39:40,697 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13759
+INFO 2023-10-05 21:39:42,235 basehttp "GET /cars?carcass_type=Sedan HTTP/1.1" 200 12754
+INFO 2023-10-05 21:39:42,235 basehttp "GET /cars?carcass_type=Sedan HTTP/1.1" 200 12754
+INFO 2023-10-05 21:39:45,561 basehttp "GET /cars?carcass_type=Liftback HTTP/1.1" 200 12479
+INFO 2023-10-05 21:39:45,561 basehttp "GET /cars?carcass_type=Liftback HTTP/1.1" 200 12479
+INFO 2023-10-05 21:39:45,569 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:39:45,569 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:39:48,188 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13759
+INFO 2023-10-05 21:39:48,188 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13759
+INFO 2023-10-05 21:40:24,085 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13759
+INFO 2023-10-05 21:40:24,085 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13759
+INFO 2023-10-05 21:40:24,092 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:40:24,092 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:40:24,093 basehttp "GET /static/main/cars.css HTTP/1.1" 200 436
+INFO 2023-10-05 21:40:24,093 basehttp "GET /static/main/cars.css HTTP/1.1" 200 436
+INFO 2023-10-05 21:41:59,041 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:41:59,041 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:41:59,048 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:41:59,048 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:41:59,049 basehttp "GET /static/main/cars.css HTTP/1.1" 200 432
+INFO 2023-10-05 21:41:59,049 basehttp "GET /static/main/cars.css HTTP/1.1" 200 432
+INFO 2023-10-05 21:41:59,864 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:41:59,864 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:41:59,871 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:41:59,871 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:42:15,587 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:42:15,587 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:42:15,594 basehttp "GET /static/main/cars.css HTTP/1.1" 200 0
+INFO 2023-10-05 21:42:15,594 basehttp "GET /static/main/cars.css HTTP/1.1" 200 0
+INFO 2023-10-05 21:42:33,808 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:42:33,808 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:42:33,815 basehttp "GET /static/main/cars.css HTTP/1.1" 200 432
+INFO 2023-10-05 21:42:33,815 basehttp "GET /static/main/cars.css HTTP/1.1" 200 432
+INFO 2023-10-05 21:43:18,092 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:43:18,092 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:43:18,099 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:43:18,099 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:43:18,099 basehttp "GET /static/main/cars.css HTTP/1.1" 200 425
+INFO 2023-10-05 21:43:18,099 basehttp "GET /static/main/cars.css HTTP/1.1" 200 425
+INFO 2023-10-05 21:43:18,825 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:43:18,825 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:43:18,832 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:43:18,832 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:43:40,382 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:43:40,382 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:43:40,389 basehttp "GET /static/main/cars.css HTTP/1.1" 200 402
+INFO 2023-10-05 21:43:40,389 basehttp "GET /static/main/cars.css HTTP/1.1" 200 402
+INFO 2023-10-05 21:43:45,283 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:43:45,283 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:44:39,613 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:44:39,613 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:44:39,621 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:44:39,621 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:44:39,621 basehttp "GET /static/main/cars.css HTTP/1.1" 200 399
+INFO 2023-10-05 21:44:39,621 basehttp "GET /static/main/cars.css HTTP/1.1" 200 399
+INFO 2023-10-05 21:44:40,438 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:44:40,438 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:44:40,444 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:44:40,444 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:46:01,834 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:46:01,834 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:46:01,842 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:46:01,842 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:46:01,842 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:46:01,842 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:47:21,509 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:47:21,509 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 13929
+INFO 2023-10-05 21:47:21,517 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:47:21,517 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:47:21,517 basehttp "GET /static/main/cars.css HTTP/1.1" 200 405
+INFO 2023-10-05 21:47:21,517 basehttp "GET /static/main/cars.css HTTP/1.1" 200 405
+INFO 2023-10-05 21:48:33,326 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14167
+INFO 2023-10-05 21:48:33,326 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14167
+INFO 2023-10-05 21:48:33,334 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:48:33,334 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:48:33,334 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:48:33,334 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:50:02,679 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:50:02,679 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:50:02,687 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:50:02,687 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:50:02,687 basehttp "GET /static/main/cars.css HTTP/1.1" 200 411
+INFO 2023-10-05 21:50:02,687 basehttp "GET /static/main/cars.css HTTP/1.1" 200 411
+INFO 2023-10-05 21:50:14,765 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:50:14,765 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:50:14,772 basehttp "GET /static/main/cars.css HTTP/1.1" 200 423
+INFO 2023-10-05 21:50:14,772 basehttp "GET /static/main/cars.css HTTP/1.1" 200 423
+INFO 2023-10-05 21:51:11,549 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:51:11,549 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:51:11,556 basehttp "GET /static/main/cars.css HTTP/1.1" 200 397
+INFO 2023-10-05 21:51:11,556 basehttp "GET /static/main/cars.css HTTP/1.1" 200 397
+INFO 2023-10-05 21:51:28,626 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:51:28,626 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14180
+INFO 2023-10-05 21:51:28,634 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:51:28,634 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:51:28,635 basehttp "GET /static/main/cars.css HTTP/1.1" 200 395
+INFO 2023-10-05 21:51:28,635 basehttp "GET /static/main/cars.css HTTP/1.1" 200 395
+INFO 2023-10-05 21:52:34,642 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14167
+INFO 2023-10-05 21:52:34,642 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14167
+INFO 2023-10-05 21:52:34,651 basehttp "GET /static/main/cars.css HTTP/1.1" 200 393
+INFO 2023-10-05 21:52:34,651 basehttp "GET /static/main/cars.css HTTP/1.1" 200 393
+INFO 2023-10-05 21:53:06,682 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 21:53:06,682 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 21:53:06,690 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:53:06,690 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:53:06,690 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 21:53:06,690 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:03:52,729 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:03:52,729 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:03:52,736 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:03:52,736 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:03:52,737 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1789
+INFO 2023-10-05 22:03:52,737 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1789
+INFO 2023-10-05 22:04:16,457 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:04:16,457 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:04:16,464 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1632
+INFO 2023-10-05 22:04:16,464 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1632
+INFO 2023-10-05 22:04:38,172 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:04:38,172 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:04:38,178 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1771
+INFO 2023-10-05 22:04:38,178 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1771
+INFO 2023-10-05 22:05:36,962 basehttp "GET /cars?carcass_type=Universal HTTP/1.1" 200 12512
+INFO 2023-10-05 22:05:36,962 basehttp "GET /cars?carcass_type=Universal HTTP/1.1" 200 12512
+INFO 2023-10-05 22:05:36,970 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:05:36,970 basehttp "GET /static/main/cars.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:05:39,257 basehttp "GET /cars?carcass_type=Universal HTTP/1.1" 200 12512
+INFO 2023-10-05 22:05:39,257 basehttp "GET /cars?carcass_type=Universal HTTP/1.1" 200 12512
+INFO 2023-10-05 22:05:40,627 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:05:40,627 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:06:18,185 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:06:18,185 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:06:18,191 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1473
+INFO 2023-10-05 22:06:18,191 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1473
+INFO 2023-10-05 22:07:07,148 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:07,148 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:07,156 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:07:07,156 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:07:07,158 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:07:07,158 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:07:16,144 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:16,144 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:16,151 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:07:16,151 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:07:24,721 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:24,721 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:24,728 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:07:24,728 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:07:31,329 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:31,329 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:07:31,335 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:07:31,335 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1513
+INFO 2023-10-05 22:08:34,184 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:08:34,184 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:08:34,191 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1440
+INFO 2023-10-05 22:08:34,191 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1440
+INFO 2023-10-05 22:08:50,910 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:08:50,910 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:08:50,917 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1439
+INFO 2023-10-05 22:08:50,917 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1439
+INFO 2023-10-05 22:09:25,057 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:09:25,057 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:09:25,064 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1553
+INFO 2023-10-05 22:09:25,064 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1553
+INFO 2023-10-05 22:10:42,325 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:10:42,325 basehttp "GET /cars?carcass_type= HTTP/1.1" 200 14154
+INFO 2023-10-05 22:10:42,333 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:10:42,333 basehttp "GET /static/main/base_page_.css HTTP/1.1" 304 0
+INFO 2023-10-05 22:10:42,333 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1611
+INFO 2023-10-05 22:10:42,333 basehttp "GET /static/main/cars.css HTTP/1.1" 200 1611

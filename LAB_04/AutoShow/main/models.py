@@ -8,7 +8,7 @@ from statistics import mean, median
 # Create your models here.
 class News(models.Model):
     title = models.CharField(max_length=50, help_text="Enter title")
-    essence = models.CharField(max_length=50, help_text="Enter essence")
+    essence = models.CharField(max_length=350, help_text="Enter essence")
     photo = models.ImageField(upload_to='images', blank=True)
     description = models.TextField(help_text="Enter description")
 
