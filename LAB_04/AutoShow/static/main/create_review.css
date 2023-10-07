@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+input[type="text"],
+textarea {
+    font-family: 'Young Serif', serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+input[required],
+textarea[required] {
+    border:3px solid #ff0000; 
+}
+
+input:disabled,
+textarea:disabled {
+    background-color: #eee; 
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Pixelify Sans', cursive;
+
+}
+
+input[type="submit"]:hover {
+    background-color: grey;
+}

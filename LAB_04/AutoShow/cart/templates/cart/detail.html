@@ -8,11 +8,11 @@
         <thead>
         <tr>
             <th></th>
-            <th>Car||</th>
-            <th>Quantity||</th>
-            <th>Remove||</th>
-            <th>Unit price||</th>
-            <th>Price||</th>
+            <th>Car</th>
+            <th>Quantity</th>
+            <th>Remove</th>
+            <th>Unit price</th>
+            <th>Price</th>
         </tr>
         </thead>
         <tbody>
@@ -21,7 +21,7 @@
                 <tr>
                     <td>
                         <a href="{{ car.get_absolute_url }}">
-                            <img src="{{ car.photo.url }}">
+                            <img width="300" height="180" src="{{ car.photo.url }}">
                         </a>
                     </td>
                     <td>{{ car.model }}</td>

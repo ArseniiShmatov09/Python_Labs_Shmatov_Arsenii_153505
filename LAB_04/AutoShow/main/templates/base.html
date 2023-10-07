@@ -12,8 +12,10 @@
             content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
 
         <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
- 
-        <link rel="stylesheet" type="text/css" href="{% static 'main/base_page_.css' %}">
+         <link rel="stylesheet" type="text/css" href="{% static 'main/base_pagee.css' %}">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pixelify+Sans&family=Young+Serif&display=swap" rel="stylesheet">
         {%block css %}
      
        
@@ -25,7 +27,7 @@
             style="display: flex; justify-content: space-between; align-items: center;">
             <div style="flex-grow: 1;">
                 <header style="text-align: center;">
-                    <h1>Автосалон MyAutoShow</h1>
+                    <h1 id="company_name">Автосалон MyAutoShow</h1>
 
                 </header>
             </div>
@@ -45,7 +47,7 @@
                 {% endwith %}
                 {%endif%}
                 {% if user.is_authenticated %}
-                |{{ user.username }}|
+                Привет, {{ user.username }}!
                 <a href="{% url 'main:logout' %}">Выйти</a>
                 {% else %}
                 <a href="{% url 'main:login' %}">Войти</a>
@@ -77,24 +79,24 @@
             </div>
         </div>
 
-        <nav class="menu">
+        <nav class="menu" id="up">
             <ul style="padding-left: 0; margin-left: 0;">
                 <li style="display: inline;"><a href="{% url 'main:index' %}">Главная</a></li>&nbsp;
-                <li style="display: inline;"><a href="{% url 'main:cars' %}">Все
-                        Машины</a></li>&nbsp;
-                <li style="display: inline;"><a href="{%url 'main:about'%}">О
-                        компании</a></li>&nbsp;
+                <li style="display: inline;"><a href="{% url 'main:cars' %}">Все Машины</a></li>&nbsp;
+                <li style="display: inline;"><a href="{%url 'main:about'%}">О компании</a></li>&nbsp;
                 <li style="display: inline;"><a href="{%url 'main:contacts'%}">Контакты</a></li>&nbsp;
                 <li style="display: inline;"><a href="{% url 'main:reviews'%}">Отзывы</a></li>&nbsp;
             </ul>
         </nav>
+    
         <main style="display: flex;" class="main-content">
             <div style="width: 80%;" style="flex-grow: 1;">
                 {% block content %}
                 {% endblock %}
             </div>
 
-            <aside style="width: 20%; padding-left: 50px;">
+            <aside class="right_info"style="width: 20%; padding-left: 50px;">
+
                 <ul class="menu-list">
                     <li class="menu-item"><a href="{% url 'main:news' %}">Новости</a></li>
                     <li class="menu-item"><a href="{% url 'main:vacancies'%}">Вакансии</a></li>
@@ -216,6 +218,45 @@
                 {%if request.user.is_staff%}
                 <a href="{% url 'stats:report'%}">Статистика</a>
                 {%endif%}
+
+                <h2>Форма для стилей с псевдоклассами</h2>
+
+            </head>
+
+            <body>
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <p>
+                        <label for="name">Имя: </label>
+                        <input type="text" id="name" name="name" disabled>
+                    </p>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="password">Пароль: </label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <p>
+                        <label for="comment">Комментарий: </label>
+                        <textarea id="comment" name="comment" required></textarea>
+                    </p>
+                    <div>
+                        <input type="checkbox" id="checkbox" name="checkbox" checked>
+                        <label for="checkbox">Флажок: </label>
+                    </div>
+                    <div>
+                       
+                        <input type="radio" id="radio1" name="radio" value="1" checked>
+                        <label for="radio1">Переключатель 1: </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio2" name="radio" value="2">
+                        <label for="radio2">Переключатель 2: </label>
+                    </div>
+                    <input type="submit" value="Сохранить">
+                </form>
             </aside>
         </main>
 

@@ -3,6 +3,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
+    font-family: 'Caveat', cursive;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    line-height: 130%;
+    font-variant: small-caps;
+    word-wrap: break-word;
 }
 
 a:link {
@@ -33,6 +39,7 @@ header > h1 {
     color: black;
 }
 
+
 .menu ul {
     padding: 0;
     margin: 0;
@@ -43,7 +50,10 @@ header > h1 {
     padding: 10px 0;
     border-radius: 5px;
 }
+#up ul{
+    background-color: #c6c6c6;
 
+}
 .menu li {
     margin-right: 20px;
 }
@@ -158,9 +168,10 @@ footer {
     width: 20%;
     text-align: left;
     padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #c8c7c7;
+    border: 3px solid #3e3e3e;
+    border-radius: 20px;
+    color: white;
 }
 
 .cart a {
@@ -203,4 +214,75 @@ ul.menu-item {
 .menu-item a:hover {
     background-color: gray;
     color: #fff;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+/* Стили для текстовых полей input[type="text"] и textarea */
+input[type="text"],
+textarea {
+    font-family: 'Young Serif', serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+textarea:required {
+    border: 3px solid #ff0000; /* Красная граница для обязательных полей */
+}
+
+/* Стили для заблокированных полей */
+input:disabled,
+textarea:disabled {
+    background-color: #050505; /* фон для заблокированных полей */
+}
+.menu{
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+/* Стили для кнопки submit */
+input[type="submit"] {
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+/* Стили для кнопки submit при наведении */
+input[type="submit"]:hover {
+    background-color: grey;
+}
+
+
+/* Выделение элементов со значениями вне диапазона */
+input:out-of-range {
+    border: 10px solid blueviolet;
+}
+
+input:checked + label {
+    color: red; 
+    background-color: #551a8b;
+}
+
+
+.menu-item::marker {
+    content: "\20aa";
+    color: black; 
+    font-size: 20px;
+
+}
+
+#company_name{
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Young Serif', serif;
+    font-kerning:normal;
 }

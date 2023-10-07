@@ -11,6 +11,9 @@ p {
     line-height: 1.5; 
     margin-bottom: 20px;
     text-align: justify; 
+    text-indent: 40px;
+    line-height: 100%;
+    font-variant: small-caps;
 }
 
 strong {
@@ -30,6 +33,7 @@ p strong {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 

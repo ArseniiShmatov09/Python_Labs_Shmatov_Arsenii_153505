@@ -3,7 +3,7 @@
 
 {%block css %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'main/cars.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/carsss.css' %}">
 {%endblock%}
 {% block title %}
 
@@ -12,31 +12,32 @@
 {% endblock %}
 
 {% block content %}
+<div class="main-content">
 
-
-<form action="{{ request.get_full_path }}" method="get">
-   <button type="submit" name="sort_price" value="ascending">Sort up by price</button>
-   <button type="submit" name="sort_price" value="descending">Sort down by price</button>
-   <button type="submit" name="sort_year" value="ascending">Sort up by year</button>
-   <button type="submit" name="sort_year" value="descending">Sort down by year</button>
-</form>
-
-<div id="sidebar">
-   <h3>Доступные машины</h3>
+<form action="{{ request.get_full_path }}" method="get" class="sort-form">
+    <button type="submit" name="sort_price" value="ascending" class="sort-button">Сортировать по цене (по возрастанию)</button>
+    <button type="submit" name="sort_price" value="descending" class="sort-button">Сортировать по цене (по убыванию)</button>
+    <button type="submit" name="sort_year" value="ascending" class="sort-button">Сортировать по году выпуска (по возрастанию)</button>
+    <button type="submit" name="sort_year" value="descending" class="sort-button">Сортировать по году выпуска (по убыванию)</button>
+ </form>
+ 
+ <div id="sidebar">
    
-   <form action="{% url 'main:cars' %}" method="get">
-    <label for="carcass_type">Выберите тип кузова:</label>
-    <select id="carcass_type" name="carcass_type">
-        <option value="">Все автомобили</option>
-        {% for c in carcass_types %}
-            <option value="{{ c.designation }}" {% if car_carcass == c.designation %}selected{% endif %}>
-                {{ c.designation }}
-            </option>
-        {% endfor %}
-    </select>
-    <button type="submit">Применить</button>
-</form>
-
+    
+    <form action="{% url 'main:cars' %}" method="get" class="filter-form">
+     <label for="carcass_type">Выберите тип кузова:</label>
+     <select id="carcass_type" name="carcass_type" class="filter-select">
+         <option value="">Все автомобили</option>
+         {% for c in carcass_types %}
+             <option value="{{ c.designation }}" {% if car_carcass == c.designation %}selected{% endif %}>
+                 {{ c.designation }}
+             </option>
+         {% endfor %}
+     </select>
+     <button type="submit" class="filter-button">Применить</button>
+ </form>
+ 
+ <h3>Доступные машины</h3>
 </div>
 <ul class="cars">
     {% for car in cars%}
@@ -48,5 +49,5 @@
     {% endfor %}
 </ul>
 
-
+</div>
 {% endblock %}

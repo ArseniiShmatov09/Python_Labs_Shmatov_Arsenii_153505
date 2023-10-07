@@ -3,7 +3,7 @@
 
 {%block css %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'main/index.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/indexx.css' %}">
 {%endblock%}
 {% block title %}
 
@@ -13,72 +13,66 @@
 
 {% block content %}
 
+<div class="main-block">
+    <div class="last-article" style="margin-bottom: 50px;">
+        <h1>Последняя актуальная новость:</h1>
+        <h2>{{news.title}}</h2>
+        <h3>{{news.essence}}</h3>
+        <a href="{% url 'main:news' %}">Показать больше</a>
+    </div>
+    <ul class="cars">
+        {% for car in cars%}
+        <li>    
+            <img src="{{car.photo.url}}" style="width: 333px; height: 220px;">
+    
+            <a class="car-name" href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
+        </li>
+        {% endfor %}
+    </ul>
+    {%if request.user.is_staff%}
+    <div><a href="{% url 'main:create'%}">add new car</a></div>
+    {%endif%}
 
-<div style="margin-bottom: 50px;">
-    <h1>Последняя актуальная новость:</h1>
-    <h2>{{news.title}}</h2>
-    <h3>{{news.essence}}</h3>
-    <a href="{% url 'main:news' %}">Показать больше</a>
+    <h1>Поддержите разработчика, посетите мoй гитхаб</h1>
+    <a class="banner" href="https://github.com/ArseniiShmatov09" target="_blank"><img
+            
+            src="../media/images/git.png"
+            alt="git"></a>
+
+    <h1>Партнеры</h1>
+
+    <ul class="brand-list">
+        <li>
+            <figure class="brand-block">
+                <p><img src="../media/images/bmw.png" alt="BMW"></p>
+                <figcaption><a href="https://www.bmw.fr/fr/accueil.html" target="_blank">BMW</a></figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure class="brand-block">
+                <p><img src="../media/images/audi.png" alt="AUDI"></p>
+                <figcaption><a href="https://www.audi.fr/fr/web/fr.html" target="_blank">AUDI</a></figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure class="brand-block">
+                <p><img src="../media/images/tesla.png" alt="TESLA"></p>
+                <figcaption><a href="https://www.tesla.com/" target="_blank">TESLA</a></figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure class="brand-block">
+                <p><img src="../media/images/merc.png" alt="MERCEDES"></p>
+                <figcaption><a href="https://www.mercedes-benz.fr/?group=all&subgroup=see-all&view=BODYTYPE"
+                        target="_blank">MERCEDES</a></figcaption>
+            </figure>
+        </li>
+    </ul>
+
+
+    {%if user.is_authenticated%}
+    <h3>Joke 4u - {{joke}} </h3>
+    <a href="{{dog}}" target="_blank">Dog is here</a>
+    {%endif%}
 </div>
-{% for car in cars%}
-<li>
-    <img src="{{car.photo.url}}" style="width: 333px; height: 200px;">
-    <a href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a>
-</li>
-
-{% endfor %}
-{%if request.user.is_staff%}
-<div><a href="{% url 'main:create'%}">add new car</a></div>
-{%endif%}
-
-<h1>Поддержите разработчика, посетите мoй гитхаб</h1>
-<a href="https://github.com/ArseniiShmatov09" target="_blank"><img
-        src="../media/images/git.png"
-        alt="git"></a>
-
-<h1>Партнеры</h1>
-
-<ul style="padding-left: 0; margin-left: 0; list-style-type: none;">
-    <li style="display: inline-block; margin-right: 10px;">
-
-        <figure>
-            <p><img src="../media/images/bmw.png" alt="BMW"></p>
-            <figcaption> <a href="https://www.bmw.fr/fr/accueil.html"
-                    target="_blank">BMW</a></figcaption>
-        </figure>
-
-    </li>
-    <li style="display: inline-block; margin-right: 10px;">
-        <figure>
-            <p><img src="../media/images/audi.png" alt="AUDI"></p>
-            <figcaption> <a href="https://www.audi.fr/fr/web/fr.html"
-                    target="_blank">AUDI</a></figcaption>
-        </figure>
-
-    </li>
-    <li style="display: inline-block; margin-right: 10px;">
-        <figure>
-            <p><img src="../media/images/tesla.png" alt="TESLA"></p>
-            <figcaption> <a href="https://www.tesla.com/" target="_blank">TESLA</a></figcaption>
-        </figure>
-
-    </li>
-    <li style="display: inline-block; margin-right: 10px;">
-
-        <figure>
-            <p><img src="../media/images/merc.png" alt="MERCEDES"></p>
-            <figcaption> <a
-                    href="https://www.mercedes-benz.fr/?group=all&subgroup=see-all&view=BODYTYPE"
-                    target="_blank">MERCEDES</a></figcaption>
-        </figure>
-
-    </li>
-   
-</ul>
-
-{%if user.is_authenticated%}
-<h3>Joke 4u - {{joke}} </h3>
-<a href="{{dog}}" target="_blank">Dog is here</a>
-{%endif%}
-
-{% endblock %}
+    {% endblock %}

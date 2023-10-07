@@ -1,0 +1,140 @@
+.main-content{
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+/* Стили для родительского контейнера <ul> */
+ul.cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Создаем грид с 3 колонками */
+    gap: 20px; /* Отступ между элементами */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+  }
+  
+  /* Стили для элементов списка <li> */
+  ul.cars li {
+    border: 1px solid #ddd; /* Граница для каждого элемента */
+    padding: 10px; /* Внутренний отступ */
+    background: white;
+  }
+  
+  .cars li:first-child {
+    background: rgb(241, 84, 84);
+}
+
+/* Стиль для последнего элемента списка */
+.cars li:last-child {
+    background: rgb(231, 255, 122);
+
+}
+
+/* Стиль для элемента списка с определенным порядковым номером (например, третий элемент) */
+.cars li:nth-child(3) {
+    background: rgb(133, 141, 255);
+}
+
+
+  /* Стили для изображения внутри элемента списка */
+  ul.cars li img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  ul.cars li .car-name:hover {
+    color: #ff6600; /* Изменяем цвет при наведении */
+  }
+  
+  ul.cars li .car-name {
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: #333; /* Цвет текста */
+    font-weight: bold; /* Жирное начертание */
+  }
+  
+/* Стиль для формы сортировки */
+.sort-form {
+  display: flex; /* Расположение кнопок в строку */
+  justify-content: center; /* Выравнивание по центру горизонтально */
+  align-items: center; /* Выравнивание по центру вертикально */
+  flex-wrap: wrap; /* Если кнопки не помещаются в одну строку, переносим их на новую строку */
+}
+
+/* Стиль для кнопок сортировки */
+.sort-button {
+  background-color: #8e8e8e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px; /* Расстояние между кнопками */
+  font-size: 14px;
+}
+
+.sort-button:hover {
+  background-color: #afafaf;
+}
+
+
+/* Стиль для боковой панели и ее заголовка */
+#sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#sidebar h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Стиль для формы фильтрации */
+.filter-form {
+  margin-top: 10px;
+}
+
+/* Стиль для выпадающего списка фильтра */
+.filter-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Стиль для кнопки применения фильтра */
+.filter-button {
+  background-color: #848484;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #b4b4b4;
+}
+
+
+@media screen and (max-width: 899px) {
+
+  ul.cars {
+      grid-template-columns: repeat(1, 2fr);
+  }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1323px) {
+
+  ul.cars {
+    grid-template-columns: repeat(2, 2fr);
+}
+}
+
+@media screen and (min-width: 1324px) {
+
+  ul.cars {
+    grid-template-columns: repeat(3, 2fr);
+}
+}

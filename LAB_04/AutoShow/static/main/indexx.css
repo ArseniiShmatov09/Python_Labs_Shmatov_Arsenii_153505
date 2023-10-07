@@ -1,0 +1,176 @@
+.main-block{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.brand-list {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brand-block {
+    border-radius: 50%; 
+    width: 150px;
+    height: 150px; 
+    background-color: #333; 
+    margin-right: 10px;
+    overflow: hidden; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.brand-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.brand-block a {
+    color: #fff; 
+    text-decoration: none;
+    padding: 5px;
+    position: absolute; 
+    bottom: 10px; 
+    left: 0; 
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease; 
+}
+
+.brand-block:hover a {
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+
+img[src$=".jpg"] {
+    border: 5px solid black; 
+}
+
+a[href^="https"] {
+    color: #FF0000; 
+}
+
+[href*="ArseniiShmatov09"] img{
+    border: 5px solid gray; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+a.banner {
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    font-size: 24px; 
+    color: #333; 
+    text-decoration: none; 
+}
+
+a.banner:hover {
+    transform: scale(1.2) rotate(360deg);
+    animation: spin 2s linear infinite, bounce 0.5s ease infinite;
+    color: #ff5733; 
+}
+
+
+.last-article {
+    position: relative;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.last-article h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.last-article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.last-article h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.last-article a {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.last-article a:hover {
+    background-color: gray;
+}
+
+ul.cars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  ul.cars li {
+    border: 2px solid #ddd; 
+    padding: 10px; 
+    background:   #dad9d9;
+  }
+
+
+  ul.cars li img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  ul.cars li .car-name:hover {
+    color: #ff6600; 
+  }
+  
+  ul.cars li .car-name {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+  }
+  
+
+  @media screen and (max-width: 767px) {
+
+    ul.cars {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    ul.cars {
+        display: grid; /* Восстанавливать отображение списка автомобилей */
+    }
+}
