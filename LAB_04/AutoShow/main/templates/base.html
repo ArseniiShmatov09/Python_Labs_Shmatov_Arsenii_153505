@@ -12,13 +12,15 @@
             content="автосалон, автомобили, продажа авто, подержанные автомобили, обслуживание авто">
 
         <link rel="icon" href="../media/images/лого.ico" type="image/x-icon">
-         <link rel="stylesheet" type="text/css" href="{% static 'main/base_pagee.css' %}">
-    
+        <link rel="stylesheet" type="text/css"
+            href="{% static 'main/css/base_pageee.css' %}">
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pixelify+Sans&family=Young+Serif&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat&family=Pixelify+Sans&family=Young+Serif&display=swap"
+            rel="stylesheet">
         {%block css %}
-     
-       
+
         {%endblock%}
         {% block title %}{%endblock%}
     </head>
@@ -26,8 +28,9 @@
         <div
             style="display: flex; justify-content: space-between; align-items: center;">
             <div style="flex-grow: 1;">
-                <header style="text-align: center;">
-                    <h1 id="company_name">Автосалон MyAutoShow</h1>
+                <header class="header" style="text-align: center;">
+                    <a href="{% url 'main:index' %}"><h1 id="company_name">Автосалон
+                            MyAutoShow</h1></a>
 
                 </header>
             </div>
@@ -58,7 +61,9 @@
                         id="userTimeZone"></span></div>
                 <div>Текущая дата и время: <span id="currentDateTime"></span></div>
                 <div><span id="utcOffset"></span></div>
-                
+                <div id ="countdown"></div>
+                <script src="{% static 'main/js/timer.js'%}"></script>
+
                 <script>
                         document.getElementById("userTimeZone").textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
                 
@@ -82,33 +87,39 @@
         <nav class="menu" id="up">
             <ul style="padding-left: 0; margin-left: 0;">
                 <li style="display: inline;"><a href="{% url 'main:index' %}">Главная</a></li>&nbsp;
-                <li style="display: inline;"><a href="{% url 'main:cars' %}">Все Машины</a></li>&nbsp;
-                <li style="display: inline;"><a href="{%url 'main:about'%}">О компании</a></li>&nbsp;
+                <li style="display: inline;"><a href="{% url 'main:cars' %}">Все
+                        Машины</a></li>&nbsp;
+                <li style="display: inline;"><a href="{%url 'main:about'%}">О
+                        компании</a></li>&nbsp;
                 <li style="display: inline;"><a href="{%url 'main:contacts'%}">Контакты</a></li>&nbsp;
                 <li style="display: inline;"><a href="{% url 'main:reviews'%}">Отзывы</a></li>&nbsp;
             </ul>
         </nav>
-    
+
         <main style="display: flex;" class="main-content">
             <div style="width: 80%;" style="flex-grow: 1;">
                 {% block content %}
                 {% endblock %}
             </div>
 
-            <aside class="right_info"style="width: 20%; padding-left: 50px;">
+            <aside class="right_info" style="width: 20%; padding-left: 50px;">
 
                 <ul class="menu-list">
                     <li class="menu-item"><a href="{% url 'main:news' %}">Новости</a></li>
                     <li class="menu-item"><a href="{% url 'main:vacancies'%}">Вакансии</a></li>
+                    <li class="menu-item"><a href="{% url 'main:js_sandbox'%}">JS Песочница</a></li>
                     <li class="menu-item">
                         {% if user.is_authenticated %}
-                        <a href="{% url 'main:promotional_code' %}">Промокоды и купоны</a>
+                        <a href="{% url 'main:promotional_code' %}">Промокоды и
+                            купоны</a>
                         {% else %}
-                        <a href="{% url 'main:login' %}?next={% url 'main:promotional_code' %}">Промокоды и купоны</a>
+                        <a
+                            href="{% url 'main:login' %}?next={% url 'main:promotional_code' %}">Промокоды
+                            и купоны</a>
                         {% endif %}
                     </li>
                 </ul>
-                
+
                 <p>Добро пожаловать в <abbr title="Автосалон MyAutoShow">Автосалон
                         MAS</abbr>! Мы - ваш путь к инновационным автомобилям и
                     качественному обслуживанию. Присоединяйтесь к нам сегодня!</p>
@@ -122,7 +133,7 @@
                     Авто мечты, роскошь и страсть,<br>
                     С нами выбор всегда на вес золота.
                 </p>
-               
+
                 <table border="1">
                     <caption>Таблица наиболее популярных машин:</caption>
                     <tr>
@@ -178,14 +189,16 @@
                 <h2>Товары с наибольшим спросом:</h2>
                 <ul>
                     {% for car in most_popular_cars %}
-                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{car.order_count }} заказов)</li>
+                    <li>{{ car.car__brand }}, {{ car.car__model }}
+                        ({{car.order_count }} заказов)</li>
                     {% endfor %}
                 </ul>
 
                 <h2>Товары с наименьшим спросом:</h2>
                 <ul>
                     {% for car in least_popular_cars %}
-                    <li>{{ car.car__brand }}, {{ car.car__model }} ({{car.order_count }} заказов)</li>
+                    <li>{{ car.car__brand }}, {{ car.car__model }}
+                        ({{car.order_count }} заказов)</li>
                     {% endfor %}
                 </ul>
 
@@ -206,11 +219,12 @@
 
                 <article itemscope itemtype="http://schema.org/Article">
                     <h1 itemprop="name">Немного о Microdata</h1>
-                    <meta itemprop="inLanguage" content="ru" /> 
+                    <meta itemprop="inLanguage" content="ru" />
                     <section itemprop="articleBody">
                         Скажи рекурсии «нет»!
                     </section>
-                    <section itemprop="author" itemscope itmetype="http://schema.org/Person">
+                    <section itemprop="author" itemscope
+                        itmetype="http://schema.org/Person">
                         <span itemprop="additionalName">VlAleVas</span>
                     </section>
                 </article>
@@ -232,7 +246,8 @@
                     </p>
                     <div>
                         <label for="email">Email: </label>
-                        <input type="text" id="email" name="email" maxlength="10">
+                        <input type="text" id="email" name="email"
+                            maxlength="10">
                     </div>
                     <div>
                         <label for="password">Пароль: </label>
@@ -243,12 +258,14 @@
                         <textarea id="comment" name="comment" required></textarea>
                     </p>
                     <div>
-                        <input type="checkbox" id="checkbox" name="checkbox" checked>
+                        <input type="checkbox" id="checkbox" name="checkbox"
+                            checked>
                         <label for="checkbox">Флажок: </label>
                     </div>
                     <div>
-                       
-                        <input type="radio" id="radio1" name="radio" value="1" checked>
+
+                        <input type="radio" id="radio1" name="radio" value="1"
+                            checked>
                         <label for="radio1">Переключатель 1: </label>
                     </div>
                     <div>
@@ -257,6 +274,7 @@
                     </div>
                     <input type="submit" value="Сохранить">
                 </form>
+                <textarea name="a" id cols="30" rows="10">AAA</textarea>
             </aside>
         </main>
 
@@ -269,7 +287,7 @@
                 <nav class="menu">
                     <ul
                         style="padding-left: 0; margin-left: 0; list-style: none;">
-                        <li style="display: inline; margin-right: 10px;"><a 
+                        <li style="display: inline; margin-right: 10px;"><a
                                 href="{%url 'main:FAQ'%}">Словарь терминов и
                                 понятий</a></li>
                         <li style="display: inline;"><a

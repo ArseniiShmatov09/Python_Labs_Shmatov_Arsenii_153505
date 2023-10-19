@@ -253,7 +253,7 @@ input[type="submit"] {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 1s ease;
     font-family: 'Pixelify Sans', cursive;
 }
 
@@ -273,7 +273,10 @@ input:checked + label {
     background-color: #551a8b;
 }
 
+.header a h1{
 
+    color: #050505;
+}
 .menu-item::marker {
     content: "\20aa";
     color: black; 

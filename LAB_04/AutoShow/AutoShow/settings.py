@@ -150,7 +150,7 @@ LOGGING_DIR = os.path.join(BASE_DIR, 'logs')  # Путь к папке с лог
 if not os.path.exists(LOGGING_DIR):
     os.makedirs(LOGGING_DIR)
 
-LOGGING_LEVEL = 'INFO'  # Уровень логирования (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+LOGGING_LEVEL = 'WARNING'  # Уровень логирования (DEBUG, INFO, WARNING, ERROR, CRITICAL)
 
 LOGGING = {
     'version': 1,

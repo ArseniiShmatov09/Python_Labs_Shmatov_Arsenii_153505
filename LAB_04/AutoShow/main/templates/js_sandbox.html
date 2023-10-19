@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %}
+
+<title>js scripts Page</title>
+
+{% endblock %}
+
+{% block content %}
+<script src="{% static 'main/js/age.js'%}"></script>
+<h1 style="font-size: 36px; color: black;">Проверка возраста</h1>
+<p style="font-size: 36px; color: black;">Введите вашу дату рождения:</p>
+<input type="date" id="dob">
+<button onclick="checkAge()">Проверить возраст</button>
+<p style="font-size: 36px; color: black;" id="result"></p>
+
+
+{% endblock %}

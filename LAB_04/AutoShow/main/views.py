@@ -25,6 +25,13 @@ def my_view(request):
     logger.error('Это сообщение с уровнем ERROR')
     logger.critical('Это сообщение с уровнем CRITICAL')
 
+
+def js_sandbox(request):
+   
+    return render(request, 'js_sandbox.html')
+                                                   
+
+
 def get_most_popular_cars():
     popular_cars = (
         OrderItem.objects
