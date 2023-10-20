@@ -18,8 +18,17 @@ ul.cars {
     border: 1px solid #ddd; /* Граница для каждого элемента */
     padding: 10px; /* Внутренний отступ */
     background: white;
+
+
   }
   
+  .car{
+    perspective: 1000px;
+  }
+  .car-item{
+    transition: transform 0.2s;
+  }
+
   .cars li:first-child {
     background: rgb(241, 84, 84);
 }

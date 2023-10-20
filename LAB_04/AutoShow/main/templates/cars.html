@@ -41,13 +41,19 @@
 </div>
 <ul class="cars">
     {% for car in cars%}
-    <li>    
-        <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
+    <li>   
+        <div class="car"> 
+        <div class="car-item">
+            <img src="{{car.photo.url}}" style="width: 500px; height: 300px;">
 
-        <a class="car-name" href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
+            <a class="car-name" href="{% url 'main:car_details' car.id %}">{{car.brand}}, {{car.model}}</a> 
+        </div>
+        </div>
     </li>
     {% endfor %}
 </ul>
 
 </div>
+<script src="{% static 'main/js/card_effect.js'%}"></script>
+
 {% endblock %}

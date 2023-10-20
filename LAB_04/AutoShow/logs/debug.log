@@ -3728,3 +3728,195 @@ Traceback (most recent call last):
 TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
 ERROR 2023-10-19 21:17:42,433 basehttp "GET /favicon.ico HTTP/1.1" 500 65862
 ERROR 2023-10-19 21:17:42,433 basehttp "GET /favicon.ico HTTP/1.1" 500 65862
+ERROR 2023-10-20 19:40:18,493 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 19:40:18,493 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 19:40:18,494 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 19:40:18,494 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 19:41:20,211 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 19:41:20,211 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 19:41:20,211 basehttp "GET /favicon.ico HTTP/1.1" 500 66091
+ERROR 2023-10-20 19:41:20,211 basehttp "GET /favicon.ico HTTP/1.1" 500 66091
+WARNING 2023-10-20 20:06:34,579 log Not Found: /js_sandbox/баннер2.jpg
+WARNING 2023-10-20 20:06:34,579 log Not Found: /js_sandbox/баннер2.jpg
+WARNING 2023-10-20 20:06:34,582 log Not Found: /js_sandbox/баннер1.jpg
+WARNING 2023-10-20 20:06:34,582 log Not Found: /js_sandbox/баннер1.jpg
+WARNING 2023-10-20 20:06:34,584 log Not Found: /js_sandbox/баннер3.jpg
+WARNING 2023-10-20 20:06:34,584 log Not Found: /js_sandbox/баннер3.jpg
+WARNING 2023-10-20 20:06:34,584 basehttp "GET /js_sandbox/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%802.jpg HTTP/1.1" 404 6111
+WARNING 2023-10-20 20:06:34,584 basehttp "GET /js_sandbox/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%802.jpg HTTP/1.1" 404 6111
+WARNING 2023-10-20 20:06:34,584 basehttp "GET /js_sandbox/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%801.jpg HTTP/1.1" 404 6111
+WARNING 2023-10-20 20:06:34,584 basehttp "GET /js_sandbox/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%803.jpg HTTP/1.1" 404 6111
+WARNING 2023-10-20 20:06:34,584 basehttp "GET /js_sandbox/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%803.jpg HTTP/1.1" 404 6111
+WARNING 2023-10-20 20:06:34,584 basehttp "GET /js_sandbox/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%801.jpg HTTP/1.1" 404 6111
+WARNING 2023-10-20 20:14:24,315 log Not Found: /js_sandbox/audi_banner.jpg
+WARNING 2023-10-20 20:14:24,315 log Not Found: /js_sandbox/audi_banner.jpg
+WARNING 2023-10-20 20:14:24,317 log Not Found: /js_sandbox/bmw_banner.png
+WARNING 2023-10-20 20:14:24,317 log Not Found: /js_sandbox/bmw_banner.png
+WARNING 2023-10-20 20:14:24,320 log Not Found: /js_sandbox/renault_banner.jpg
+WARNING 2023-10-20 20:14:24,320 log Not Found: /js_sandbox/renault_banner.jpg
+WARNING 2023-10-20 20:14:24,320 basehttp "GET /js_sandbox/audi_banner.jpg HTTP/1.1" 404 6081
+WARNING 2023-10-20 20:14:24,320 basehttp "GET /js_sandbox/renault_banner.jpg HTTP/1.1" 404 6090
+WARNING 2023-10-20 20:14:24,320 basehttp "GET /js_sandbox/bmw_banner.png HTTP/1.1" 404 6078
+WARNING 2023-10-20 20:14:24,320 basehttp "GET /js_sandbox/bmw_banner.png HTTP/1.1" 404 6078
+WARNING 2023-10-20 20:14:24,320 basehttp "GET /js_sandbox/renault_banner.jpg HTTP/1.1" 404 6090
+WARNING 2023-10-20 20:14:24,320 basehttp "GET /js_sandbox/audi_banner.jpg HTTP/1.1" 404 6081
+WARNING 2023-10-20 20:14:25,936 log Not Found: /js_sandbox/renault_banner.jpg
+WARNING 2023-10-20 20:14:25,936 log Not Found: /js_sandbox/renault_banner.jpg
+WARNING 2023-10-20 20:14:25,937 log Not Found: /js_sandbox/audi_banner.jpg
+WARNING 2023-10-20 20:14:25,937 log Not Found: /js_sandbox/audi_banner.jpg
+WARNING 2023-10-20 20:14:25,939 log Not Found: /js_sandbox/bmw_banner.png
+WARNING 2023-10-20 20:14:25,939 log Not Found: /js_sandbox/bmw_banner.png
+WARNING 2023-10-20 20:14:25,939 basehttp "GET /js_sandbox/renault_banner.jpg HTTP/1.1" 404 6090
+WARNING 2023-10-20 20:14:25,939 basehttp "GET /js_sandbox/bmw_banner.png HTTP/1.1" 404 6078
+WARNING 2023-10-20 20:14:25,939 basehttp "GET /js_sandbox/bmw_banner.png HTTP/1.1" 404 6078
+WARNING 2023-10-20 20:14:25,939 basehttp "GET /js_sandbox/audi_banner.jpg HTTP/1.1" 404 6081
+WARNING 2023-10-20 20:14:25,939 basehttp "GET /js_sandbox/audi_banner.jpg HTTP/1.1" 404 6081
+WARNING 2023-10-20 20:14:25,939 basehttp "GET /js_sandbox/renault_banner.jpg HTTP/1.1" 404 6090
+WARNING 2023-10-20 20:14:26,416 log Not Found: /js_sandbox/bmw_banner.png
+WARNING 2023-10-20 20:14:26,416 log Not Found: /js_sandbox/bmw_banner.png
+WARNING 2023-10-20 20:14:26,417 log Not Found: /js_sandbox/audi_banner.jpg
+WARNING 2023-10-20 20:14:26,417 log Not Found: /js_sandbox/audi_banner.jpg
+WARNING 2023-10-20 20:14:26,418 log Not Found: /js_sandbox/renault_banner.jpg
+WARNING 2023-10-20 20:14:26,418 basehttp "GET /js_sandbox/bmw_banner.png HTTP/1.1" 404 6078
+WARNING 2023-10-20 20:14:26,418 basehttp "GET /js_sandbox/bmw_banner.png HTTP/1.1" 404 6078
+WARNING 2023-10-20 20:14:26,418 log Not Found: /js_sandbox/renault_banner.jpg
+WARNING 2023-10-20 20:14:26,419 basehttp "GET /js_sandbox/audi_banner.jpg HTTP/1.1" 404 6081
+WARNING 2023-10-20 20:14:26,419 basehttp "GET /js_sandbox/audi_banner.jpg HTTP/1.1" 404 6081
+WARNING 2023-10-20 20:14:26,419 basehttp "GET /js_sandbox/renault_banner.jpg HTTP/1.1" 404 6090
+WARNING 2023-10-20 20:14:26,419 basehttp "GET /js_sandbox/renault_banner.jpg HTTP/1.1" 404 6090
+WARNING 2023-10-20 20:14:56,589 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:14:56,589 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:14:56,590 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:14:56,591 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:14:56,591 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:14:56,590 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:14:56,592 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:14:56,592 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:16:05,094 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:16:05,095 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:16:05,095 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:16:05,094 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:16:05,096 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:16:05,096 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:16:05,096 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:16:05,096 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:17:12,361 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:17:12,362 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:17:12,362 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:17:12,361 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:17:12,363 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:17:12,363 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:17:12,363 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:17:12,363 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:18:29,196 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:18:29,197 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:18:29,197 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:18:29,196 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:18:29,198 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:18:29,198 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:18:29,198 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:18:29,198 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:18:42,791 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:18:42,791 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:18:42,792 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:18:42,792 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:18:42,792 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:18:42,792 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:18:42,792 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:18:42,792 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:22:21,249 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:22:21,250 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:22:21,250 log Not Found: /media/images/audi_banner.jpg
+WARNING 2023-10-20 20:22:21,249 log Not Found: /media/images/renault_banner.jpg
+WARNING 2023-10-20 20:22:21,250 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:22:21,250 basehttp "GET /media/images/audi_banner.jpg HTTP/1.1" 404 6315
+WARNING 2023-10-20 20:22:21,250 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+WARNING 2023-10-20 20:22:21,250 basehttp "GET /media/images/renault_banner.jpg HTTP/1.1" 404 6327
+ERROR 2023-10-20 21:13:33,369 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 21:13:33,369 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 21:13:33,369 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 21:13:33,369 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 21:15:48,439 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 21:15:48,439 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 21:15:48,439 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 21:15:48,439 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 21:21:34,620 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 21:21:34,620 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 21:21:34,620 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 21:21:34,620 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 22:41:46,131 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 22:41:46,131 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-20 22:41:46,131 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
+ERROR 2023-10-20 22:41:46,131 basehttp "GET /favicon.ico HTTP/1.1" 500 66078
