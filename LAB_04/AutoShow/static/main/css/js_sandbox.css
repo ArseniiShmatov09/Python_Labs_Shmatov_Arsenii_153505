@@ -31,3 +31,19 @@ form {
     left: 35%;
     height: 400px;
 }
+
+.even-cell{
+
+    background-color: greenyellow;
+    color: rgb(10, 54, 251);
+    transition: background-color 0.5s, color 0.5s;
+
+}
+
+.odd-cell{
+
+    background-color: rgb(10, 54, 251);
+    color: greenyellow;
+    transition: background-color 0.5s, color 0.5s;
+
+}

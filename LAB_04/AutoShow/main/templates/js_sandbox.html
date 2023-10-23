@@ -32,16 +32,73 @@
   </div>
   <form id="rotationForm" {% if not user.is_superuser %}style="display: none;"{% endif %}>
     <label for="rotationInterval">Интервал ротации (сек):</label>
-    <input type="number" id="rotationInterval" value="2">
+    <input  type="number" id="rotationInterval" value="2">
     <button type="button" id="startRotation">Start Rotation</button>
     <button type="button" id="stopRotation">Stop Rotation</button>
 </form>
+
+
+<h1>Квадратная таблица</h1>
+    <input value="5" type="number" id="tableSize" placeholder="Размер таблицы (1-10)">
+    <input value="2" type="number" id="maxSelectable" placeholder="Максимум выбираемых (1-10)">
+    <button id="generateTable">Сгенерировать таблицу</button>
+    <button onclick="transposeTable()">Транспонировать таблицу</button>
+    <button onclick="addRowAndColumn()">Добавить ряд и колонку</button>
+
+    <table id="table"></table>
+
+
+<h1>Анализ имен сотрудников</h1>
+
+<form id="employeeForm">
+    <label for="lastName">Фамилия:</label>
+    <input type="text" id="lastName" required><br><br>
+
+    <label for="firstName">Имя:</label>
+    <input type="text" id="firstName" required><br><br>
+
+    <label for="middleName">Отчество:</label>
+    <input type="text" id="middleName" required><br><br>
+
+    <label for="gender">Пол:</label>
+    <select id="gender" required>
+        <option value="мужской">Мужской</option>
+        <option value="женский">Женский</option>
+    </select><br><br>
+
+    <label for="experience">Стаж работы (в годах):</label>
+    <input type="number" id="experience" required><br><br>
+
+    <button type="button" id="addEmployee">Добавить сотрудника</button>
+</form>
+
+<h2>Сотрудники учреждения</h2>
+<table id="employeeTable">
+    <thead>
+        <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Пол</th>
+            <th>Стаж работы</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<h2>Самые распространенные имена</h2>
+<p>Самое распространенное мужское имя: <span id="commonMaleName"></span></p>
+<p>Самое распространенное женское имя: <span id="commonFemaleName"></span></p>
+
 <div class="scroll">
   <img id = "right_car" src="https://www.transparentpng.com/thumb/car-png/car-amazing-image-download-9.png" alt="Car Amazing Image Download @transparentpng.com">
-   <img id = "left_car" src="https://www.transparentpng.com/thumb/car-png/photos-png-clipart-car-4.png" alt="photos png clipart car @transparentpng.com">  
-  <img id="bottom_car" src="https://www.transparentpng.com/thumb/cars/7F9Ean-red-mustang-car-rear-view-download.png" alt="red mustang car rear view download @transparentpng.com">
+  <img id="left_car" src="https://www.transparentpng.com/thumb/car-png/transparent-background-car-25.png" alt="transparent background car @transparentpng.com">
+   <img id="bottom_car" src="https://www.transparentpng.com/thumb/cars/7F9Ean-red-mustang-car-rear-view-download.png" alt="red mustang car rear view download @transparentpng.com">
   <img id = "center_car"src="https://www.transparentpng.com/thumb/car-png/photos-car-1.png" alt="photos car @transparentpng.com">
 </div>
+<script src="{% static 'main/js/employee.js'%}"></script>
+<script src="{% static 'main/js/table.js'%}"></script>
 <script src="{% static 'main/js/age.js'%}"></script>
 <script src="{% static 'main/js/banner.js'%}"></script>
 <script src="{% static 'main/js/animation_scroll.js'%}"></script>
