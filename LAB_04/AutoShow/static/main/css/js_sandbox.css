@@ -5,3 +5,29 @@
 form {
     margin-top: 20px;
 }
+
+ .scroll img {
+    position: absolute;
+   
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#right_car{
+    right: 400px;
+}
+
+#left_car{
+
+    left: 0px;
+}
+
+#center_car{
+    left: 25%;
+    height: 40px;
+}
+
+#bottom_car{
+    left: 35%;
+    height: 400px;
+}

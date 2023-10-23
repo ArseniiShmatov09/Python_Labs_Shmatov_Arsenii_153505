@@ -1,5 +1,4 @@
 body {
-    background-image: url("https://gas-kvas.com/uploads/posts/2023-02/1675443528_gas-kvas-com-p-fonovii-risunok-dlya-div-32.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
@@ -9,6 +8,40 @@ body {
     line-height: 130%;
     font-variant: small-caps;
     word-wrap: break-word;
+    background-image: url("https://gas-kvas.com/uploads/posts/2023-02/1675443528_gas-kvas-com-p-fonovii-risunok-dlya-div-32.jpg");
+
+}
+
+
+#light-theme {
+    color: #333333 !important;
+    transition: background-color 0.5s, color 0.5s;
+
+
+}
+
+#dark-theme {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    transition: background-color 0.5s, color 0.5s;
+    background-image: none;
+
+}
+
+.big-letters{
+
+    font-size: xx-large;
+    transition: font-size 5s;
+}
+
+.progress{
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 0%;
+    height: 5px;
+    background-color: #3e3e3e;
 }
 
 a:link {
@@ -36,7 +69,6 @@ a:focus {
 
 header > h1 {
     font-size: 36px;
-    color: black;
 }
 
 
@@ -60,8 +92,8 @@ header > h1 {
 
 .menu a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
+    color: #333333;
     transition: color 0.3s;
 }
 
@@ -71,9 +103,9 @@ header > h1 {
 
 aside {
     width: 20%;
-    background-color: #f0f0f0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-left: 50px;
+    border: 5px solid;
 }
 
 aside p {
@@ -219,10 +251,8 @@ ul.menu-item {
 label {
     font-weight: bold;
     font-size: 20px;
-    color: black;
 }
 
-/* Стили для текстовых полей input[type="text"] и textarea */
 input[type="text"],
 textarea {
     font-family: 'Young Serif', serif;
@@ -231,21 +261,19 @@ textarea {
 }
 
 textarea:required {
-    border: 3px solid #ff0000; /* Красная граница для обязательных полей */
+    border: 3px solid #ff0000; 
 }
 
-/* Стили для заблокированных полей */
 input:disabled,
 textarea:disabled {
-    background-color: #050505; /* фон для заблокированных полей */
+    background-color: #050505;
 }
 .menu{
-
+    z-index: 3;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
-/* Стили для кнопки submit */
 input[type="submit"] {
     background-color: black;
     color: #fff;
@@ -257,13 +285,11 @@ input[type="submit"] {
     font-family: 'Pixelify Sans', cursive;
 }
 
-/* Стили для кнопки submit при наведении */
 input[type="submit"]:hover {
     background-color: grey;
 }
 
 
-/* Выделение элементов со значениями вне диапазона */
 input:out-of-range {
     border: 10px solid blueviolet;
 }

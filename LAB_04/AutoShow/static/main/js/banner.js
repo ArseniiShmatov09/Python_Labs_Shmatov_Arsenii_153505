@@ -36,18 +36,4 @@ document.addEventListener('visibilitychange', function () {
     }
 });
 
-if ('hidden' in document) {
-    // Добавление слушателя события visibilitychange
-    document.addEventListener('visibilitychange', function() {
-      if (document.hidden) {
-        // Страница стала невидимой, останавливаем смену баннеров
-        stopRotation();
-      } else {
-        // Страница стала видимой, запускаем смену баннеров
-        startRotation();
-      }
-    });
-}
-
-// Запуск смены баннеров при загрузке страницы
 startRotation();

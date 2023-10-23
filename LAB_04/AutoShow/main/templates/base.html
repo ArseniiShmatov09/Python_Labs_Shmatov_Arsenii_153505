@@ -25,6 +25,7 @@
         {% block title %}{%endblock%}
     </head>
     <body>
+        <div class="progress"></div>
         <div
             style="display: flex; justify-content: space-between; align-items: center;">
             <div style="flex-grow: 1;">
@@ -275,6 +276,14 @@
                     <input type="submit" value="Сохранить">
                 </form>
                 <textarea name="a" id cols="30" rows="10">AAA</textarea>
+                <h1>Переключение темы сайта</h1>
+                <label for="themeToggle">Светлая / Темная тема</label>
+                <input type="checkbox" id="themeToggle">
+                <div>
+                    <label for="lettersToggle">Большие / Маленькие буквы</label>
+                    <input type="checkbox" id="lettersToggle">
+                </div>
+          
             </aside>
         </main>
 
@@ -297,6 +306,10 @@
                 </nav>
             </div>
         </footer>
+        <script src="{% static 'main/js/theme.js'%}"></script>
+        <script src="{% static 'main/js/letters.js'%}"></script>
+
+        <script src="{% static 'main/js/progress_bar.js'%}"></script>
 
     </body>
 </html>

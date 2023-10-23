@@ -39,11 +39,14 @@ h1 {
 
 .employee-info p strong {
     font-size: 18px;
+    color: #007bff;
 }
 
 .employee-info p {
     margin: 5px 0;
     font-size: 16px;
+    color: #007bff;
+
 }
 
 .job-links a {

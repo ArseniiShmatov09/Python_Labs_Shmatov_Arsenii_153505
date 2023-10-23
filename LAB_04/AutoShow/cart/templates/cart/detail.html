@@ -1,8 +1,11 @@
 {% extends "base.html" %}
+{%load static%}
 {% block title %}
-    Your shopping cart
+<title>Shopping cart</title>
+
 {% endblock %}
 {% block content %}
+
     <h1>Your shopping cart</h1>
     <table class="cart">
         <thead>
@@ -52,7 +55,7 @@
 <tr class="total">
     <td>Total</td>
     <td colspan="4"></td>
-    <td class="num">
+    <td class="num total_price">
         ${{ cart.get_total_price_after_discount|floatformat:"2" }}
     </td>
 </tr>
@@ -60,11 +63,17 @@
     </table>
     <form action="{% url 'cart:apply' %}" method="post">
         {{ coupon_apply_form }}
-        <input type="submit" value="Apply">
+        <input id="input" type="submit" value="Apply">
         {% csrf_token %}
     </form>
     <p class="text-right">
         <h4><a href="{% url 'main:cars' %}" class="button light">Continue shopping</a>
             <a href="{% url 'order:order_create' %}">Checkout</a></h4>
     </p>
+
+    <input type="number" id="dob">
+    <button onclick="applyPromo()">Применить скидку</button>
+    <script src="{% static 'cart/js/promo.js'%}"></script>
+
+
 {% endblock %}

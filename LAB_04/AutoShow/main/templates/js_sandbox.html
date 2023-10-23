@@ -14,11 +14,11 @@
 
 {% block content %}
 
-<h1 style="font-size: 36px; color: black;">Проверка возраста</h1>
-<p style="font-size: 36px; color: black;">Введите вашу дату рождения:</p>
+<h1 style="font-size: 36px;">Проверка возраста</h1>
+<p style="font-size: 36px;">Введите вашу дату рождения:</p>
 <input type="date" id="dob">
 <button onclick="checkAge()">Проверить возраст</button>
-<p style="font-size: 36px; color: black;" id="result"></p>
+<p style="font-size: 36px;" id="result"></p>
 
 
 <div class="banner" id="banner1">
@@ -36,9 +36,13 @@
     <button type="button" id="startRotation">Start Rotation</button>
     <button type="button" id="stopRotation">Stop Rotation</button>
 </form>
-
-
+<div class="scroll">
+  <img id = "right_car" src="https://www.transparentpng.com/thumb/car-png/car-amazing-image-download-9.png" alt="Car Amazing Image Download @transparentpng.com">
+   <img id = "left_car" src="https://www.transparentpng.com/thumb/car-png/photos-png-clipart-car-4.png" alt="photos png clipart car @transparentpng.com">  
+  <img id="bottom_car" src="https://www.transparentpng.com/thumb/cars/7F9Ean-red-mustang-car-rear-view-download.png" alt="red mustang car rear view download @transparentpng.com">
+  <img id = "center_car"src="https://www.transparentpng.com/thumb/car-png/photos-car-1.png" alt="photos car @transparentpng.com">
+</div>
+<script src="{% static 'main/js/age.js'%}"></script>
 <script src="{% static 'main/js/banner.js'%}"></script>
-<script src="{% static 'main/js/banner.js'%}"></script>
-
+<script src="{% static 'main/js/animation_scroll.js'%}"></script>
 {% endblock %}

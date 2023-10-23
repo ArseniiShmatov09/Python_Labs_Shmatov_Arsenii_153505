@@ -1,7 +1,6 @@
 .container{
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -37,13 +36,13 @@ header dfn a {
 
 #features li {
     font-size: 18px;
-    color: #333;
+
     margin-bottom: 10px;
 }
 
 #about {
     font-size: 18px;
-    color: #333;
+
     margin-top: 20px;
 }
 
