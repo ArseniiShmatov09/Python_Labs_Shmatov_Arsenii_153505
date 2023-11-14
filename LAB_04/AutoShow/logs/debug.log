@@ -4978,3 +4978,1457 @@ Traceback (most recent call last):
 TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
 ERROR 2023-10-23 01:06:48,415 basehttp "GET /favicon.ico HTTP/1.1" 500 66073
 ERROR 2023-10-23 01:06:48,415 basehttp "GET /favicon.ico HTTP/1.1" 500 66073
+ERROR 2023-10-24 11:31:26,826 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc33250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc33250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc33250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:31:26,826 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc33250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc33250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc33250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:31:26,827 basehttp "GET / HTTP/1.1" 500 158382
+ERROR 2023-10-24 11:31:26,827 basehttp "GET / HTTP/1.1" 500 158382
+ERROR 2023-10-24 11:31:27,001 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:31:27,001 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:31:27,001 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:31:27,001 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:31:41,664 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9ef20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9ef20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9ef20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:31:41,664 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9ef20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9ef20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9ef20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:31:41,665 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:31:41,665 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:31:41,773 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:31:41,773 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:31:41,774 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:31:41,774 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:31:54,150 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9f0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:31:54,150 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9f0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:31:54,151 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:31:54,151 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:31:54,250 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:31:54,250 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:31:54,250 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:31:54,250 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:32:07,056 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9f7c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f7c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f7c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:32:07,056 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9f7c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f7c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f7c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:32:08,114 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9f100>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f100>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f100>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:32:08,114 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cc9f100>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f100>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cc9f100>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:32:08,114 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:32:08,114 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:32:08,291 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:32:08,291 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:32:08,292 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:32:08,292 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:33:06,089 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cd0b820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cd0b820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cd0b820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:33:06,089 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18cd0b820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cd0b820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18cd0b820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:33:14,236 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18ccf8490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18ccf8490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18ccf8490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:33:14,236 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18ccf8490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18ccf8490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18ccf8490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:33:14,236 basehttp "GET / HTTP/1.1" 500 158519
+ERROR 2023-10-24 11:33:14,236 basehttp "GET / HTTP/1.1" 500 158519
+ERROR 2023-10-24 11:33:14,341 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:33:14,341 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:33:14,341 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:33:14,341 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:33:51,047 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18c326530>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18c326530>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18c326530>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:33:51,047 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff18c326530>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/arsenii/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18c326530>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/arsenii/IGI_LABS/LAB_04/AutoShow/main/views.py", line 65, in index
+    joke = requests.get(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='official-joke-api.appspot.com', port=443): Max retries exceeded with url: /jokes/random (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff18c326530>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR 2023-10-24 11:33:51,048 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:33:51,048 basehttp "GET / HTTP/1.1" 500 158520
+ERROR 2023-10-24 11:33:51,150 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:33:51,150 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 11:33:51,151 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 11:33:51,151 basehttp "GET /favicon.ico HTTP/1.1" 500 65845
+ERROR 2023-10-24 15:04:09,309 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 15:04:09,309 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-24 15:04:09,310 basehttp "GET /favicon.ico HTTP/1.1" 500 65855
+ERROR 2023-10-24 15:04:09,310 basehttp "GET /favicon.ico HTTP/1.1" 500 65855
+ERROR 2023-10-27 10:32:24,064 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 10:32:24,064 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 10:32:24,065 basehttp "GET /favicon.ico HTTP/1.1" 500 65983
+ERROR 2023-10-27 10:32:24,065 basehttp "GET /favicon.ico HTTP/1.1" 500 65983
+ERROR 2023-10-27 10:33:46,686 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 10:33:46,686 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 10:33:46,687 basehttp "GET /favicon.ico HTTP/1.1" 500 65373
+ERROR 2023-10-27 10:33:46,687 basehttp "GET /favicon.ico HTTP/1.1" 500 65373
+ERROR 2023-10-27 19:37:13,280 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 19:37:13,280 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 19:37:13,281 basehttp "GET /favicon.ico HTTP/1.1" 500 65397
+ERROR 2023-10-27 19:37:13,281 basehttp "GET /favicon.ico HTTP/1.1" 500 65397
+ERROR 2023-10-27 20:19:44,901 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:19:44,901 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:19:44,902 basehttp "GET /favicon.ico HTTP/1.1" 500 65373
+ERROR 2023-10-27 20:19:44,902 basehttp "GET /favicon.ico HTTP/1.1" 500 65373
+WARNING 2023-10-27 20:30:37,132 log Not Found: /order/media/images/лого.ico
+WARNING 2023-10-27 20:30:37,132 log Not Found: /order/media/images/лого.ico
+WARNING 2023-10-27 20:30:37,132 basehttp "GET /order/media/images/%D0%BB%D0%BE%D0%B3%D0%BE.ico HTTP/1.1" 404 6187
+WARNING 2023-10-27 20:30:37,132 basehttp "GET /order/media/images/%D0%BB%D0%BE%D0%B3%D0%BE.ico HTTP/1.1" 404 6187
+ERROR 2023-10-27 20:31:10,259 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:31:10,259 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:31:10,259 basehttp "GET /favicon.ico HTTP/1.1" 500 65397
+ERROR 2023-10-27 20:31:10,259 basehttp "GET /favicon.ico HTTP/1.1" 500 65397
+ERROR 2023-10-27 20:35:14,461 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:35:14,461 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:35:14,461 basehttp "GET /favicon.ico HTTP/1.1" 500 65373
+ERROR 2023-10-27 20:35:14,461 basehttp "GET /favicon.ico HTTP/1.1" 500 65373
+ERROR 2023-10-27 20:48:13,408 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:48:13,408 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 20:48:13,409 basehttp "GET /favicon.ico HTTP/1.1" 500 65394
+ERROR 2023-10-27 20:48:13,409 basehttp "GET /favicon.ico HTTP/1.1" 500 65394
+ERROR 2023-10-27 21:04:23,160 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-10-27 21:04:23,160 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:12:51,281 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:12:51,281 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:12:51,281 basehttp "GET /favicon.ico HTTP/1.1" 500 66008
+ERROR 2023-11-10 23:12:51,281 basehttp "GET /favicon.ico HTTP/1.1" 500 66008
+ERROR 2023-11-10 23:13:39,423 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:39,423 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:39,423 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:13:39,423 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:13:54,480 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:54,480 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:54,481 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:13:54,481 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:13:57,070 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:57,070 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:57,071 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:13:57,071 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:13:59,987 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:59,987 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:13:59,987 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:13:59,987 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:14:04,527 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:04,527 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:04,527 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:14:04,527 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:14:09,695 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:09,695 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:09,696 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:14:09,696 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:14:13,871 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:13,871 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:13,871 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:14:13,871 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:14:19,119 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:19,119 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:19,119 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:14:19,119 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:14:28,482 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:28,482 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:28,482 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:14:28,482 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:14:29,095 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:29,095 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:29,096 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:14:29,096 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:14:34,499 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:34,499 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:34,499 basehttp "GET /favicon.ico HTTP/1.1" 500 66005
+ERROR 2023-11-10 23:14:34,499 basehttp "GET /favicon.ico HTTP/1.1" 500 66005
+ERROR 2023-11-10 23:14:57,752 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:57,752 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:14:57,752 basehttp "GET /favicon.ico HTTP/1.1" 500 65988
+ERROR 2023-11-10 23:14:57,752 basehttp "GET /favicon.ico HTTP/1.1" 500 65988
+ERROR 2023-11-10 23:15:00,877 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:15:00,877 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:15:00,877 basehttp "GET /favicon.ico HTTP/1.1" 500 65988
+ERROR 2023-11-10 23:15:00,877 basehttp "GET /favicon.ico HTTP/1.1" 500 65988
+ERROR 2023-11-10 23:18:43,337 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:18:43,337 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:18:43,337 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:18:43,337 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:19:06,702 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:19:06,702 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:19:06,702 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:19:06,702 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:20:47,529 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:20:47,529 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:20:47,529 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:20:47,529 basehttp "GET /favicon.ico HTTP/1.1" 500 65987
+ERROR 2023-11-10 23:20:50,298 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:20:50,298 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:20:50,299 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:20:50,299 basehttp "GET /favicon.ico HTTP/1.1" 500 65984
+ERROR 2023-11-10 23:21:47,935 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:21:47,935 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/arsenii/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: CarsList() got an unexpected keyword argument 'car_carcass'
+ERROR 2023-11-10 23:21:47,935 basehttp "GET /favicon.ico HTTP/1.1" 500 65988
+ERROR 2023-11-10 23:21:47,935 basehttp "GET /favicon.ico HTTP/1.1" 500 65988
