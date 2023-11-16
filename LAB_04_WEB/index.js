@@ -1,15 +1,13 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import { registerValidation, loginValidation } from './validation/auth.js';
-import checkAuth from './utils/checkAuth.js';
-import * as UserController from './controllers/UserController.js';
-import * as CarController from './controllers/CarController.js';
-import passport from 'passport';
-import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
 import session from 'express-session';
-import { carCreateValidation, carEditValidation } from './validation/car.js';
+import passport from 'passport';
 import multer from 'multer';
-
+import { handleValidationErrors, checkAuth } from './utils/index.js';
+import { UserController, CarController } from './controllers/index.js';
+import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
+import { carCreateValidation, carEditValidation, registerValidation, loginValidation  } from './validation/index.js';
+import cors from 'cors';
 
 const app = express();
 const storage = multer.diskStorage({
@@ -24,16 +22,12 @@ const storage = multer.diskStorage({
 const upload = multer({ storage});
 
 app.use(express.json());
-
+app.use(cors());
 app.use(session({ secret: 'your-secret-key', resave: true, saveUninitialized: true }));
 
 app.use(passport.initialize());
 app.use(passport.session());
 app.use('/uploads', express.static('uploads'));
-
-
-
-
 
 mongoose.connect('mongodb+srv://admin:09120912@cluster0.wogfkyo.mongodb.net/carBlog')
 .then(()=>console.log('DB is Ok'))
@@ -81,15 +75,15 @@ passport.serializeUser((user, done) => {
       res.send('Hello, guest!');
     }
   });
-app.post('/auth/register', registerValidation, UserController.register);
-app.post('/auth/login', loginValidation, UserController.login);
+app.post('/auth/register', registerValidation, handleValidationErrors, UserController.register);
+app.post('/auth/login', loginValidation, handleValidationErrors, UserController.login);
 app.get('/auth/me', checkAuth, UserController.getMe);
 
 app.get('/cars', CarController.getAllCars);
 app.get('/cars/:id',checkAuth, CarController.getOneCar);
-app.post('/cars', checkAuth, carCreateValidation, CarController.createCar);
+app.post('/cars', checkAuth, carCreateValidation, handleValidationErrors, CarController.createCar);
 app.delete('/cars/:id',checkAuth, CarController.removeCar);
-app.patch('/cars/:id', checkAuth, carEditValidation, CarController.updateCar);
+app.patch('/cars/:id', checkAuth, carEditValidation, handleValidationErrors, CarController.updateCar);
 
 app.post('/upload', checkAuth, upload.single('image'), (req, res)=>{
   res.json({
