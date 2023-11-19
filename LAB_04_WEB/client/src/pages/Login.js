@@ -16,15 +16,12 @@ const Login = ({ onLogin, setLoggedInUser }) => {
       });
       localStorage.setItem('token', response.data.token);
       console.log('Login successful', response.data);
-      setLoggedInUser(response.data);
-      // Вызовите функцию обратного вызова, переданную из родительского компонента
       onLogin(response.data);
       history.push('/');
     } catch (error) {
       console.error('Login error:', error.message);
 
       if (error.response) {
-        // Ошибка от сервера с кодом состояния, например, 404 или 400
         if (error.response.status === 404) {
           setError('User not found');
         } else if (error.response.status === 400) {

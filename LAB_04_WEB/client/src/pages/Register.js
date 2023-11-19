@@ -12,11 +12,8 @@ const Register = ({ onRegister, history }) => {
         fullName,
         avatarUrl,
       });
-
-      // Вызывайте функцию обратного вызова для регистрации пользователя
+      localStorage.setItem('token', response.data.token);
       onRegister(response.data);
-
-      // Перенаправьте пользователя на главную страницу или другую страницу после успешной регистрации
       history.push('/');
     } catch (error) {
       console.error('Registration error:', error.message);

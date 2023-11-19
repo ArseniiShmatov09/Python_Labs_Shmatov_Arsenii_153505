@@ -4,7 +4,11 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import CarDetails from './pages/CarDetails';
 import axios from 'axios';
+import AddCar from './pages/AddCar'; 
+import EditCar from './pages/EditCar';
+
 
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
@@ -14,28 +18,23 @@ const App = () => {
     const token = localStorage.getItem('token');
     console.log(localStorage.getItem('token'));
     if (token) {
-      // Выполняем запрос на сервер для проверки токена и получения данных пользователя
       axios.get('http://localhost:3001/auth/me', {
         headers: {
           Authorization: `${token}`,
         },
       })
       .then(response => {
-        // Устанавливаем пользователя в состояние
         setUser(response.data);
         setLoggedInUser(response.data);
       })
       .catch(error => {
         console.error('Token verification error:', error.message, token);
-        // Обработка ошибок аутентификации
       });
     }
   }, []);
 
   const handleLogout = () => {
-    // Удаление токена из localStorage
     localStorage.removeItem('token');
-    // Очистка состояния пользователя
     setLoggedInUser(null);
   };
 
@@ -43,12 +42,17 @@ const App = () => {
     <Router>
     <Switch>
       <Route path="/login">
-        {loggedInUser ? <Redirect to="/" /> : <Login onLogin={setLoggedInUser} setLoggedInUser={setLoggedInUser} />}
+        {loggedInUser ? <Redirect to="/" /> : <Login onLogin={(user) => setLoggedInUser(user)} />}
       </Route>
       <Route path="/register">
         {loggedInUser ? <Redirect to="/" /> : <Register onRegister={(user) => setLoggedInUser(user)} />}
       </Route>
-      <Route path="/">
+      <Route path="/cars/:id" render={() => <CarDetails loggedInUser={loggedInUser} />} />
+
+      <Route exact path="/add-car" component = {AddCar} />
+      <Route exact path="/edit-car/:id" component = {EditCar} />
+
+      <Route exact path="/">
         <Home loggedInUser={loggedInUser} onLogout={handleLogout} />
       </Route>
     </Switch>

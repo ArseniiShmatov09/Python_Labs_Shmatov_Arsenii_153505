@@ -78,6 +78,7 @@ passport.serializeUser((user, done) => {
 app.post('/auth/register', registerValidation, handleValidationErrors, UserController.register);
 app.post('/auth/login', loginValidation, handleValidationErrors, UserController.login);
 app.get('/auth/me', checkAuth, UserController.getMe);
+app.get('/users/:id', UserController.getUserById);
 
 app.get('/cars', CarController.getAllCars);
 app.get('/cars/:id',checkAuth, CarController.getOneCar);
