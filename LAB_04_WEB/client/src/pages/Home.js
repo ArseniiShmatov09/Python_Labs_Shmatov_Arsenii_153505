@@ -1,26 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AuthButtons from '../components/AuthButtons';
 import CarList from '../components/CarList';
-import { useState } from 'react';
+import axios from 'axios';
+import ApiJoke from '../components/ApiJoke';
+import ApiDogImage from '../components/ApiDogImage';
+import TimeZoneInfo from '../components/TimeZoneInfo';
 
 const Home = ({ loggedInUser, onLogout }) => {
-  const [showAddCarForm] = useState(false);
 
   return (
     <div>
       <h1>Home</h1>
+      <TimeZoneInfo/>
       <AuthButtons isAuthenticated={!!loggedInUser} onLogout={onLogout} />
       <div>
-        {loggedInUser ? (
-          <p>Привет, {loggedInUser.fullName}!</p>
-        ) : (
-          <p>Пожалуйста, войдите</p>
-        )}
+        {loggedInUser && <p>Привет, {loggedInUser.fullName}!</p>}
+        {!loggedInUser && <p>Пожалуйста, войдите</p>}
       </div>
-      <CarList />
-      <Link to="/add-car">Add Car</Link>
-      {showAddCarForm}
+
+
+
+      {loggedInUser && <Link to="/add-car">Add Car</Link>}
+     <CarList />
+     {loggedInUser && <ApiJoke/>}
+    {loggedInUser && <ApiDogImage/>}
     </div>
   );
 };

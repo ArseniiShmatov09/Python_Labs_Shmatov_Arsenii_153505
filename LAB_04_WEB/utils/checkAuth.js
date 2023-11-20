@@ -12,13 +12,13 @@ export default (req, res, next) =>{
 
         }
         catch(err){
-            return res.status(403).json({
+            return res.status(402).json({
             message: 'No access',
         });
         }
 
     } else{
-       return res.status(403).json({
+       return res.status(402).json({
             message: 'No accesss',
         })
     }

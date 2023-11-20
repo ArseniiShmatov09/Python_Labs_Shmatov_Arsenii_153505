@@ -1,49 +1,65 @@
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
-const AddCarForm = () => {
+const AddCarForm = ({ onAddCar }) => {
+  const [brand, setBrand] = useState('');
+  const [model, setModel] = useState('');
+  const [cost, setCost] = useState('');
+  const [description, setDescription] = useState('');
+  const [yearOfPublication, setYearOfPublication] = useState('');
+  const [carUrl, setCarUrl] = useState('');
+  const [carcassTypes, setCarcassTypes] = useState([]);
+  const [selectedCarcassType, setSelectedCarcassType] = useState('');
   const history = useHistory();
-
-  const [formData, setFormData] = useState({
-    brand: '',
-    model: '',
-    cost: '',
-    description: '',
-    yearOfPublication: '',
-    carUrl: '',
-  });
   const [formError, setFormError] = useState('');
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+
+  useEffect(() => {
+    const fetchCarcassTypes = async () => {
+      try {
+        const response = await axios.get('http://localhost:3001/carcassTypes');
+        setCarcassTypes(response.data);
+      } catch (error) {
+        console.error('Error fetching carcass types:', error.message);
+      }
+    };
+
+    fetchCarcassTypes();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
+   
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:3001/cars', formData, {
+      const response = await axios.post('http://localhost:3001/cars', {
+        brand,
+        model,
+        cost,
+        description,
+        yearOfPublication,
+        carUrl,
+        carcassTypeId: selectedCarcassType,
+      }, {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token}`, // Добавьте токен в заголовки запроса
         },
       });
 
-      setFormData({
-        brand: '',
-        model: '',
-        cost: '',
-        description: '',
-        yearOfPublication: '',
-        carUrl: '',
-      });
+      onAddCar(response.data);
+      // Очищаем поля формы после успешного добавления
+      setBrand('');
+      setModel('');
+      setCost('');
+      setDescription('');
+      setYearOfPublication('');
+      setCarUrl('');
+      setSelectedCarcassType('');
 
       history.push('/');
-    } 
+
+    }
     catch (error) {
         console.error('Error adding car:', error.message);
     
@@ -59,31 +75,43 @@ const AddCarForm = () => {
     <form onSubmit={handleSubmit}>
       <label>
         Brand:
-        <input type="text" name="brand" value={formData.brand} onChange={handleChange} />
+        <input type="text" value={brand} onChange={(e) => setBrand(e.target.value)} required />
       </label>
       <label>
         Model:
-        <input type="text" name="model" value={formData.model} onChange={handleChange} />
+        <input type="text" value={model} onChange={(e) => setModel(e.target.value)} required />
       </label>
       <label>
         Cost:
-        <input type="text" name="cost" value={formData.cost} onChange={handleChange} />
+        <input type="number" value={cost} onChange={(e) => setCost(e.target.value)} required />
       </label>
       <label>
         Description:
-        <textarea name="description" value={formData.description} onChange={handleChange} />
+        <textarea value={description} onChange={(e) => setDescription(e.target.value)} required />
       </label>
       <label>
         Year of Publication:
-        <input type="text" name="yearOfPublication" value={formData.yearOfPublication} onChange={handleChange} />
+        <input type="number" value={yearOfPublication} onChange={(e) => setYearOfPublication(e.target.value)} required />
       </label>
       <label>
-        Car Image URL:
-        <input type="text" name="carUrl" value={formData.carUrl} onChange={handleChange} />
+        Car URL:
+        <input type="url" value={carUrl} onChange={(e) => setCarUrl(e.target.value)} required />
+      </label>
+      <label>
+        Carcass Type:
+        <select value={selectedCarcassType} onChange={(e) => setSelectedCarcassType(e.target.value)} required>
+          <option value="" disabled>Select Carcass Type</option>
+          {carcassTypes.map((carcassType) => (
+            <option key={carcassType._id} value={carcassType._id}>
+              {carcassType.designation}
+            </option>
+          ))}
+        </select>
       </label>
       <button type="submit">Add Car</button>
-    {formError && <p style={{ color: 'red' }}>{formError}</p>}
-  </form>
+      {formError && <p style={{ color: 'red' }}>{formError}</p>}
+
+    </form>
   );
 };
 

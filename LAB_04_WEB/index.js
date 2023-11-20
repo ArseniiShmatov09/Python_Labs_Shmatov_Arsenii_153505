@@ -43,7 +43,6 @@ passport.use(new GoogleStrategy({
   },
 
   (accessToken, refreshToken, profile, done) => {
-    // Ваша логика для сохранения пользователя в базе данных или возвращения пользователя
     return done(null, profile);
   }
 ));
@@ -81,10 +80,12 @@ app.get('/auth/me', checkAuth, UserController.getMe);
 app.get('/users/:id', UserController.getUserById);
 
 app.get('/cars', CarController.getAllCars);
-app.get('/cars/:id',checkAuth, CarController.getOneCar);
+app.get('/cars/:id', CarController.getOneCar);
 app.post('/cars', checkAuth, carCreateValidation, handleValidationErrors, CarController.createCar);
 app.delete('/cars/:id',checkAuth, CarController.removeCar);
 app.patch('/cars/:id', checkAuth, carEditValidation, handleValidationErrors, CarController.updateCar);
+app.get('/carcassTypes/:id', handleValidationErrors, CarController.getCarcassTypeById);
+app.get('/carcassTypes', handleValidationErrors, CarController.getAllCarcassTypes);
 
 app.post('/upload', checkAuth, upload.single('image'), (req, res)=>{
   res.json({

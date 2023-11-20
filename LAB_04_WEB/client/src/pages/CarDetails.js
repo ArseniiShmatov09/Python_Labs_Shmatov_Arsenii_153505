@@ -7,6 +7,8 @@ const CarDetails = ({ loggedInUser }) => {
   const { id } = useParams();
   const [car, setCar] = useState(null);
   const [author, setAuthor] = useState(null);
+  const [carcassType, setCarcassType] = useState(null);
+
   const history = useHistory();
 
   useEffect(() => {
@@ -14,20 +16,24 @@ const CarDetails = ({ loggedInUser }) => {
     const token = localStorage.getItem('token');
   
       try {
-        const response = await axios.get(`http://localhost:3001/cars/${id}`, {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          });
+        const response = await axios.get(`http://localhost:3001/cars/${id}`);
         setCar(response.data);
 
             const authorId = response.data.user;
             const authorResponse = await axios.get(`http://localhost:3001/users/${authorId}`);
             setAuthor(authorResponse.data.fullName);
 
+            const carcassTypeId = response.data.carcassType;
+
+            if (carcassTypeId) {
+              const carcassTypeResponse = await axios.get(`http://localhost:3001/carcassTypes/${carcassTypeId}`);
+              setCarcassType(carcassTypeResponse.data.designation);
+            }
         } catch (error) {
           console.error('Error fetching car details:', error.message);
         }
+
+
       };
   
 
@@ -58,10 +64,11 @@ const CarDetails = ({ loggedInUser }) => {
   return (
     <div>
       <h2>Car Details</h2>
-      <img alt='' src={`${car.carUrl}`}/>
+      <img height={150} width={200} alt='' src={`${car.carUrl}`}/>
       
       <p>Name: {car.brand}, {car.model}</p>
       <p>Description: {car.description}</p>
+      <p>Carcass Type: {carcassType || 'Unknown'}</p>
       <p>Year of publication: {car.yearOfPublication}</p> 
       <p>Cost: {car.cost}</p>
       <p>Views: {car.viewsCount}</p>

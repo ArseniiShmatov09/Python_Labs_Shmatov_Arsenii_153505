@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
 const EditCarForm = () => {
-
   const history = useHistory();
   const { id } = useParams();
   const [formData, setFormData] = useState({
@@ -14,44 +13,51 @@ const EditCarForm = () => {
     description: '',
     yearOfPublication: '',
     carUrl: '',
+    carcassType: '', // Добавляем новое поле для выбора каркасса
   });
+  const [carcassTypes, setCarcassTypes] = useState([]); // Список доступных каркассов
   const [formError, setFormError] = useState('');
+
   useEffect(() => {
-    const fetchCarDetails = async () => {
+    const fetchData = async () => {
       const token = localStorage.getItem('token');
 
       try {
-        const response = await axios.get(`http://localhost:3001/cars/${id}`, {
+        // Получаем данные о машине
+        const carResponse = await axios.get(`http://localhost:3001/cars/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
 
+        // Получаем список каркассов
+        const carcassTypesResponse = await axios.get('http://localhost:3001/carcassTypes');
+
         setFormData({
-          brand: response.data.brand,
-          model: response.data.model,
-          cost: response.data.cost.toString(), // приводим к строке, так как input type="text"
-          description: response.data.description,
-          yearOfPublication: response.data.yearOfPublication.toString(), // приводим к строке
-          carUrl: response.data.carUrl,
+          brand: carResponse.data.brand,
+          model: carResponse.data.model,
+          cost: carResponse.data.cost.toString(),
+          description: carResponse.data.description,
+          yearOfPublication: carResponse.data.yearOfPublication.toString(),
+          carUrl: carResponse.data.carUrl,
+          carcassType: carResponse.data.carcassType._id, // Используйте carcassTypeId
         });
-      }  
 
-
-    catch (error) {
+        setCarcassTypes(carcassTypesResponse.data);
+      } catch (error) {
         console.error('Error fetching car details:', error.message);
       }
     };
 
-    fetchCarDetails();
+    fetchData();
   }, [id]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -65,17 +71,17 @@ const EditCarForm = () => {
         },
       });
 
-       history.push(`/cars/${id}`);
+      history.push(`/cars/${id}`);
     } catch (error) {
-        console.error('Error editing car:', error.message);
-    
-        if (error.response && error.response.data) {
-          setFormError(error.response.data[0].msg);
-        } else {
-          setFormError('Error editing car. Please try again.');
-        }
+      console.error('Error editing car:', error.message);
+
+      if (error.response && error.respAonse.data) {
+        setFormError(error.response.data[0].msg);
+      } else {
+        setFormError('Error editing car. Please try again.');
       }
-    };
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -108,9 +114,18 @@ const EditCarForm = () => {
         Car Image URL:
         <input type="text" name="carUrl" value={formData.carUrl} onChange={handleChange} />
       </label>
+      <label>
+        Carcass Type:
+        <select name="carcassTypeId" value={formData.carcassTypeId} onChange={handleChange}>
+          {carcassTypes.map((carcassType) => (
+            <option key={carcassType._id} value={carcassType._id}>
+              {carcassType.designation}
+            </option>
+          ))}
+        </select>
+      </label>
       <button type="submit">Update Car</button>
       {formError && <p style={{ color: 'red' }}>{formError}</p>}
-
     </form>
   );
 };

@@ -36,6 +36,10 @@ const CarSchema = new mongoose.Schema({
         ref:'User', 
         required:true,
     },
+    carcassType:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'CarcassType', 
+    },
 },
     {
         timestamps: true,

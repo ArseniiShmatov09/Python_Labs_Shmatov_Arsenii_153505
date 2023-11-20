@@ -1,32 +1,34 @@
 import mongoose from 'mongoose';
 import CarModel from '../models/car.js';
+import CarcassTypeModel from '../models/carcassType.js';
 
-export const getAllCars = async(req, res) =>{
+export const getAllCars = async (req, res) => {
+  try {
+    const sortOption = req.query.sortBy; // Получаем параметр сортировки из запроса
+    const carcassTypeFilter = req.query.carcassType; // Получаем тип кузова из запроса
 
-    try{
-        const sortOption = req.query.sortBy; // Получаем параметр сортировки из запроса
+    let cars;
 
-        let cars;
+    // Фильтрация по типу кузова, если он указан в запросе
+    const filter = carcassTypeFilter ? { carcassType: carcassTypeFilter } : {};
 
-        if (sortOption === 'priceAsc') {
-            cars = await CarModel.find().sort({ cost: 1 }).populate('user').exec();
-        } else if (sortOption === 'priceDesc') {
-            cars = await CarModel.find().sort({ cost: -1 }).populate('user').exec();
-        } else {
-            cars = await CarModel.find().populate('user').exec();
-        }
-
-        res.json(cars);
+    if (sortOption === 'priceAsc') {
+      cars = await CarModel.find(filter).sort({ cost: 1 }).populate('user').exec();
+    } else if (sortOption === 'priceDesc') {
+      cars = await CarModel.find(filter).sort({ cost: -1 }).populate('user').exec();
+    } else {
+      cars = await CarModel.find(filter).populate('user').exec();
     }
 
-    catch (err){
-        console.log(err)
-        res.status(500).json({
-            message: 'Error in getting cars',
-        })
-    }
+    res.json(cars);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({
+      message: 'Error in getting cars',
+    });
+  }
+};
 
-}
 
 export const removeCar = async(req, res) =>{
     try {
@@ -91,6 +93,7 @@ export const createCar = async (req, res) => {
             yearOfPublication: req.body.yearOfPublication,
             carUrl: req.body.carUrl,
             user: req.userId,
+            carcassType: req.body.carcassTypeId,
         })
 
         const car = await doc.save();
@@ -124,6 +127,7 @@ export const updateCar = async (req, res) => {
             yearOfPublication: req.body.yearOfPublication,
             carUrl: req.body.carUrl,
             user: req.userId,
+            carcassType: req.body.carcassTypeId,
         },
         );
 
@@ -141,3 +145,31 @@ export const updateCar = async (req, res) => {
         });
       }
 }
+
+export const getCarcassTypeById = async (req, res) => {
+    try {
+      const carcassTypeId = req.params.id;
+
+      const carcassType = await CarcassTypeModel.findById(carcassTypeId);
+      if (!carcassType) {
+        return res.status(404).json({ message: 'Carcass type not found' });
+      }
+  
+      res.json(carcassType);
+    } catch (error) {
+      console.error('Error fetching carcass type details:', error.message);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  };
+
+  export const getAllCarcassTypes = async (req, res) => {
+    try {
+      const carcassTypes = await CarcassTypeModel.find();
+      res.status(200).json(carcassTypes);
+    } catch (error) {
+      console.error('Error fetching carcass types:', error.message);
+      res.status(500).json({ message: 'Error fetching carcass types' });
+    }
+  };
+
+  
