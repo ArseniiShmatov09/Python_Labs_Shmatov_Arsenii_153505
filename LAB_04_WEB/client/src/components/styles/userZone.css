@@ -1,0 +1,122 @@
+/* styles.css (или как вы назовете файл) */
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .time-info {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .time-info h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .time-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .time-info span {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .time-info:before,
+  .time-info:after {
+    content: '';
+    display: table;
+  }
+  
+  .time-info:after {
+    clear: both;
+  }
+  
+  .time-info {
+    zoom : 1;
+  }
+  
+  .right-panel {
+    float: right;
+    margin-top: -25px;
+  }
+  
+  .auth-buttons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .auth-buttons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .auth-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #858585;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #969696;
+  }
+  
+  .auth-buttons a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .auth-buttons a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Стили для компонента Header */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header p {
+    margin: 0;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+
+  /* Дополнительные стили для компонента Header */
+.user-greeting {
+    float: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .user-greeting p {
+    margin: 0;
+    font-size: 16px;
+  }
+  

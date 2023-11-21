@@ -8,8 +8,6 @@ const ApiDogImage = () => {
       try {
         const response = await fetch('https://dog.ceo/api/breeds/image/random');
         const data = await response.json();
-
-        // Проверяем, что ответ содержит URL картинки
         if (data && data.message) {
           setDogImageUrl(data.message);
         } else {
@@ -24,8 +22,8 @@ const ApiDogImage = () => {
   }, []);
 
   return (
-    <div>
-      {dogImageUrl && <img height={150} src={dogImageUrl} alt="Dog" />}
+    <div className='container'>
+      {dogImageUrl && <img className='news-image' height={150} src={dogImageUrl} alt="Dog" />}
     </div>
   );
 };

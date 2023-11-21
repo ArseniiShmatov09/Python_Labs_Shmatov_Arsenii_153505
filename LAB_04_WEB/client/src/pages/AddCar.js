@@ -12,7 +12,6 @@ const AddCarPage = () => {
 
   return (
     <div>
-      <h2>Add Car</h2>
       <AddCarForm onAddCar={handleAddCar} />
     </div>
   );

@@ -6,23 +6,20 @@ import axios from 'axios';
 import ApiJoke from '../components/ApiJoke';
 import ApiDogImage from '../components/ApiDogImage';
 import TimeZoneInfo from '../components/TimeZoneInfo';
+import Header from '../components/Header';
+import './styles/utils.css';
 
 const Home = ({ loggedInUser, onLogout }) => {
 
   return (
     <div>
-      <h1>Home</h1>
-      <TimeZoneInfo/>
-      <AuthButtons isAuthenticated={!!loggedInUser} onLogout={onLogout} />
-      <div>
-        {loggedInUser && <p>Привет, {loggedInUser.fullName}!</p>}
-        {!loggedInUser && <p>Пожалуйста, войдите</p>}
-      </div>
+      <Header/>
 
-
-
-      {loggedInUser && <Link to="/add-car">Add Car</Link>}
      <CarList />
+     <div className='container'>
+     {loggedInUser && <Link to="/add-car" className="add-car-link">Add Car</Link>}
+     </div>
+
      {loggedInUser && <ApiJoke/>}
     {loggedInUser && <ApiDogImage/>}
     </div>

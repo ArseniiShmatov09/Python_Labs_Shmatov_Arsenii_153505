@@ -13,9 +13,9 @@ const EditCarForm = () => {
     description: '',
     yearOfPublication: '',
     carUrl: '',
-    carcassType: '', // Добавляем новое поле для выбора каркасса
+    carcassType: '', 
   });
-  const [carcassTypes, setCarcassTypes] = useState([]); // Список доступных каркассов
+  const [carcassTypes, setCarcassTypes] = useState([]); 
   const [formError, setFormError] = useState('');
 
   useEffect(() => {
@@ -23,14 +23,12 @@ const EditCarForm = () => {
       const token = localStorage.getItem('token');
 
       try {
-        // Получаем данные о машине
         const carResponse = await axios.get(`http://localhost:3001/cars/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
 
-        // Получаем список каркассов
         const carcassTypesResponse = await axios.get('http://localhost:3001/carcassTypes');
 
         setFormData({
@@ -40,7 +38,7 @@ const EditCarForm = () => {
           description: carResponse.data.description,
           yearOfPublication: carResponse.data.yearOfPublication.toString(),
           carUrl: carResponse.data.carUrl,
-          carcassType: carResponse.data.carcassType._id, // Используйте carcassTypeId
+          carcassType: carResponse.data.carcassType._id, 
         });
 
         setCarcassTypes(carcassTypesResponse.data);
@@ -84,39 +82,80 @@ const EditCarForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className="form-container" onSubmit={handleSubmit}>
+      <label className="form-label">
         Brand:
-        <input type="text" name="brand" value={formData.brand} onChange={handleChange} />
+        <input
+          className="form-input"
+          type="text"
+          name="brand"
+          value={formData.brand}
+          onChange={handleChange}
+        />
       </label>
-      <label>
+
+      <label className="form-label">
         Model:
-        <input type="text" name="model" value={formData.model} onChange={handleChange} />
+        <input
+          className="form-input"
+          type="text"
+          name="model"
+          value={formData.model}
+          onChange={handleChange}
+        />
       </label>
-      <label>
+
+      <label className="form-label">
         Cost:
-        <input type="text" name="cost" value={formData.cost} onChange={handleChange} />
+        <input
+          className="form-input"
+          type="text"
+          name="cost"
+          value={formData.cost}
+          onChange={handleChange}
+        />
       </label>
-      <label>
+
+      <label className="form-label">
         Description:
-        <textarea name="description" value={formData.description} onChange={handleChange} />
+        <input
+          className="form-textarea"
+          name="description"
+          value={formData.description}
+          onChange={handleChange}
+        />
       </label>
-      <label>
+
+      <label className="form-label">
         Year of Publication:
         <input
+          className="form-input"
           type="text"
           name="yearOfPublication"
           value={formData.yearOfPublication}
           onChange={handleChange}
         />
       </label>
-      <label>
+
+      <label className="form-label">
         Car Image URL:
-        <input type="text" name="carUrl" value={formData.carUrl} onChange={handleChange} />
+        <input
+          className="form-input"
+          type="text"
+          name="carUrl"
+          value={formData.carUrl}
+          onChange={handleChange}
+        />
       </label>
-      <label>
+
+      <label className="form-label">
         Carcass Type:
-        <select name="carcassTypeId" value={formData.carcassTypeId} onChange={handleChange}>
+        <select
+          className="form-select"
+          name="carcassTypeId"
+          value={formData.carcassTypeId}
+          onChange={handleChange}
+        >
           {carcassTypes.map((carcassType) => (
             <option key={carcassType._id} value={carcassType._id}>
               {carcassType.designation}
@@ -124,8 +163,12 @@ const EditCarForm = () => {
           ))}
         </select>
       </label>
-      <button type="submit">Update Car</button>
-      {formError && <p style={{ color: 'red' }}>{formError}</p>}
+
+      <button className="form-button" type="submit">
+        Update Car
+      </button>
+
+      {formError && <p className="form-error">{formError}</p>}
     </form>
   );
 };

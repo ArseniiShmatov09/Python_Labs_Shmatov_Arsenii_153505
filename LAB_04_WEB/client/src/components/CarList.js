@@ -1,6 +1,8 @@
+// CarList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './styles/carList.css'; 
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
@@ -50,12 +52,10 @@ const CarList = () => {
   };
 
   return (
-    <div>
-      <h2>All Cars</h2>
-      <div>
+    <div className="container">
+      <div className="sort-buttons">
         <button onClick={() => handleSortChange('priceAsc')}>Sort by Price (Asc)</button>
         <button onClick={() => handleSortChange('priceDesc')}>Sort by Price (Desc)</button>
-        <label htmlFor="carcassTypeSelect">Choose carcass type:</label>
         <select id="carcassTypeSelect" onChange={handleCarcassTypeChange} value={selectedCarcassType}>
           <option value="">All</option>
           {carcassTypes.map((carcassType) => (
@@ -65,13 +65,14 @@ const CarList = () => {
           ))}
         </select>
       </div>
-      <ul>
+      <ul className="car-list">
         {cars.map((car) => (
-          <li key={car._id}>
-            <Link to={`/cars/${car._id}`}>
-              <p>{car.brand} {car.model}</p>
+          <li key={car._id} className="car-item">
+            <img src={`${car.carUrl}`} alt={`${car.brand} ${car.model}`} className="car-image" />
+            <Link to={`/cars/${car._id}`} className="car-link">
+              <p className="car-details">{car.brand} {car.model}</p>
             </Link>
-            <p>Cost: {car.cost}</p>
+            <p className="car-cost">Cost: {car.cost}$</p>
           </li>
         ))}
       </ul>

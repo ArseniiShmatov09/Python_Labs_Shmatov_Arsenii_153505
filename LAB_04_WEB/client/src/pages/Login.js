@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import LoginForm from '../components/LoginForm';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import './styles/login.css';
 
 const Login = ({ onLogin, setLoggedInUser }) => {
   const [error, setError] = useState('');
@@ -30,21 +31,18 @@ const Login = ({ onLogin, setLoggedInUser }) => {
           setError('Error logging in');
         }
       } else if (error.request) {
-        // Ошибка запроса
         setError('Request error');
       } else {
-        // Остальные ошибки
         setError('Unknown error');
       }
     }
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <LoginForm onSubmit={handleLogin} />
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-    </div>
+    <div className="login-container">
+    <LoginForm onSubmit={handleLogin} />
+    {error && <p className="error-message">{error}</p>}
+  </div>
   );
 };
 

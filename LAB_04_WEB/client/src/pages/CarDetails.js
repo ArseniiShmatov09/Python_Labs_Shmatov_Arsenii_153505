@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import './styles/carDetails.css';
 
 const CarDetails = ({ loggedInUser }) => {
   const { id } = useParams();
@@ -62,27 +64,29 @@ const CarDetails = ({ loggedInUser }) => {
   const isAuthor = loggedInUser && author === loggedInUser.fullName;
   
   return (
-    <div>
-      <h2>Car Details</h2>
-      <img height={150} width={200} alt='' src={`${car.carUrl}`}/>
-      
-      <p>Name: {car.brand}, {car.model}</p>
-      <p>Description: {car.description}</p>
-      <p>Carcass Type: {carcassType || 'Unknown'}</p>
-      <p>Year of publication: {car.yearOfPublication}</p> 
-      <p>Cost: {car.cost}</p>
-      <p>Views: {car.viewsCount}</p>
-      <p>Author: {author || 'Unknown'}</p> 
 
-         {isAuthor && (
-        <button onClick={handleDeleteCar}>Delete Car</button>
+    <div><Header />
+    <div className="containerr">
+      
+      <img className="car-imagee" alt='' src={`${car.carUrl}`} />
+      <p className="car-detailsss">Name: {car.brand}, {car.model}</p>
+      <p className="car-detailsss">Description: {car.description}</p>
+      <p className="car-detailsss">Carcass Type: {carcassType || 'Unknown'}</p>
+      <p className="car-detailsss">Year of publication: {car.yearOfPublication}</p>
+      <p className="car-detailsss">Cost: {car.cost}</p>
+      <p className="car-detailsss">Views: {car.viewsCount}</p>
+      <p className="car-detailsss">Author: {author || 'Unknown'}</p>
+  
+      {isAuthor && (
+        <button className="car-detailss" onClick={handleDeleteCar}>Delete Car</button>
       )}
-        {isAuthor && (
+      {isAuthor && (
         <Link to={`/edit-car/${id}`}>
-          <button>Edit Car</button>
+          <button className="car-detailss">Edit Car</button>
         </Link>
       )}
-        </div>
+    </div>
+    </div>
   );
 };
 

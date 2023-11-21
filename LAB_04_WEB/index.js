@@ -4,10 +4,11 @@ import session from 'express-session';
 import passport from 'passport';
 import multer from 'multer';
 import { handleValidationErrors, checkAuth } from './utils/index.js';
-import { UserController, CarController } from './controllers/index.js';
+import { UserController, CarController, NewsController, FAQController } from './controllers/index.js';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
 import { carCreateValidation, carEditValidation, registerValidation, loginValidation  } from './validation/index.js';
 import cors from 'cors';
+
 
 const app = express();
 const storage = multer.diskStorage({
@@ -22,7 +23,10 @@ const storage = multer.diskStorage({
 const upload = multer({ storage});
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', // Замените на домен вашего фронтенда
+  credentials: true,
+}));
 app.use(session({ secret: 'your-secret-key', resave: true, saveUninitialized: true }));
 
 app.use(passport.initialize());
@@ -47,6 +51,7 @@ passport.use(new GoogleStrategy({
   }
 ));
 
+
 passport.serializeUser((user, done) => {
     done(null, user);
   });
@@ -66,14 +71,26 @@ passport.serializeUser((user, done) => {
       res.redirect('/');
     }
   );
-  
-  app.get('/', (req, res) => {
-    if (req.isAuthenticated()) {
-      res.send(`Hello, ${req.user.displayName}!`);
-    } else {
-      res.send('Hello, guest!');
+
+  app.get('/',
+    (req, res) => {
+     
+      res.redirect('http://localhost:3000');
     }
+  );
+  
+  app.get('/logout', (req, res) => {
+    req.logout();
+    res.redirect('/');
   });
+
+  app.get('/api/current_user', (req, res) => {
+    let userr = req.user;
+    res.json({
+      user: userr,
+    });
+  });
+
 app.post('/auth/register', registerValidation, handleValidationErrors, UserController.register);
 app.post('/auth/login', loginValidation, handleValidationErrors, UserController.login);
 app.get('/auth/me', checkAuth, UserController.getMe);
@@ -84,8 +101,12 @@ app.get('/cars/:id', CarController.getOneCar);
 app.post('/cars', checkAuth, carCreateValidation, handleValidationErrors, CarController.createCar);
 app.delete('/cars/:id',checkAuth, CarController.removeCar);
 app.patch('/cars/:id', checkAuth, carEditValidation, handleValidationErrors, CarController.updateCar);
+
 app.get('/carcassTypes/:id', handleValidationErrors, CarController.getCarcassTypeById);
 app.get('/carcassTypes', handleValidationErrors, CarController.getAllCarcassTypes);
+
+app.get('/news', NewsController.getAllNews);
+app.get('/faq', FAQController.getAllFAQ);
 
 app.post('/upload', checkAuth, upload.single('image'), (req, res)=>{
   res.json({
@@ -94,10 +115,7 @@ app.post('/upload', checkAuth, upload.single('image'), (req, res)=>{
 
 });
 
-app.listen(3001, (err)=>{
-    if (err) 
-        return console.log(err);
-
-    console.log("Server OK");
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
-

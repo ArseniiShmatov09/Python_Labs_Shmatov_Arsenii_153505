@@ -4,12 +4,10 @@ import CarcassTypeModel from '../models/carcassType.js';
 
 export const getAllCars = async (req, res) => {
   try {
-    const sortOption = req.query.sortBy; // Получаем параметр сортировки из запроса
-    const carcassTypeFilter = req.query.carcassType; // Получаем тип кузова из запроса
-
+    const sortOption = req.query.sortBy; 
+    const carcassTypeFilter = req.query.carcassType; 
     let cars;
 
-    // Фильтрация по типу кузова, если он указан в запросе
     const filter = carcassTypeFilter ? { carcassType: carcassTypeFilter } : {};
 
     if (sortOption === 'priceAsc') {
@@ -61,7 +59,7 @@ export const getOneCar = async(req, res) =>{
         const updatedCar = await CarModel.findOneAndUpdate(
             { _id: carId },
             { $inc: { viewsCount: 1 } },
-            { new: true } // чтобы получить обновленный документ
+            { new: true } 
         );
 
         if (!updatedCar) {

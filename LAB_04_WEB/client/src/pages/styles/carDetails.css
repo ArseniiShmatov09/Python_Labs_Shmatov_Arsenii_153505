@@ -1,0 +1,33 @@
+/* CarDetails.css */
+
+.containerr {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #787978;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-imagee {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-detailsss {
+    font-size: 24px;
+    line-height: 1.5;
+    background-color: #787978;
+    color: white;
+}
+.car-detailss:hover {
+    background-color: #2a2a2a;
+}
+.car-detailss {
+    background-color: #787978;
+    color: red;
+
+}

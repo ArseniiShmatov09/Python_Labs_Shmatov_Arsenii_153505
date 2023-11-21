@@ -1,6 +1,6 @@
 // RegisterForm.js
 import React, { useState } from 'react';
-import axios from 'axios';
+import './styles/register.css'; // Импортируем файл стилей
 
 const RegisterForm = ({ onSubmit }) => {
   const [email, setEmail] = useState('');
@@ -53,27 +53,29 @@ const RegisterForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Email:</label>
-        <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
-      </div>
-      
-      <div>
-        <label>Password:</label>
-        <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
-      </div>
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Email:</label>
+          <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          {errors.email && <p className="error-message">{errors.email}</p>}
+        </div>
+        
+        <div className="form-group">
+          <label>Password:</label>
+          <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          {errors.password && <p className="error-message">{errors.password}</p>}
+        </div>
 
-      <div>
-        <label>Full Name:</label>
-        <input type="text" name="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)} />
-        {errors.fullName && <p style={{ color: 'red' }}>{errors.fullName}</p>}
-      </div>
+        <div className="form-group">
+          <label>Full Name:</label>
+          <input type="text" name="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+          {errors.fullName && <p className="error-message">{errors.fullName}</p>}
+        </div>
 
-      <button type="submit">Register</button>
-    </form>
+        <button type="submit">Register</button>
+      </form>
+    </div>
   );
 };
 

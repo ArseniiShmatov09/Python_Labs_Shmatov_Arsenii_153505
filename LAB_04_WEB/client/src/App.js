@@ -8,6 +8,9 @@ import CarDetails from './pages/CarDetails';
 import axios from 'axios';
 import AddCar from './pages/AddCar'; 
 import EditCar from './pages/EditCar';
+import News from './pages/News';
+import FAQ from './pages/FAQ';
+import GoogleButton from './components/GoogleButton';
 
 
 const App = () => {
@@ -36,8 +39,9 @@ const App = () => {
   const handleLogout = () => {
     localStorage.removeItem('token');
     setLoggedInUser(null);
+    window.location.reload();
   };
-
+  
   return (
     <Router>
     <Switch>
@@ -47,14 +51,17 @@ const App = () => {
       <Route path="/register">
         {loggedInUser ? <Redirect to="/" /> : <Register onRegister={(user) => setLoggedInUser(user)} />}
       </Route>
+  
+
       <Route path="/cars/:id" render={() => <CarDetails loggedInUser={loggedInUser} />} />
 
       <Route exact path="/add-car" component = {AddCar} />
       <Route exact path="/edit-car/:id" component = {EditCar} />
-
+      <Route path = "/news" component = {News}/>
+      <Route path = "/faq" component = {FAQ}/>
       <Route exact path="/">
-        <Home loggedInUser={loggedInUser} onLogout={handleLogout} />
-      </Route>
+      <Home loggedInUser={loggedInUser} onLogout={handleLogout} />
+            </Route>
     </Switch>
   </Router>
   );

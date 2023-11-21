@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './styles/utils.css';
 
 const ApiJoke = () => {
   const [joke, setJoke] = useState({ setup: '', punchline: '' });
@@ -23,9 +24,11 @@ const ApiJoke = () => {
     fetchJoke();
   }, []); 
   return (
-    <div>
-      <p>{joke.setup}</p>
-      <p>{joke.punchline}</p>
+    <div className='container'>
+      <div className="joke-container">
+        <p className="joke-setup">{joke.setup}</p>
+        <p className="joke-punchline">{joke.punchline}</p>
+      </div>
     </div>
   );
 };

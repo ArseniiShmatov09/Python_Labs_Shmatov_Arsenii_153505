@@ -1,57 +1,64 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
+import './styles/userZone.css';
 
-const TimeZoneInfo = () => {
-  const [localTime, setLocalTime] = useState('');
-  const [utcTime, setUtcTime] = useState('');
-  const [userTimeZone, setUserTimeZone] = useState('');
+class TimeZoneInfo extends Component {
+  constructor(props) {
+    super(props);
 
- 
-  useEffect(() => {
-
-    const getUserTimeZoneInfo = () => {
-        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        setUserTimeZone(timeZone);
-      };
-      
-    const updateTimes = () => {
-      const now = new Date();
-
-      const localTimeOptions = {
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-        timeZoneName: 'short',
-      };
-      const localTimeString = now.toLocaleString(undefined, localTimeOptions);
-      setLocalTime(localTimeString);
-
-      const utcTimeOptions = {
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-        timeZone: 'UTC',
-      };
-      const utcTimeString = now.toLocaleString(undefined, utcTimeOptions);
-      setUtcTime(utcTimeString);
-
-    
-
+    this.state = {
+      localTime: '',
+      utcTime: '',
+      userTimeZone: '',
     };
+  }
 
-    const intervalId = setInterval(updateTimes, 1000);
-    updateTimes(); 
-    getUserTimeZoneInfo();
+  componentDidMount() {
+    this.getUserTimeZoneInfo();
+    this.intervalId = setInterval(this.updateTimes, 1000);
+  }
 
-    return () => clearInterval(intervalId);
-  }, []);
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
 
-  return (
-  
-    <div style={{ marginTop: '10px' }}>Тайм зона пользователя: {userTimeZone}
-      <p>Локальное время: {localTime}</p>
-      <p>Время в UTC: {utcTime}</p>
+  getUserTimeZoneInfo = () => {
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    this.setState({ userTimeZone: timeZone });
+  };
+
+  updateTimes = () => {
+    const now = new Date();
+
+    const localTimeOptions = {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+      timeZoneName: 'short',
+    };
+    const localTimeString = now.toLocaleString(undefined, localTimeOptions);
+    this.setState({ localTime: localTimeString });
+
+    const utcTimeOptions = {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+      timeZone: 'UTC',
+    };
+    const utcTimeString = now.toLocaleString(undefined, utcTimeOptions);
+    this.setState({ utcTime: utcTimeString });
+  };
+
+  render() {
+    const { userTimeZone, localTime, utcTime } = this.state;
+
+    return (
+      <div className="time-info">
+      <p>Тайм зона пользователя: <span>{this.state.userTimeZone}</span></p>
+      <p>Локальное время: <span>{this.state.localTime}</span></p>
+      <p>Время в UTC: <span>{this.state.utcTime}</span></p>
     </div>
-  );
-};
+    );
+  }
+}
 
 export default TimeZoneInfo;
